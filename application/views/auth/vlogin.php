@@ -5,7 +5,7 @@
 			<span class="db"><img class="w-25 mb-3"  alt="logo" /></span>
 			<h4 class="font-medium m-b-25">Masuk</h4>
 		</div>
-		<!-- Form -->
+		<!-- Form dasadad -->
 		<div class="row">
 			<div class="col-12">				
 				<form class="form-horizontal m-t-20" id="loginform" action="" method="post">
