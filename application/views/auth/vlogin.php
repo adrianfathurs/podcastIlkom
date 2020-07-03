@@ -1,48 +1,63 @@
-<center>
-<div class="auth-box">
-	<div id="loginform">
-		<div class="logo">
-			<span class="db"><img class="w-25 mb-3"  alt="logo" /></span>
-			<h4 class="font-medium m-b-25">Masuk</h4>
-		</div>
-		<!-- Form dasadad -->
-		<div class="row">
-			<div class="col-12">				
-				<form class="form-horizontal m-t-20" id="loginform" action="" method="post">
-					<div class="input-group mb-3">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+   <!--Made with love by Mutiullah Samim -->
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/auth.css">
+</head>
+<body>
+	
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<a href="https://www.facebook.com/"><span><i class="fab fa-facebook-square"></i></span></a>
+					<a href="https://www.gmail.com/"><span><i class="fab fa-google-plus-square"></i></span></a>
+					<a href="https://www.twitter.com/"><span><i class="fab fa-twitter-square"></i></span></a>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control form-control-lg" placeholder="Username atau Email" aria-label="Username" aria-describedby="basic-addon1" name="account">
+						<input type="text" class="form-control" placeholder="username">
+						
 					</div>
-					<div class="input-group mb-3">
+					<div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password">
+						<input type="password" class="form-control" placeholder="password">
 					</div>
-					<div class="form-group row">
-						<div class="col-md-12">
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customCheck1">
-								<label class="custom-control-label" for="customCheck1">Ingat saya</label>
-								<a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i>Lupa password?</a>
-							</div>
-						</div>
+					<div class="row align-items-center remember">
+						<label >
+						<input type="checkbox">Remember Me
+						</label>
 					</div>
-					<div class="form-group text-center">
-						<div class="col-xs-12 p-b-20">
-							<button class="btn btn-block btn-lg btn-info" type="submit">Masuk</button>
-						</div>
-					</div>
-					<div class="form-group m-b-0 m-t-10">
-						<div class="col-sm-12 text-center">
-							Belum punya akun? <a href="" class="text-info m-l-5"><b>Daftar Sekarang!</b></a>
-						</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
 					</div>
 				</form>
-			</div>
+			</div>			
 		</div>
 	</div>
-
 </div>
+</body>
+</html>
