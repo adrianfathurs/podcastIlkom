@@ -19,11 +19,8 @@
   <link rel="stylesheet" href="assets/css/fl-bigmug-line.css">
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 <body>
-
-
 
   <div class="site-wrap fixed-top">
     <div class="site-navbar mt-4 bg-light">
