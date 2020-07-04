@@ -5,7 +5,7 @@ class HomePage extends CI_Controller {
 
 	public function index()
 	{
-		$data['css']="template/template_homepage_css";
+		$data['css']="home/vhomepage_css";
 		$this->load->view('template/header');
 		$this->load->view('home/homePage',$data);
 		$this->load->view('template/footer');
