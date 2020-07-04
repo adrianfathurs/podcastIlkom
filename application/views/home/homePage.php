@@ -15,32 +15,46 @@ if (isset($css)) {
   </div>
 </div>
 
-<div class="container-fluid "> 
+<div class="container-fluid container-margin bg-dark"> 
   <div class="row">
     <div class="col-md-2">
       <!-- KOSONG -->
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6">
       <div class="row">
         <h1 class="animated infinite bounce animated.slow tengah">HELLO FROM CRASTFM</h1>
       </div>
       <div class="row ">
-       <img class="tengah"src="assets/images/prambors.jpg" width="250" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+       <img class="tengah"src="assets/images/lambang_crast.png" width="250" height="150" class="d-inline-block align-top" alt="" loading="lazy">
      </div>
      <div class="row ">
-      <audio class=" tengah padding-top-row" src="http://streaming.rri.co.id:9025/web-rrijakartapro1.mp3" preload="auto" controls>PLAY</audio>
+      <audio class=" tengah padding-top-row radius" src="http://streaming.rri.co.id:9025/web-rrijakartapro1.mp3" preload="auto" controls>PLAY</audio>
     </div>
   </div>
-  <div class="col-md-5">
-        <iframe class ="youtube-place" width="300" height="150" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <iframe class ="youtube-place clear-float" width="300" height="150" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div class="col-md-4 ">
+    <div class="row">
+      <div class="card" style="width: 25rem;">
+        <h3 class="card-text px-1 text-black ">Youtube &nbsp;<a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"><img class="animated infinite jello " src="assets/images/youtube.png" width="20px" height="20"></h3></a>
+        <iframe class ="youtube-place" width="398" height="200" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="card" style="width: 25rem;">
+        <iframe class ="youtube-place" width="398" height="200" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>  
+
   </div>
 </div>
 
 <!-- Link buat menampilkan playlist spotify -->
 <!-- <iframe class= ""src="https://open.spotify.com/embed/playlist/1Vs0AmVOfmGza5oYf3Ox1B" width="800" height="800" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
 
-
+<!-- <iframe class ="youtube-place clear-float" width="300" height="150" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 
 </div>
 
@@ -48,7 +62,7 @@ if (isset($css)) {
   <div class="container">
     <div class="row">
       <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-        <h2 class="mb-5">Upcoming Shows</h2>
+        <h2 class="mb-5">Schedule Shows</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
         officia, error reiciendis ab quod?</p>
       </div>

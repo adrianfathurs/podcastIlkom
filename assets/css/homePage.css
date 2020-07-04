@@ -1,20 +1,49 @@
+@media (max-width: 991px){
+	.youtube-place{
+		
+		float:none;
+		position: center;
+		
+	}
+}
 .youtube-place{
-	margin-top: 5px;
+	
 	float:right;
+	
 }
 .clear-float{
 	clear: right;
 }
+.background-youtube{
+	width: 410;
+	height: 210;
+	background-color: #fff;
+}
 .margin-container{
 	padding-top: 160px;
+}
+.container-margin{
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 .padding-top-row{
 	margin-top: 10px;
 }
-.tengah
-{
+.tengah{
 	margin-top: 10px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+.radius{
+	border-radius: 10px;
+	background-color: 
+}
+.logo-brand-display{
+	display: inline;
+	float: left;
+}
+.text-style-brand{
+	
+
 }
