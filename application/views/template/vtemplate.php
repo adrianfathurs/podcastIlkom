@@ -22,7 +22,7 @@
     
 </head>
 
-<body class="container bg-black" >
+<body class="container bg-light" >
 
 	<!-- ============================================================== -->
 	<!-- Main wrapper - style you can find in pages.scss -->
