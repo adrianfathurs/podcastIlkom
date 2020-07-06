@@ -31,8 +31,7 @@
            <a class="navbar-brand" href="#">
 
             <img src="assets/images/logo_podcrast-2.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2">&nbsp;PODCRAST</p></strong></img>
-            
-            
+                        
           </a>
         </div>
         <div class="col-4 col-md-4 col-lg-8">

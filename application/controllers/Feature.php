@@ -9,8 +9,10 @@
         }
         
         function index(){
-            // $data = $this->Mfeature->get_all();
-            $this->load->view('feature/vfeature');
+            $data['content'] = 'feature/vfeature.php';
+            // $data['content'] = 'home/homePage.p  hp';
+            $this->load->view('template/vtemplate', $data);
+            // $this->load->view('feature/vfeature');
             
         }
 
