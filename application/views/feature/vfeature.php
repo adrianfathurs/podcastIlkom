@@ -5,7 +5,7 @@
 <!------ Include the above in your HEAD tag ---------->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css">
 </head>
-
+<section>
     <div class="container">
     	<div class="row">
     	    <h1 class="text-center"><span>Article About Feature</span></h1>
@@ -26,3 +26,4 @@
             <?php } ?>
     	</div>
     </div>
+</section>    

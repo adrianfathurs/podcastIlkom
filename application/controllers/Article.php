@@ -10,7 +10,7 @@
         
         function index(){
             // $data = $this->Mfeature->get_all();
-            $this->load->view('article/vform');
+            $this->load->view('article/vArticle');
             
         }
 
