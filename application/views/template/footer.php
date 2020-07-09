@@ -3,10 +3,10 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Deejee</h3>
+              <h3 class="footer-heading mb-4">About PodCrast</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
             </div>
-            <div class="mb-5">
+            <!-- <div class="mb-5">
               <h3 class="footer-heading mb-4">Subscribe</h3>
               <form action="#" method="post" class="site-block-subscribe">
                 <div class="input-group mb-3">
@@ -17,10 +17,10 @@
                   </div>
                 </div>
               </form>
-            </div>
+            </div> -->
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="row mb-5">
+            <!-- <div class="row mb-5">
               <div class="col-md-12">
                 <h3 class="footer-heading mb-4">Navigations</h3>
               </div>
@@ -40,7 +40,7 @@
                   <li><a href="#">Membership</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
 
             <div class="row">
               <div class="col-md-12">
@@ -58,7 +58,7 @@
           </div>
 
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="mb-5">
+            <!-- <div class="mb-5">
               <h3 class="footer-heading mb-4">Watch Live Streaming</h3>
 
               <div class="block-16">
@@ -67,7 +67,7 @@
                   <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
                 </figure>
               </div>
-            </div>
+            </div> -->
           </div>
           
         </div>
@@ -75,7 +75,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+           <!--  Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a> -->
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>

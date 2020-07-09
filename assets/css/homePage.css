@@ -1,3 +1,10 @@
+
+.background-image1{
+	
+	width: 100%;
+	height: 250px;
+}
+
 @media (max-width: 991px){
 	.youtube-place{
 		
@@ -43,7 +50,186 @@
 	display: inline;
 	float: left;
 }
-.text-style-brand{
+.logo-podcrast{
+	margin-left: 20px;
+	
+}
+.card-podcrast{
+	padding-bottom: 10px;
+}
+
+/*w3School carousel*/
+
+.w3-container, .w3-panel {
+	padding: 0.01em 16px;
+}
+
+.w3-content {
+	max-width: 980px;
+}
+
+.w3-content, .w3-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+/*effect carousel*/
+.margin-main-carousel{
+	margin: auto;
+}
+.element{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	color: #000;
+
+	position:relative;
+}
+.effect
+{
+	
+	overflow: hidden;
+	transition: all 0.5s ease;
+
+}
+.front , .back
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	/*fungsinya agar pergerakan transformnya tidak terlihat*/
+	backface-visibility:hidden;
+
+}
+.back
+{
+	width: 100%;
+	height: 100%;
+	top:-100%;
+	opacity: 0.9;
+	background-color: #333;
+	text-align: center;
+	
+	
+	transition: all 0.5s ease;
+	/*box -shadow horzontal vertical blur persebaran_shadow warna*/
+	//box-shadow: 10px 10px 50px 2px #333;
+}
+.effect:hover .back
+{
+	top:0%;
+	left: 0%;
 	
 
+}
+.effect:hover
+{
+	transform: scale(0.9);
+
+}
+.back-content 
+{
+	line-height: 0px;	
+}
+
+.effect:hover .back-content
+{
+	transform:scale(3);
+	border-radius: 10px;
+	padding-top: 60px;
+	
+}
+@media (max-width: 681px){
+	.padding-row-carousel
+	{
+		padding:auto;
+	}
+	.image-size-second-carousel
+	{
+		width: 60%;
+		height: 60%;
+	}
+
+}
+
+.padding-row-carousel
+{
+	padding-left: 60px;
+
+}
+.image-size-second-carousel
+{
+	width: 100px;
+	height:100px;
+}
+
+/*button caroseul*/
+.btn-border
+{
+	border-radius: 50px; 
+	width: 80px;
+	height: 80px;
+}
+.btn-primary
+{
+	opacity: 0.4;
+}
+
+.btn-primary:hover
+{
+	opacity: 1;
+}
+
+@media (max-width: 681px){
+	.btn-prev{
+		
+		float:none;
+		margin: auto;
+		font-size: 70%;
+	}
+	.btn-next{
+		
+		float:none;
+		margin: auto;
+		font-size: 63%;
+		
+	}
+	.btn-border
+	{
+		border-radius: 40px; 
+		width: 50px;
+		height: 50px;
+	}
+}
+.btn-prev
+{
+	float: left;
+	margin-top: 120px;
+}
+.btn-next
+{
+	float: right;
+	margin-top: 120px;
+}
+/* Top 10 Chart */
+
+.visibility1{
+	visibility: visible;
+}
+.visibility2{
+	visibility: visible;
+}
+
+@media(max-width: 681px){
+	.visibility1{
+		visibility: hidden;
+	}
+	.visibility2{
+		visibility: visible;
+	}	
 }

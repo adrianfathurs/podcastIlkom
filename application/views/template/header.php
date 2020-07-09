@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/fl-bigmug-line.css">
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
@@ -27,15 +28,15 @@
     <div class="site-navbar mt-4 bg-light">
       <div class="container py-1">
         <div class="row align-items-center">
-          <div class="col-8 col-md-8 col-lg-4">
+          <div class="col-7 col-md-7 col-lg-4">
            <a class="navbar-brand" href="#">
 
-            <img src="assets/images/logo_podcrast-2.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2">&nbsp;PODCRAST</p></strong></img>
+            <img src="assets/images/logo_podcrast-2.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;PODCRAST</p></strong></img>
             
             
           </a>
         </div>
-        <div class="col-4 col-md-4 col-lg-8">
+        <div class="col-5 col-md-5 col-lg-8">
           <nav class="site-navigation text-right text-md-right" role="navigation">
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
@@ -43,26 +44,12 @@
               <li class="active">
                 <a class="text-black" href="http://streaming.rri.co.id:9025/web-rrijakartapro1.mp3">Home</a>
               </li>
-              <li><a class="text-black" href="dj.html">DJs</a></li>
-              <li class="has-children">
-                <a class="text-black" href="shows.html">Shows</a>
-                <ul class="dropdown arrow-top">
-                  <li><a class="text-black"  href="#">Top 20 of The Week</a></li>
-                  <li><a class="text-black"  href="#">Featured Artist</a></li>
-                  <li><a class="text-black"  href="#">Interviews</a></li>
-                  <li class="has-children">
-                    <a class="text-black" href="#">Sub Menu</a>
-                    <ul class="dropdown">
-                      <li><a class="text-black" href="#">Menu One</a></li>
-                      <li><a class="text-black" href="#">Menu Two</a></li>
-                      <li><a class="text-black" href="#">Menu Three</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="text-black" href="events.html">Events</a></li>
-              <li><a class="text-black" href="about.html">About</a></li>
-              <li><a class="text-black" href="contact.html">Contact</a></li>
+              <li><a class="text-black" href="#">Music</a></li>
+              <li><a class="text-black" href="events.html">Announcer</a></li>
+              <li><a class="text-black" href="about.html">Artikel</a></li>
+              <li><a class="text-black" href="about.html">Event</a></li>
+              <li><a class="text-black" href="about.html">About US</a></li>
+              <li><a class="text-black" href="about.html">Member</a></li>
             </ul>
           </nav>
         </div>
@@ -71,11 +58,11 @@
   </div>
 </div>
 
-<div class="site-mobile-menu">
-  <div class="site-mobile-menu-header">
-    <div class="site-mobile-menu-close mt-3">
-      <span class="icon-close2 js-menu-toggle"></span>
+<div class="site-mobile-menu bg-dark">
+  <div class="site-mobile-menu-header bg-dark ">
+    <div class="site-mobile-menu-close mt-3 bg-dark ">
+      <span class="icon-close2 js-menu-toggle bg-dark text-white"></span>
     </div>
   </div>
-  <div class="site-mobile-menu-body"></div>
+  <div class="site-mobile-menu-body bg-dark "style="color: #ffffff"></div>
   </div> <!-- .site-mobile-menu -->
