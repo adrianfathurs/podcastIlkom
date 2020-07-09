@@ -19,26 +19,26 @@ if (isset($css)) {
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
 
-    <div class="carousel-item active" data-interval="10000">
+    <div class="carousel-item active" data-interval="1000">
       <img class="image-carousel-size" src="assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
 
 
-      <h1 class="mb-4">Turn On The Feeling With Music</h1>
-      <p><a href="#" class="btn btn-primary px-4 py-3">About Us</a></p>
+      <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <a href="#" ><button class="btn-primary px-4 py-3">About Us</button></a>
       
     </img>
   </div>
 
   <div class="carousel-item " data-interval="2000">
     <img class="image-carousel-size" src="assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
-    <h1 class="mb-4">Turn On The Feeling With Music</h1>
+     <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
     <p><a href="#" class="btn btn-primary px-4 py-3">About Us</a></p>
   </img>
 </div>
 
-<div class="carousel-item ">
+<div class="carousel-item" data-interval="2000">
   <img class="image-carousel-size" src="assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
-  <h1 class="mb-4">Turn On The Feeling With Music</h1>
+   <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
   <p><a href="#" class="btn btn-primary px-4 py-3">About Us</a></p>
 </div>
 
@@ -62,7 +62,7 @@ if (isset($css)) {
     </div>
     <div class="col-md-6">
       <div class="row">
-        <h1 class="animated infinite bounce animated.slow tengah">HELLO FROM CRASTFM</h1>
+        <h2 class=" tengah text-hello-crast animated infinite bounce animated.slow  text-white">HELLO FROM CRASTFM</h2>
       </div>
       <div class="row ">
        <img class="tengah"src="assets/images/lambang_crast.png" width="250" height="150" class="d-inline-block align-top" alt="" loading="lazy">
@@ -75,7 +75,7 @@ if (isset($css)) {
     <div class="row">
       <div class="card" style="width: 25rem;">
         <h3 class="card-header  bg-secondary mb-2 px-1 text-black ">Youtube &nbsp;<a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"><img class="animated infinite jello " src="assets/images/youtube.png" width="50px" height="50px"></h3></a>
-        <iframe class ="youtube-place" width="398" height="200" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+        <iframe class ="youtube-place" width="373" height="200" src="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
 
       </div>
     </div>
@@ -83,7 +83,7 @@ if (isset($css)) {
       <div class="card " style="width: 25rem;">
         <h3 class="card-header  bg-secondary mb-2 px-1 text-black">PodCrast <img class="animated infinite jello"src="assets/images/logo_podcrast-2.png" width="50px" height="50px" alt="" loading="lazy" alt="PODCRAST" > </h3>
         <!-- Link buat menampilkan playlist spotify -->
-        <iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/playlist/1Vs0AmVOfmGza5oYf3Ox1B" width="390px" height="100px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+        <iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/playlist/1Vs0AmVOfmGza5oYf3Ox1B" width="380px" height="100px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
       </div>
     </div>  
 
@@ -314,32 +314,32 @@ if (isset($css)) {
       </thead>
       <tbody>
         <tr>
-           <td  class="visibility2">1</td>
-            <td class="visibility2">Mark</td>
-            <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-            <td class="visibility1">Otto</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-        </tr>
-        <tr>
-           <td  class="visibility2">2</td>
-            <td class="visibility2">Mark</td>
-            <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-            <td class="visibility1">Otto</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-        </tr>
-        <tr>
-           <td  class="visibility2">2</td>
-            <td class="visibility2">Mark</td>
-            <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-            <td class="visibility1">Otto</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-            <td class="visibility1">@mdo</td>
-        </tr>
+         <td  class="visibility2">1</td>
+         <td class="visibility2">Mark</td>
+         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
+         <td class="visibility1">Otto</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+       </tr>
+       <tr>
+         <td  class="visibility2">2</td>
+         <td class="visibility2">Mark</td>
+         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
+         <td class="visibility1">Otto</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+       </tr>
+       <tr>
+         <td  class="visibility2">2</td>
+         <td class="visibility2">Mark</td>
+         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
+         <td class="visibility1">Otto</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+         <td class="visibility1">@mdo</td>
+       </tr>
         <!-- <tr>
           <th scope="row">2</th>
           <td>Mark</td>
@@ -538,57 +538,69 @@ if (isset($css)) {
 </div>
 
 <div class="site-section bg-dark">
-  <div class="container">
-    <div class="row">
-      <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-        <h2 class="mb-5">News &amp; Events</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
+  <div class="container" data-aos="fade-up">
+    <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+        <h2 class="mb-5">Articles</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
+        officia, error reiciendis ab quod?</p>
       </div>
-    </div>
     <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-        <a href="single.html"><img src="assets/images/img_4.jpg" alt="Image" class="img-fluid"></a>
-        <div class="p-4 bg-white">
-          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-          <h2 class="h5 text-black mb-3"><a href="single.html">This Is The Day, Party, Party!</a></h2>
-
+        <?php for($i=0;$i<3;$i++){ ?>
+          <div class="col-md-4 mt-5">               
+            <div class="card profile-card-5 mt-5">       
+              <div class="card-img-block">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+              </div>
+              <div class="card-body pt-0">
+                <h5 class="card-title">Kolom 1</h5></a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div> 
+              </div>            
+            </div> 
+             <div class="col-md-4 mt-5">   
+                  <div class="card profile-card-5 mt-5">
+                    <a href="#">
+                      <div class="card-img-block">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                      </div>
+                      <div class="card-body pt-0">
+                        <h5 class="card-title">Kolom 2</h5></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+              </div>                  
+                <div class="col-md-4 mt-5"> 
+                    <div class="card profile-card-5 mt-5">
+                      <a href="#">
+                        <div class="card-img-block">
+                          <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                        </div>
+                        <div class="card-body pt-0">
+                          <h5 class="card-title">Kolom 3</h5></a>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                   </div>                        
+                <?php } ?>           
+          </div>   
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-        <a href="single.html"><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-        <div class="p-4 bg-white">
-          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-          <h2 class="h5 text-black mb-3"><a href="single.html">This Is The Day, Party, Party!</a></h2>
 
+      <div class="bg-primary" data-aos="fade">
+        <div class="container">
+          <div class="row">
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-        <a href="single.html"><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-        <div class="p-4 bg-white">
-          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-          <h2 class="h5 text-black mb-3"><a href="single.html">This Is The Day, Party, Party!</a></h2>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-primary" data-aos="fade">
-  <div class="container">
-    <div class="row">
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
-    </div>
-  </div>
-</div>
-<!-- Script Js Content -->
-<?php
-if (isset($js)) {
-  $this->load->view($js);
-}
-?>
+      <!-- Script Js Content -->
+      <?php
+      if (isset($js)) {
+        $this->load->view($js);
+      }
+      ?>
