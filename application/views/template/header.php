@@ -28,12 +28,12 @@
     <div class="site-navbar mt-4 bg-light">
       <div class="container py-1">
         <div class="row align-items-center">
-          <div class="col-7 col-md-7 col-lg-4">
+          <div class="col-6 col-md-6 col-lg-3">
            <a class="navbar-brand" href="#">
-            <img src="assets/images/logo_podcrast-2.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;PODCRAST</p></strong></img>
+            <img src="assets/images/lambang_crast.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;PODCRAST</p></strong></img>
           </a>
         </div>
-        <div class="col-5 col-md-5 col-lg-8">
+        <div class="col-6 col-md-6 col-lg-9">
           <nav class="site-navigation text-right text-md-right" role="navigation">
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
@@ -43,6 +43,7 @@
               </li>
               <li><a class="text-black" href="#">Music</a></li>
               <li><a class="text-black" href="events.html">Announcer</a></li>
+              <li><a class="text-black" href="events.html">Management</a></li>
               <li><a class="text-black" href="about.html">Artikel</a></li>
               <li><a class="text-black" href="about.html">Event</a></li>
               <li><a class="text-black" href="about.html">About US</a></li>
