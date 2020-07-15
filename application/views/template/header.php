@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="assets/css/fl-bigmug-line.css">
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="<?php echo base_url(); ?>assets/css/header.css" rel="stylesheet">
+
 
 </head>
 <body>

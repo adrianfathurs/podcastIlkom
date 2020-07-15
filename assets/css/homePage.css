@@ -1,56 +1,62 @@
+.background-image1 {
 
-.background-image1{
-	
 	width: 100%;
 	height: 250px;
 }
 
-@media (max-width: 991px){
-	.youtube-place{
-		
-		float:none;
+@media (max-width: 991px) {
+	.youtube-place {
+
+		float: none;
 		position: center;
-		
+
 	}
 }
-.text-hello-crast
-{
-	
-}
-.position-card{
+
+.text-hello-crast {}
+
+.position-card {
 	float: right;
 	padding-left: 200px
 }
-.youtube-place{
-	
-	float:right;
+
+.youtube-place {
+
+	float: right;
 	padding-left: 20px;
 	padding-bottom: 10px;
-	
+
 }
-.position-widget{
+
+.position-widget {
 	float: right;
-	
+
 }
-.clear-float{
+
+.clear-float {
 	clear: right;
 }
-.background-youtube{
+
+.background-youtube {
 	width: 410;
 	height: 210;
 	background-color: #fff;
 }
-.margin-container{
+
+.margin-container {
 	padding-top: 160px;
 }
-.container-margin{
+
+.container-margin {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-.padding-top-row{
+
+.padding-top-row {
 	margin-top: 10px;
 }
-.tengah{
+
+.tengah {
 	margin-top: 10px;
 	padding-left: auto;
 	padding-right: auto;
@@ -58,22 +64,20 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.radius{
+
+.radius {
 	border-radius: 10px;
-	background-color: 
+	background-color:
 }
-.logo-brand-display{
-	display: inline;
-	float: left;
-}
-.logo-podcrast{
+
+.logo-podcrast {
 	margin-left: 20px;
-	
-}
-.fix-image-right {
 
 }
-.btn-podcrast{
+
+.fix-image-right {}
+
+.btn-podcrast {
 	margin-left: 40px;
 	margin-right: 20px;
 	border-radius: 20px;
@@ -81,7 +85,8 @@
 
 /*w3School carousel*/
 
-.w3-container, .w3-panel {
+.w3-container,
+.w3-panel {
 	padding: 0.01em 16px;
 }
 
@@ -89,172 +94,177 @@
 	max-width: 980px;
 }
 
-.w3-content, .w3-auto {
+.w3-content,
+.w3-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
 	box-sizing: inherit;
 }
 
 /*effect carousel*/
-.margin-main-carousel{
+.margin-main-carousel {
 	margin: auto;
 }
-.element{
+
+.element {
 	width: 300px;
 	height: 300px;
 	margin: auto;
 	color: #000;
 
-	position:relative;
+	position: relative;
 }
-.effect
-{
-	
+
+.effect {
+
 	overflow: hidden;
 	transition: all 0.5s ease;
 
 }
-.front , .back
-{
+
+.front,
+.back {
 	position: absolute;
 	top: 0;
 	left: 0;
-	
+
 	/*fungsinya agar pergerakan transformnya tidak terlihat*/
-	backface-visibility:hidden;
+	backface-visibility: hidden;
 
 }
-.back
-{
+
+.back {
 	width: 100%;
 	height: 100%;
-	top:-100%;
+	top: -100%;
 	opacity: 0.9;
 	background-color: #333;
 	text-align: center;
-	
-	
+
+
 	transition: all 0.5s ease;
 	/*box -shadow horzontal vertical blur persebaran_shadow warna*/
 	//box-shadow: 10px 10px 50px 2px #333;
 }
-.effect:hover .back
-{
-	top:0%;
+
+.effect:hover .back {
+	top: 0%;
 	left: 0%;
-	
+
 
 }
-.effect:hover
-{
+
+.effect:hover {
 	transform: scale(0.9);
 
 }
-.back-content 
-{
-	line-height: 0px;	
+
+.back-content {
+	line-height: 0px;
 }
 
-.effect:hover .back-content
-{
-	transform:scale(3);
+.effect:hover .back-content {
+	transform: scale(3);
 	border-radius: 10px;
 	padding-top: 60px;
-	
+
 }
-@media (max-width: 681px){
-	.padding-row-carousel
-	{
-		padding:auto;
+
+@media (max-width: 681px) {
+	.padding-row-carousel {
+		padding: auto;
 	}
-	.image-size-second-carousel
-	{
+
+	.image-size-second-carousel {
 		width: 60%;
 		height: 60%;
 	}
 
 }
 
-.padding-row-carousel
-{
+.padding-row-carousel {
 	padding-left: 60px;
 
 }
-.image-size-second-carousel
-{
+
+.image-size-second-carousel {
 	width: 100px;
-	height:100px;
+	height: 100px;
 }
 
 /*button caroseul*/
-.btn-border
-{
-	border-radius: 50px; 
+.btn-border {
+	border-radius: 50px;
 	width: 80px;
 	height: 80px;
 }
-.btn-primary
-{
+
+.btn-primary {
 	opacity: 0.4;
 }
 
-.btn-primary:hover
-{
+.btn-primary:hover {
 	opacity: 1;
 }
 
-@media (max-width: 681px){
-	.btn-prev{
-		
-		float:none;
+@media (max-width: 681px) {
+	.btn-prev {
+
+		float: none;
 		margin: auto;
 		font-size: 70%;
 	}
-	.btn-next{
-		
-		float:none;
+
+	.btn-next {
+
+		float: none;
 		margin: auto;
 		font-size: 63%;
-		
+
 	}
-	.btn-border
-	{
-		border-radius: 40px; 
+
+	.btn-border {
+		border-radius: 40px;
 		width: 50px;
 		height: 50px;
 	}
 }
-.btn-prev
-{
+
+.btn-prev {
 	float: left;
 	margin-top: 120px;
 }
-.btn-next
-{
+
+.btn-next {
 	float: right;
 	margin-top: 120px;
 }
+
 /* Top 10 Chart */
 
-.visibility1{
-	visibility: visible;
-}
-.visibility2{
+.visibility1 {
 	visibility: visible;
 }
 
-@media(max-width: 681px){
-	.visibility1{
+.visibility2 {
+	visibility: visible;
+}
+
+@media(max-width: 681px) {
+	.visibility1 {
 		visibility: hidden;
 	}
-	.visibility2{
+
+	.visibility2 {
 		visibility: visible;
-	}	
+	}
 }
-.margin-top-col-article
-{
+
+.margin-top-col-article {
 	padding-top: 200px;
 }
