@@ -15,11 +15,21 @@
 }
 .text-hello-crast
 {
-	font-size: 120px;
+	
+}
+.position-card{
+	float: right;
+	padding-left: 200px
 }
 .youtube-place{
 	
 	float:right;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	
+}
+.position-widget{
+	float: right;
 	
 }
 .clear-float{
@@ -60,9 +70,13 @@
 	margin-left: 20px;
 	
 }
-.card-podcrast{
-	padding-bottom: 10px;
-	
+.fix-image-right {
+
+}
+.btn-podcrast{
+	margin-left: 40px;
+	margin-right: 20px;
+	border-radius: 20px;
 }
 
 /*w3School carousel*/

@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
+	<link rel="shortcut icon" href="assets/images/lambang_crast.png" width="20px">
+	<title>Crast Radio FM</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Tell the browser to be responsive to screen width -->
@@ -10,7 +12,7 @@
 	<meta name="author" content="">
 	<!-- Favicon icon -->
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() ?>assets/images/lambang_crast.png">
-	<title>Crast Radio FM</title>
+	
 	<!-- CSS tambahan untuk halaman tertentu -->
 	<?php
 	if (isset($css)) {
