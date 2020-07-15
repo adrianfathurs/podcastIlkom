@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
   <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
   
 
   </head>
@@ -10,12 +11,12 @@
   <div class="row">
     <div class="col-xl">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body text-black">
                 <h5 class="card-title"> Form Article</h5>
                 <form method="POST" action="" enctype="multipart/form-data">
                     <div class="form-group">
                         <label class="col-sm-4 form-control-label"> Judul Artikel:</label>  
-                        <input type="text" class="form-control text-dark" placeholder="asdads">                                                                        
+                        <input type="text" class="form-control " placeholder="">                                                                        
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 form-control-label"> Jenis Artikel:</label>  
