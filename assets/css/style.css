@@ -1734,7 +1734,7 @@ a {
 
 form .form-control {
   background: none;
-  color: #fff !important; }
+  color: rgb(0, 0, 0) !important; }
   form .form-control:active, form .form-control:focus {
     background: none; }
 

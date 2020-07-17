@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
-  
-
+  <head>    
   </head>
 
   <body>
@@ -14,14 +10,17 @@
             <div class="card-body text-black">
                 <h5 class="card-title"> Form Article</h5>
                 <form method="POST" action="" enctype="multipart/form-data">
-                    <div class="form-group">
+                    <div class="form-group" >
                         <label class="col-sm-4 form-control-label"> Judul Artikel:</label>  
-                        <input type="text" class="form-control " placeholder="">                                                                        
+                        <input type="text" class="form-control "  placeholder="Judul Artikel">                                                                        
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 form-control-label"> Jenis Artikel:</label>  
                         <select class="custom-select mb-3 required" >
+                        <option disabled selected>Pilih Jenis Artikel</option>
                         <option value="">Feature</option>
+                        <option value="">Hype</option>
+                        <option value="">Review</option>
                         <option value="">Music Info</option>
                         </select>
                     </div>

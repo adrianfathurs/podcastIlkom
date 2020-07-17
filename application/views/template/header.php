@@ -19,9 +19,9 @@
   <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="assets/css/fl-bigmug-line.css">
   <link rel="stylesheet" href="assets/css/aos.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">  
   <link href="<?php echo base_url(); ?>assets/css/header.css" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
@@ -50,7 +50,7 @@
               <li><a class="text-black" href="about.html">Artikel</a></li>
               <li><a class="text-black" href="about.html">Event</a></li>
               <li><a class="text-black" href="about.html">About US</a></li>
-              <li><a class="text-black" href="about.html">Member</a></li>
+              <li><a class="text-black" href="<?php echo base_url('Auth') ?>">Member</a></li>
             </ul>
           </nav>
         </div>
