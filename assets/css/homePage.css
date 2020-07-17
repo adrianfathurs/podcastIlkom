@@ -67,7 +67,7 @@
 
 .radius {
 	border-radius: 10px;
-	background-color:
+	background-color: ;
 }
 
 .logo-podcrast {
@@ -149,7 +149,7 @@
 
 	transition: all 0.5s ease;
 	/*box -shadow horzontal vertical blur persebaran_shadow warna*/
-	//box-shadow: 10px 10px 50px 2px #333;
+	/*box-shadow: 10px 10px 50px 2px #333;*/
 }
 
 .effect:hover .back {
@@ -267,4 +267,36 @@
 
 .margin-top-col-article {
 	padding-top: 200px;
+}
+
+@media (max-width: 480px) {
+	.text-heading-article {
+		color: #228B22;
+		font-size: 20px;
+		padding-left: 160px;
+		padding-right: auto;
+
+	}
+}
+
+@media(max-width: 670px) {
+	.text-heading-article {
+		color: #228B22;
+		font-size: 20px;
+		padding-left: 190px;
+		padding-right: auto;
+
+	}
+}
+
+
+
+.text-heading-article {
+	color: #228B22;
+	font-size: 38px;
+}
+
+.text-heading-article:hover {
+	color: #B22222;
+	font-size: 38px;
 }

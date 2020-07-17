@@ -34,8 +34,8 @@
         }
         else
         {
-           $('.demo').removeClass('animated infinite bounce animated.slow');
-           console.log("salah");
+          $('.demo').removeClass('animated infinite bounce animated.slow');
+          console.log("salah");
           console.log(dots[slideIndex]);
         }
       }
