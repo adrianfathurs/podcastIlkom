@@ -363,6 +363,7 @@ if (isset($css)) {
           <th  scope="col" class="visibility1">Song Genre</th>
           <th  scope="col" class="visibility1">Chart Category</th>
           <th  scope="col" class="visibility1">Chart Status</th>
+          
         </tr>  
       </thead>
       <tbody>
