@@ -52,8 +52,8 @@ if (isset($css)) {
     <div class="row">
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+      <a href="https://www.instagram.com/crast1078fm/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+      <a href="https://twitter.com/CrastFM/" target="_blank"  class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
     </div>
@@ -62,40 +62,34 @@ if (isset($css)) {
 
 <div class="container-fluid container-margin bg-dark"> 
   <div class="row">
-    <div class="col-md-2">
-      <!-- KOSONG -->
-    </div>
-    <div class="col-md-6">
-      <div class="row">
-        <h2 class=" tengah text-hello-crast animated infinite bounce animated.slow  text-white">HELLO FROM CRASTFM</h2>
-      </div>
+    <div class="col-md-2"><!-- KOSONG --></div>
+      <div class="col-md-5 offset-md-1">
+        <div class="row">
+          <h2 class=" tengah text-hello-crast animated infinite bounce animated.slow  text-white">HELLO FROM CRASTFM</h2>
+        </div>
+        <div class="row ">
+          <img class="tengah"src="assets/images/lambang_crast.png" width="250" height="150" class="d-inline-block align-top" alt="" loading="lazy">
+        </div>
       <div class="row ">
-       <img class="tengah"src="assets/images/lambang_crast.png" width="250" height="150" class="d-inline-block align-top" alt="" loading="lazy">
-     </div>
-     <div class="row ">
-      <audio class=" tengah padding-top-row radius" src="http://streaming.rri.co.id:9025/web-rrijakartapro1.mp3" preload="auto" controls>PLAY</audio>
-    </div>
-  </div>
-  <div class="col-md-2">
-
-  </div>
-  
-  <div class="col-md-2 fix-image-right" >
-    <div class="row ">
-      <div class="card position-widget" style="width: 11rem;">
-        <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Youtube &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"><img class="animated infinite jello " src="assets/images/youtube.png" width="50px" height="50px"></h3></a>
-        <iframe class ="youtube-place" width="150" height="75" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+        <audio class=" tengah padding-top-row radius" src="http://streaming.rri.co.id:9025/web-rrijakartapro1.mp3" preload="auto" controls>PLAY</audio>
       </div>
     </div>
-    <div class="row mt-2">
-      <div class="card" style="width: 11rem;">
-        <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>PodCrast &nbsp;</b><img class="animated infinite jello"src="assets/images/logo_podcrast-2.png" width="50px" height="50px" alt="" loading="lazy" alt="PODCRAST" > </h3>
-        <!-- Link buat menampilkan playlist spotify -->
-        <div class="">
-          <a  href="https://open.spotify.com/embed/episode/6eJ1odPM6i5wOr0ImglriU" target="_blank"><button class=" btn-podcrast btn-primary">Button</button></a>
+    <div class="col-md-2"></div>
+    <div class="col-md-2 fix-image-right" >
+      <div class="row ">
+        <div class="card position-widget" style="width: 12rem;">
+          <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Youtube &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"></h3></a>
+          <iframe class ="youtube-place" width="150" height="75" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
         </div>
       </div>
-    </div>  
+      <div class="row mt-2">
+        <div class="card " style="width: 12rem;">
+          <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Podcrast &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"></h3></a>
+          <!-- Link buat menampilkan playlist spotify -->
+          <iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/episode/6eJ1odPM6i5wOr0ImglriU "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+        </div>
+      </div>
+    </div> 
   </div>
 </div>
 <!-- https://open.spotify.com/show/095GreX08Xkfo299FxrPim?si=L1JafZJ9QdC2V1KgE6mp5w
@@ -240,22 +234,22 @@ if (isset($css)) {
 
     <div class="container">
       <div class="row padding-row-carousel mt-4">
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='assets/images/img_3.jpg' style="cursor:pointer" onclick="currentDiv(1)">
         </div>
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_2.jpg" style="cursor:pointer" onclick="currentDiv(2)">
         </div>
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_1.jpg" style="cursor:pointer" onclick="currentDiv(3)">
         </div>
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='assets/images/img_1.jpg' style="cursor:pointer" onclick="currentDiv(4)">
         </div>
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_2.jpg" style="cursor:pointer" onclick="currentDiv(5)">
         </div>
-        <div class="col">
+        <div class="col col-md-2 col-sm-6 col-xs-6">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_1.jpg" style="cursor:pointer" onclick="currentDiv(6)">
         </div>
       </div>
@@ -356,125 +350,33 @@ if (isset($css)) {
     <table class="table table-hover table-dark">
       <thead>
         <tr>
-          <th  scope="col" class="visibility2">Chart Number</th>
-          <th  scope="col" class="visibility2">Song Title</th>
-          <th  scope="col" class="visibility2">Play</th>
-          <th  scope="col" class="visibility1">Song Artist</th>
-          <th  scope="col" class="visibility1">Song Genre</th>
-          <th  scope="col" class="visibility1">Chart Category</th>
-          <th  scope="col" class="visibility1">Chart Status</th>
-          
+          <th  scope="col" class="visibility2"><p class="text-center">Chart Number</p></th>
+          <th  scope="col" class="visibility2"><p class="text-center">Song Title</p></th>
+          <th  scope="col" class="visibility2"><p class="text-center">Play</p></th>
+          <th  scope="col" class="visibility1"><p class="text-center">Song Artist</p></th>
+          <th  scope="col" class="visibility1"><p class="text-center">Song Genre</th>
+          <th  scope="col" class="visibility1"><p class="text-center">Chart Category</th>
+          <th  scope="col" class="visibility1"><p class="text-center">Chart Status</th>
         </tr>  
       </thead>
       <tbody>
+      <?php foreach ($tanggaLagu as $tL):?>
         <tr>
-         <td  class="visibility2">1</td>
-         <td class="visibility2">Mark</td>
-         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-         <td class="visibility1">Otto</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-       </tr>
-       <tr>
-         <td  class="visibility2">2</td>
-         <td class="visibility2">Mark</td>
-         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-         <td class="visibility1">Otto</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-       </tr>
-       <tr>
-         <td  class="visibility2">2</td>
-         <td class="visibility2">Mark</td>
-         <td class="visibility2"><iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/track/7ytR5pFWmSjzHJIeQkgog4?si=cpla3_ZWR1SLBGLtx89NlA" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </td>
-         <td class="visibility1">Otto</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-         <td class="visibility1">@mdo</td>
-       </tr>
-        <!-- <tr>
-          <th scope="row">2</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
+          <td  class="visibility2" ><p class="text-center"><?=$tL['id_lagu']?></p></td>
+          <td class="visibility2"><p class="text-center"><?= $tL['judul_lagu']?></p></td>
+          <td class="visibility2"><p class="text-center"><iframe class= "px-4 card-podcrast" src="https://open.spotify.com/embed/track/<?= $tL['link_lagu']?>" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></td>
+          <td class="visibility1"><p class="text-center"><?=$tL['artist_lagu']?></p></td>
+          <td class="visibility1"><p class="text-center"><?=$tL['genre_lagu']?></p></td>
+          <td class="visibility1"><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
+          <?php if($tL['status_lagu']==1){?>
+          <td class="visibility1"><p class="text-center"><img src="assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <?php } elseif ($tL['status_lagu']==2){?>
+          <td class="visibility1"><p class="text-center"><img src="assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <?php } else {?>
+          <td class="visibility1"><p class="text-center"><img src="assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
+          <?php };?>
         </tr>
-         <tr>
-          <th scope="row">3</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-         <tr>
-          <th scope="row">5</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-         <tr>
-          <th scope="row">7</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">8</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-         <tr>
-          <th scope="row">9</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">10</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr> -->
+      <?php endforeach;?>
       </tbody>
     </table>
   </div>
@@ -599,8 +501,10 @@ if (isset($css)) {
       officia, error reiciendis ab quod?</p>
     </div>
     <div class="row">
-      <?php for($i=0;$i<3;$i++){ ?>
-        <div class="col-md-4 mt-5">               
+      <?php for($i=0;$i<3;$i++){?>
+      <div class="row" ><h3 class="text-heading-article">Info Music</h3></div>
+      <div class="row">
+        <div class="col-md-4 mt-2">               
           <div class="card profile-card-5 mt-5">       
             <div class="card-img-block">
               <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
@@ -611,7 +515,7 @@ if (isset($css)) {
             </div> 
           </div>            
         </div> 
-        <div class="col-md-4 mt-5">   
+        <div class="col-md-4 mt-2">   
           <div class="card profile-card-5 mt-5">
             <a href="#">
               <div class="card-img-block">
@@ -621,32 +525,34 @@ if (isset($css)) {
                 <h5 class="card-title">Kolom 2</h5></a>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </div>
-          </div>                  
-          <div class="col-md-4 mt-5"> 
-            <div class="card profile-card-5 mt-5">
-              <a href="#">
-                <div class="card-img-block">
-                  <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
-                </div>
-                <div class="card-body pt-0">
-                  <h5 class="card-title">Kolom 3</h5></a>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+          </div>   
+        </div>                  
+        <div class="col-md-4 mt-2"> 
+          <div class="card profile-card-5 mt-5">
+            <a href="#">
+              <div class="card-img-block">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
               </div>
-            </div>                        
-          <?php } ?>           
-        </div>   
-      </div>
-    </div>
+              <div class="card-body pt-0">
+                <h5 class="card-title">Kolom 3</h5></a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+          </div>
+          <div class="mt-3"><center><a href=""><bold>Read More...</bold></a></center></div>  
+        </div>
+        </div>               
+          <?php } ?>         
+    </div>   
+  </div>
+</div>
 
     <div class="bg-primary" data-aos="fade">
       <div class="container">
         <div class="row">
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+          <a href="https://www.instagram.com/crast1078fm/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+          <a href="https://twitter.com/CrastFM/" target="_blank"  class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
         </div>
