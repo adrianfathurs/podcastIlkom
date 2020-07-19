@@ -1,0 +1,11 @@
+@media(max-width:1028px) {
+	.playlist-lagu-position {
+		width: 430px;
+	}
+}
+
+@media(max-width:510px) {
+	.playlist-lagu-position {
+		width: 200px;
+	}
+}

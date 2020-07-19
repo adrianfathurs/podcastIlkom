@@ -7,6 +7,7 @@ class HomePage extends CI_Controller {
 		
 		$this->load->helper('form');
 		$this->load->model('TanggaLagu');
+		$this->load->model('Spotify');
 	}
 
 	public function index()
@@ -14,6 +15,7 @@ class HomePage extends CI_Controller {
 		$data['css']="home/vhomepage_css";
 		$data['js']="home/vhomepage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
+		$data['linkPodcrast']=$this->Spotify->getLinkEpisode();
 		//var_dump($data['tanggaLagu']);
 		$this->load->view('template/header');
 		$this->load->view('home/homePage',$data);

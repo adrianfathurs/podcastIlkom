@@ -19,41 +19,41 @@ if (isset($css)) {
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
-      <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-    </img>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
+        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      </img>
+    </div>
+
+    <div class="carousel-item " data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
+        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      </img>
+    </div>
+
+    <div class="carousel-item" data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
+        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-
-  <div class="carousel-item " data-interval="2000">
-    <img class="image-carousel-size" src="assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
-    <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-  </img>
-</div>
-
-<div class="carousel-item" data-interval="2000">
-  <img class="image-carousel-size" src="assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
-  <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-</div>
-
-<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-</a>
-
-<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-</a>
-</div>
 </div> 
 
 <div class="bg-primary" data-aos="fade">
   <div class="container">
     <div class="row">
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
+      <a href="https://www.twitter.com/CrastFM/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
       <a href="https://www.instagram.com/crast1078fm/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-      <a href="https://twitter.com/CrastFM/" target="_blank"  class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+      <a href=""   class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
     </div>
@@ -85,8 +85,10 @@ if (isset($css)) {
       <div class="row mt-2">
         <div class="card " style="width: 12rem;">
           <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Podcrast &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"></h3></a>
-          <!-- Link buat menampilkan playlist spotify -->
-          <iframe class= "px-4 card-podcrast"src="https://open.spotify.com/embed/episode/6eJ1odPM6i5wOr0ImglriU "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+          <!-- Link buat menampilkan podcrast playlist spotify -->
+          <?php foreach ($linkPodcrast as $LP) :?>
+            <iframe class= "px-4 card-podcrast " id="click-embed-podcrast" src="https://open.spotify.com/embed/episode/<?php echo $LP['link_spotify']; ?> "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+            <?php endforeach;?>  
         </div>
       </div>
     </div> 
@@ -160,7 +162,7 @@ if (isset($css)) {
 
           <div class="element effect" style="display:none">
             <div class="front">
-              <img class="mySlides" src='assets/images/img_3.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_3.jpg'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
@@ -172,7 +174,7 @@ if (isset($css)) {
 
           <div class="element effect" style="display:none">
             <div class="front">
-              <img class="mySlides" src='assets/images/img_2.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_2.jpg'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
@@ -184,7 +186,7 @@ if (isset($css)) {
 
           <div class="element effect" >
             <div class="front">
-              <img class="mySlides" src='assets/images/img_1.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_1.jpg'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
@@ -196,7 +198,7 @@ if (isset($css)) {
 
           <div class="element effect" >
             <div class="front">
-              <img class="mySlides" src='assets/images/img_1.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_1.jpg'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
@@ -209,7 +211,7 @@ if (isset($css)) {
 
         <div class="element effect" >
           <div class="front">
-            <img class="mySlides" src='assets/images/img_2.jpg'  width="300px;" height="300px;">
+            <img class="mySlides" src='<?php echo base_url()?>assets/images/img_2.jpg'  width="300px;" height="300px;">
           </div>
           <div class="back" >
             <div class="back-content">
@@ -221,7 +223,7 @@ if (isset($css)) {
       </div>
       <div class="element effect" >
         <div class="front">
-          <img class="mySlides" src='assets/images/img_3.jpg'  width="300px;" height="300px;">
+          <img class="mySlides" src='<?php echo base_url()?>assets/images/img_3.jpg'  width="300px;" height="300px;">
         </div>
         <div class="back" >
           <div class="back-content">
@@ -369,11 +371,11 @@ if (isset($css)) {
           <td class="visibility1"><p class="text-center"><?=$tL['genre_lagu']?></p></td>
           <td class="visibility1"><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
           <?php if($tL['status_lagu']==1){?>
-          <td class="visibility1"><p class="text-center"><img src="assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
           <?php } elseif ($tL['status_lagu']==2){?>
-          <td class="visibility1"><p class="text-center"><img src="assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
           <?php } else {?>
-          <td class="visibility1"><p class="text-center"><img src="assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
+          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
           <?php };?>
         </tr>
       <?php endforeach;?>
