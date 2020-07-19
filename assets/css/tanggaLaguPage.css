@@ -1,0 +1,19 @@
+/* Top 10 Chart */
+
+.visibility1 {
+	visibility: visible;
+}
+
+.visibility2 {
+	visibility: visible;
+}
+
+@media(max-width: 681px) {
+	.visibility1 {
+		visibility: hidden;
+	}
+
+	.visibility2 {
+		visibility: visible;
+	}
+}

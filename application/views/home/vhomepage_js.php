@@ -1,3 +1,4 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script>
   var slideIndex = 1;
   showDivs(slideIndex);
@@ -8,9 +9,6 @@
   function plusDivs(n) {
     showDivs(slideIndex += n);
   }
-
-
-
 
   function showDivs(n) {
     var i;
@@ -39,5 +37,12 @@
           console.log(dots[slideIndex]);
         }
       }
+
+$(document).ready(function(){
+		    $("#click-embed-podcrast").click(function(){
+		    	var url=$("#click-embed-podcrast").attr('src');
+          window.open(url,'_blank')
+	    	});
+      });
 
     </script>
