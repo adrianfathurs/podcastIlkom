@@ -5,7 +5,7 @@
         function __construct() {
             parent::__construct();
                                     
-            
+            $this->load->model("Martikel");
         }
         
         function index(){
@@ -14,12 +14,12 @@
             
             $data['content'] = 'article/vform.php';
             $this->load->view('template/vtemplate', $data);
-
-            
         }
 
-        function add(){
-            
+        function insert(){
+
+            $this->Martikel->add();            
+            redirect('Article');
         }
 
     }

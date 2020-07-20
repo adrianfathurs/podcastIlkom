@@ -10,7 +10,7 @@
         <div class="card">
             <div class="card-body text-black">
                 <h5 class="card-title"> Form Article</h5>
-                <form method="POST" action="" enctype="multipart/form-data">
+                <form method="POST" action="<?php echo site_url() ?>Article/insert/" enctype="multipart/form-data">
                     <div class="form-group" >
                         <label class="col-sm-4 form-control-label"> Judul Artikel:</label>  
                         <input type="text" class="form-control " name="judul" placeholder="Judul Artikel">                                                                        
@@ -44,9 +44,8 @@
                     </div>  
                     <div class="text-right">
                     <!-- <input type="button" class="btn btn-warning" onclick="history.back();" value="Batal"> -->
-                    <button type="button" class="btn btn-secondary" onclick="history.back();">Batal</button>                    
-                    <input type="text" hidden id="submitPresence" name="submitPresence" value="submitPresence">
-                    <button type="submit" class="btn btn-success"> Simpan</button>
+                    <button type="button" class="btn btn-secondary" onclick="history.back();">Batal</button>                                        
+                    <button type="submit" class="btn btn-success"> Simpans</button>
                     </div>
                 </form>
             </div>      
