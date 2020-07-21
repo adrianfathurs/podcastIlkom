@@ -5,18 +5,21 @@
         function __construct() {
             parent::__construct();
                                     
-            
+            $this->load->model("Martikel");
         }
         
         function index(){
             // $data = $this->Mfeature->get_all();
 
             
-            $this->load->view('template/header');
-            $this->load->view('article/vArticle');
-            $this->load->view('template/footer');
+            $data['content'] = 'article/vform.php';
+            $this->load->view('template/vtemplate', $data);
+        }
 
-            
+        function insert(){
+
+            $this->Martikel->add();            
+            redirect('Article');
         }
 
     }

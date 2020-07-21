@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				<form method="POST" action="<?php echo base_url('User_management') ?>">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
