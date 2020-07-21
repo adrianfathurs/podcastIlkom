@@ -1,0 +1,9 @@
+.padding-row-schedule {
+	margin-left: 370px;
+}
+
+@media(max-width:720px) {
+	.padding-row-schedule {
+		margin-left: -100px;
+	}
+}

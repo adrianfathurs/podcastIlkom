@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/header.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/homearticle.css">
+  <script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/jquery-migrate-3.0.1.min.js"></script>
 
 
 </head>
@@ -45,7 +47,7 @@
                   <li class="active">
                     <a class="text-black" href="<?php echo base_url('homePage');?>">Home</a>
                   </li>
-                  <li><a class="text-black" href="events.html">Schedule</a></li>
+                  <li><a class="text-black" href="<?php echo site_url('Schedule')?>">Schedule</a></li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +56,7 @@
                         <a class="dropdown-item music-navbar-hover" href="#">Info Music</a>
                       </div>
                   </li>
-                  <li><a class="text-black" href="events.html">Announcer</a></li>
+                  <li><a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a></li>
                   <li><a class="text-black" href="events.html">Management</a></li>
                   <li><a class="text-black" href="about.html">Artikel</a></li>
                   <li><a class="text-black" href="about.html">Event</a></li>

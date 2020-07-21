@@ -256,7 +256,7 @@ if (isset($css)) {
         </div>
       </div>
       <br>
-      <center><a href=""><bold>Read More</bold></a></center>
+      <center><a href="<?php echo site_url('schedule')?>"><bold>Read More</bold></a></center>
     </div>
   </div>
 </div>
@@ -383,118 +383,6 @@ if (isset($css)) {
     </table>
   </div>
 </div>
-
-
-
-
-<div class="site-section">
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-        <h2 class="mb-5">Our DJs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="assets/images/person_1.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Megan Smith</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="assets/images/person_2.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="assets/images/person_3.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Philip Martin</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="assets/images/person_4.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Steven Ericson</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="assets/images/person_5.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Nathan Dumlao</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-        <div class="team-member">
-          <img src="images/person_6.jpg" alt="Image" class="img-fluid">
-          <div class="text">
-            <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-            <p>
-              <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="site-section bg-dark">
   <div class="container" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -507,7 +395,7 @@ if (isset($css)) {
       <div class="row" ><h3 class="text-heading-article">Info Music</h3></div>
       <div class="row">
         <div class="col-md-4 mt-2">               
-          <div class="card profile-card-5 mt-5">       
+          <div class="card profile-card-5 mt-5 card-hover">       
             <div class="card-img-block">
               <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
             </div>
