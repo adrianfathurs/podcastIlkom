@@ -62,6 +62,8 @@
                   <li><a class="text-black" href="about.html">Event</a></li>
                   <li><a class="text-black" href="about.html">About US</a></li>
                   <li><a class="text-black" href="about.html">Member</a></li>
+                  <li><a class="text-black" href="<?php echo site_url('auth/logout')?>">Sign Out</a></li>
+
                 </ul>
             </nav>
         </div>

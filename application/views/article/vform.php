@@ -43,7 +43,7 @@
                                           
                     </div>  
                     <div class="text-right">
-                    <!-- <input type="button" class="btn btn-warning" onclick="history.back();" value="Batal"> -->
+                    <input type="text" hidden id="creator" name="creator" value="<?php echo $id ?>">
                     <button type="button" class="btn btn-secondary" onclick="history.back();">Batal</button>                                        
                     <button type="submit" class="btn btn-success"> Simpans</button>
                     </div>

@@ -4,7 +4,10 @@
 
         function __construct() {
             parent::__construct();
-                                    
+                               
+            if ($this->session->userdata('is_login') != TRUE) {
+                redirect('auth');
+            }
             $this->load->model("Martikel");
             
         }
@@ -12,12 +15,17 @@
         function index(){
             // $data = $this->Mfeature->get_all();
 
-            
+            $data['role'] = $this->session->userdata('role');            
+            $data['id'] = $this->session->userdata('id');           
             $data['content'] = 'article/vform.php';
+            // print_r($data);die;  
             $this->load->view('template/vtemplate', $data);
         }
 
         function insert(){
+            $input = $this->input->post(NULL,TRUE);
+            extract($input);
+            
 
             $foto111=$_FILES['foto1'];
             $foto222=$_FILES['foto2'];
@@ -29,38 +37,37 @@
 
 
             if(!isset($foto111)){
-                var_dump("Data Hilang1");
+                print_r($data);die;
             }
                 
                 else{
                     if(!isset($foto222))
                     {
-                        var_dump("Data Hilang2");
+                        print_r($data);die;
                     }
                     else
                     {
                         if(!isset($foto333))
                         {
-                            var_dump("Data Hilang3");
+                            print_r($data);die;
                         }
                         else{
-                            var_dump("data nyampe");
-    
                             $foto11=$this->_upload($foto111,$foto1_name);
                             $foto22=$this->_upload($foto222,$foto2_name);
                             $foto33=$this->_upload($foto333,$foto3_name);
 
                             $data=[
                                 'judul'=>$this->input->post('judul'),
-                                'jenis_artikel'=>$this->input->post('judul'),
+                                'jenis_artikel'=>$this->input->post('jenis_artikel'),
                                 'essay'=>$this->input->post('essay'),
                                 'foto1'=>$foto11,
                                 'foto2'=>$foto22,
-                                'foto3'=>$foto33
+                                'foto3'=>$foto33,
+                                'fk_akun' => $creator
                             ];
-
-                           // $this->Martikel->insert($data);
-                           var_dump($data);
+                            // print_r($data);die;
+                           $this->Martikel->insert($data);
+                            redirect('article');
                         }
                     }
                 }
