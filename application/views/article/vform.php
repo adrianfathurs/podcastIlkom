@@ -10,7 +10,7 @@
         <div class="card">
             <div class="card-body text-black">
                 <h5 class="card-title"> Form Article</h5>
-                <form method="POST" action="<?php echo site_url() ?>Article/insert/" enctype="multipart/form-data">
+               <?php echo form_open_multipart('Article/insert/');?>
                     <div class="form-group" >
                         <label class="col-sm-4 form-control-label"> Judul Artikel:</label>  
                         <input type="text" class="form-control " name="judul" placeholder="Judul Artikel">                                                                        
@@ -37,7 +37,7 @@
                         <label class="col-sm-4 form-control-label" >Gambar 3 :</label>
                         <input type="file" class="form-control" name="foto3" >  
                     </div>                                                          
-                    <div class="form-groupo">
+                    <div class="form-group">
                         <label class="col-sm-4 form-control-label" >Isi Artikel :</label>
                         <textarea id="mytextarea" name="essay"></textarea>        
                                           
@@ -47,7 +47,7 @@
                     <button type="button" class="btn btn-secondary" onclick="history.back();">Batal</button>                                        
                     <button type="submit" class="btn btn-success"> Simpans</button>
                     </div>
-                </form>
+                <?php echo form_close();?>
             </div>      
         </div>
     </div>
