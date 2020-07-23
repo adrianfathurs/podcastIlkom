@@ -61,9 +61,12 @@
                   <li><a class="text-black" href="about.html">Artikel</a></li>
                   <li><a class="text-black" href="about.html">Event</a></li>
                   <li><a class="text-black" href="about.html">About US</a></li>
-                  <li><a class="text-black" href="about.html">Member</a></li>
-                  <li><a class="text-black" href="<?php echo site_url('auth/logout')?>">Sign Out</a></li>
-
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">Logout</a>
+                      </div>
+                  </li>
                 </ul>
             </nav>
         </div>

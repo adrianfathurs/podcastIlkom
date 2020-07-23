@@ -6,6 +6,7 @@
             parent::__construct();
                                
             if ($this->session->userdata('is_login') != TRUE) {
+                $this->session->set_userdata('typeNotif', 'notLoggedIn');
                 redirect('auth');
             }
             $this->load->model("Martikel");
@@ -16,7 +17,8 @@
             // $data = $this->Mfeature->get_all();
 
             $data['role'] = $this->session->userdata('role');            
-            $data['id'] = $this->session->userdata('id');           
+            $data['id'] = $this->session->userdata('id');    
+            $data['js'] = 'template/vtemplate_notif_js';       
             $data['content'] = 'article/vform.php';
             // print_r($data);die;  
             $this->load->view('template/vtemplate', $data);
@@ -36,22 +38,10 @@
             $foto3_name="foto3";
 
 
-            if(!isset($foto111)){
-                print_r($data);die;
-            }
-                
-                else{
-                    if(!isset($foto222))
-                    {
-                        print_r($data);die;
-                    }
-                    else
-                    {
-                        if(!isset($foto333))
-                        {
-                            print_r($data);die;
-                        }
-                        else{
+            if(null == $foto111 && $foto111 && $foto111 ){
+                $this->session->set_userdata('typeNotif', "gagalUpload");
+                redirect('article');
+            } else {
                             $foto11=$this->_upload($foto111,$foto1_name);
                             $foto22=$this->_upload($foto222,$foto2_name);
                             $foto33=$this->_upload($foto333,$foto3_name);
@@ -68,24 +58,21 @@
                             // print_r($data);die;
                            $this->Martikel->insert($data);
                             redirect('article');
-                        }
                     }
-                }
-            
         }
 
         function _upload($foto,$ft){
                     $config['upload_path']='./assets/upload/';
-					$config['allowed_types']='jpg|png';
+					$config['allowed_types']='jpg|png|jpeg';
 					$this->load->library('upload',$config);
-                    var_dump($foto);
-                    var_dump($ft);
+               
                     if($ft=="foto1")
                     {
 
                         if(!$this->upload->do_upload('foto1'))
                         {
-                            echo "Upload gagal1";die();
+                            $this->session->set_userdata('typeNotif', "gagalUpload1");
+                            redirect('article');
                         }
                         else
                         {
@@ -98,7 +85,8 @@
 
                         if(!$this->upload->do_upload('foto2'))
                         {
-                            echo "Upload gagal2";die();
+                            $this->session->set_userdata('typeNotif', "gagalUpload2");
+                            redirect('article');
                         }
                         else
                         {
@@ -111,7 +99,8 @@
 
                         if(!$this->upload->do_upload('foto3'))
                         {
-                            echo "Upload gagal3";die();
+                            $this->session->set_userdata('typeNotif', "gagalUpload3");
+                            redirect('article');
                         }
                         else
                         {

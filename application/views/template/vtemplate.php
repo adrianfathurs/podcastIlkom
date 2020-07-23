@@ -43,6 +43,8 @@
 			<!-- ============================================================== -->
 			<!-- Container fluid  -->
 			<!-- ============================================================== -->
+			<div>
+			</div>
 			<div class="container-fluid" >
 				<!-- Content here-->
 				<?php if (isset($content)) {
@@ -92,6 +94,7 @@
 	<script src="<?php echo base_url() ?>assets/js/custom.min.js"></script>
 	<!--Javascript tambahan untuk halaman tertentu -->
     <script src="<?php echo base_url(); ?>assets/js/jquery.PrintArea.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery.PrintArea.js"></script>
     <script>
     $(function() {
         $("#print").click(function() {

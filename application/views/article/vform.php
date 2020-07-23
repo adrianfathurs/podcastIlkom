@@ -9,6 +9,14 @@
     <div class="col-xl">
         <div class="card">
             <div class="card-body text-black">
+            <?php if (!empty($this->session->userdata('typeNotif'))) : ?>
+                    <div id="alerttype" class="alert p-3 mb-2">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                        <h5 id="alerttitle"></h5>
+                        <span id="alertmessage"></span>
+                        <i id="alerticon"></i>
+                    </div>
+                <?php endif; ?>
                 <h5 class="card-title"> Form Article</h5>
                <?php echo form_open_multipart('Article/insert/');?>
                     <div class="form-group" >
