@@ -14,10 +14,15 @@
             // $data = $this->Mfeature->get_all();
 
             $data['role'] = $this->session->userdata('role');            
-            $data['id'] = $this->session->userdata('id');    
-            $data['js'] = 'template/vtemplate_notif_js';       
+            $data['id'] = $this->session->userdata('id'); 
+            $data['username'] = $this->session->userdata('username');    
+            $data['js'] = 'template/vtemplate_notif_js';  
+            if ($data['role'] == '1' || $data['role'] == '2' ){     
             $data['content'] = 'article/vform.php';            
             $this->load->view('template/vtemplate', $data);
+            }else {
+                redirect('homepage');
+            };
         }
 
         function getArtikel($id){

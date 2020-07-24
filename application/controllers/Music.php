@@ -18,7 +18,10 @@ class Music extends CI_Controller {
 		$data['js']="home/vhomepage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
 		//var_dump($data['tanggaLagu']);
-		$this->load->view('template/header');
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
+		$this->load->view('template/header',$data);
 		$this->load->view('music/tanggaLaguPage',$data);
 		$this->load->view('template/footer'); 
 	}
@@ -29,7 +32,10 @@ class Music extends CI_Controller {
 		$data['js']="music/vtanggaLaguPage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
 		//var_dump($data['tanggaLagu']);
-		$this->load->view('template/header');
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
+		$this->load->view('template/header',$data);
 		$this->load->view('music/tanggaLaguPage',$data);
 		$this->load->view('template/footer');
 	}
@@ -39,7 +45,10 @@ class Music extends CI_Controller {
 		$data['css']="music/vplaylistLaguPage_css";
 		$data['js']="music/vplaylistLaguPage_js";
 		$data['linkPlaylist']=$this->Spotify->getLinkPlaylist();
-		$this->load->view('template/header');
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
+		$this->load->view('template/header',$data);
 		$this->load->view('music/playlistLaguPage',$data);
 		$this->load->view('template/footer');
 	}

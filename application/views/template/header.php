@@ -35,12 +35,12 @@
     <div class="site-navbar mt-4 bg-light">
       <div class="container py-1">
         <div class="row align-items-center">
-          <div class="col-5 col-md-5 col-lg-2">
+          <div class="col-5 col-md-5 col-lg-1">
             <a class="navbar-brand" href="#">
               <img src="<?php echo base_url();?>assets/images/lambang_crast.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;PODCRAST</p></strong></img>
             </a>
           </div>
-          <div class="col-7 col-md-7 col-lg-10">
+          <div class="col-7 col-md-7 col-lg-11">
             <nav class="site-navigation text-right text-md-right" role="navigation">
               <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
@@ -61,12 +61,20 @@
                   <li><a class="text-black" href="about.html">Artikel</a></li>
                   <li><a class="text-black" href="about.html">Event</a></li>
                   <li><a class="text-black" href="about.html">About US</a></li>
+                  <?php if (empty($id)){ ?>
+                    <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
+                  <?php } else { ?>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">Logout</a>
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $username ?> </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
+                        <?php if ($role == '1') {?>                                   
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('User_management');?>">Manajemen Pengguna</a>
+                        <?php } ?>
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">LogOut</a>                                                
+                        
                       </div>
                   </li>
+                  <?php }; ?>
                 </ul>
             </nav>
         </div>
