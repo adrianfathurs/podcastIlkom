@@ -391,47 +391,59 @@ if (isset($css)) {
       officia, error reiciendis ab quod?</p>
     </div>
     <div class="row">
-      <?php for($i=0;$i<3;$i++){?>
-      <div class="row" ><h3 class="text-heading-article">Info Music</h3></div>
-      <div class="row">
-        <div class="col-md-4 mt-2">               
-          <div class="card profile-card-5 mt-5 card-hover">       
-            <div class="card-img-block">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
-            </div>
-            <div class="card-body pt-0">
-              <h5 class="card-title">Kolom 1</h5></a>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div> 
-          </div>            
-        </div> 
-        <div class="col-md-4 mt-2">   
+    <div class="row" >    
+            
+      <div class="col">                  
+        <div class="row-md-4 mt-2">
+        <?php for($j=1;$j<4;$j++){?>
           <div class="card profile-card-5 mt-5">
             <a href="#">
               <div class="card-img-block">
                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">Kolom 2</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-          </div>   
-        </div>                  
-        <div class="col-md-4 mt-2"> 
-          <div class="card profile-card-5 mt-5">
-            <a href="#">
-              <div class="card-img-block">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">Kolom 3</h5></a>
+                <h5 class="card-title">Feature <?php echo $j; ?> </h5></a>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
           </div>
-          <div class="mt-3"><center><a href=""><bold>Read More...</bold></a></center></div>  
+          <?php } ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/1')?>"><bold>Read More...</bold></a></center></div>  
         </div>
-        </div>               
-          <?php } ?>         
+      </div>               
+      <div class="col">                  
+        <div class="row-md-4 mt-2">
+        <?php for($j=1;$j<4;$j++){?>
+          <div class="card profile-card-5 mt-5">
+            <a href="#">
+              <div class="card-img-block">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+              </div>
+              <div class="card-body pt-0">
+                <h5 class="card-title">Hype ke <?php echo $j; ?> </h5></a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+          </div>
+          <?php } ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/2')?>"><bold>Read More...</bold></a></center></div>  
+        </div>
+      </div>    
+      <div class="col">                  
+        <div class="row-md-4 mt-2">
+        <?php for($j=1;$j<4;$j++){?>
+          <div class="card profile-card-5 mt-5">
+            <a href="#">
+              <div class="card-img-block">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+              </div>
+              <div class="card-body pt-0">
+                <h5 class="card-title">Review ke <?php echo $j; ?> </h5></a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+          </div>
+          <?php } ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/3')?>"><bold>Read More...</bold></a></center></div>  
+        </div>
+      </div>               
     </div>   
   </div>
 </div>

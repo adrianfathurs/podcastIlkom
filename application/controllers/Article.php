@@ -5,10 +5,7 @@
         function __construct() {
             parent::__construct();
                                
-            if ($this->session->userdata('is_login') != TRUE) {
-                $this->session->set_userdata('typeNotif', 'notLoggedIn');
-                redirect('auth');
-            }
+           
             $this->load->model("Martikel");
             
         }
@@ -19,12 +16,22 @@
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id');    
             $data['js'] = 'template/vtemplate_notif_js';       
-            $data['content'] = 'article/vform.php';
-            // print_r($data);die;  
+            $data['content'] = 'article/vform.php';            
             $this->load->view('template/vtemplate', $data);
         }
 
-        function insert(){
+        function getArtikel($id){
+            $data['role'] = $this->session->userdata('role');            
+            $data['id'] = $this->session->userdata('id');    
+            $data['js'] = 'template/vtemplate_notif_js'; 
+            $data['jumlah'] = $this->Martikel->getJumData($id);
+            $data['artikel'] = $this->Martikel->loadArtikel($id);
+            $data['content'] = 'article/vArticle.php';
+            // print_r($data);die;  
+            $this->load->view('template/vtemplate', $data);
+        }
+        
+        function insert(){            
             $input = $this->input->post(NULL,TRUE);
             extract($input);
             
