@@ -18,13 +18,13 @@
       <?php endif; ?>
     	<div class="row">
     	    <h1 class="text-center"><span>Article About Feature</span></h1>
-    	    <?php for ($i = 0; $i < $jumlah; $i++){
+    	    <?php 
               foreach($artikel as $art) :            
             ?>    
           		
     		<div class="col-md-4 mt-4">
     		    <div class="card profile-card-5">
-                    <a href="#">
+                    <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
                     <div class="card-img-block">
     		            <img class="card-img-top" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>" alt="Card image cap">
     		        </div>
@@ -35,7 +35,7 @@
                 </div>                
     		</div>
         <?php endforeach; ?>
-            <?php } ?>
+            
     	</div>
     </div>
 </section>    

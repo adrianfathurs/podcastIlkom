@@ -25,9 +25,32 @@
             };
         }
 
+        function view($id){
+            $data['role'] = $this->session->userdata('role');            
+            $data['id'] = $this->session->userdata('id'); 
+            $data['username'] = $this->session->userdata('username'); 
+            $data['artikel'] = $this->Martikel->viewArtikel($id);  
+
+            $query = $this->Martikel->viewArtikel($id);
+            $paragraf1 = strlen($query->essay);
+            $kalimat1 = substr($query->essay, 0, $paragraf1/2);
+            $kalimat2 = substr($query->essay, $paragraf1/2);
+
+            $data['kalimat'] = array(
+                'kalimat1' => $kalimat1,
+                'kalimat2' => $kalimat2,                
+            );
+            // print_r($kalimat);print_r($kalimat2);die;   
+            $data['js'] = 'template/vtemplate_notif_js'; 
+            $data['css'] = 'article/varticle_css';  
+            $data['content'] = 'article/vViewArticle.php';            
+            $this->load->view('template/vtemplate', $data);
+        }
+
         function getArtikel($id){
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id');    
+            $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'template/vtemplate_notif_js'; 
             $data['jumlah'] = $this->Martikel->getJumData($id);
             $data['artikel'] = $this->Martikel->loadArtikel($id);

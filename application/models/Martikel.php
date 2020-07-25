@@ -25,5 +25,14 @@
             $query = $this->db->get('artikel');            
             return $query->result();
         }
+
+        function viewArtikel($id){
+            $this->db->where('id_artikel', $id);
+            $query = $this->db->get('artikel'); 
+            // print_r($query);die;
+
+            
+            return $query->row();
+        }
     }
 ?>
