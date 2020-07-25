@@ -52,7 +52,7 @@
 
                             $data=[
                                 'judul'=>$this->input->post('judul'),
-                                'jenis_artikel'=>$this->input->post('judul'),
+                                'jenis_artikel'=>$this->input->post('jenis_artikel'),
                                 'essay'=>$this->input->post('essay'),
                                 'foto1'=>$foto11,
                                 'foto2'=>$foto22,
@@ -60,7 +60,7 @@
                             ];
 
                            // $this->Martikel->insert($data);
-                           var_dump($data);
+                        var_dump($data);
                         }
                     }
                 }
