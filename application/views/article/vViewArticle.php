@@ -5,6 +5,11 @@
 <!------ Include the above in your HEAD tag ---------->
 </head>
 <section class="banner-section">
+                    <div class="col-md">
+                        <div class="text-right">                        
+                        <a href="<?php echo base_url('article/update/').$artikel->id_artikel ?>" class="btn waves-effect waves-light btn-warning">Edit</a>
+                        </div>
+                    </div>
     <img class="image-carousel-size" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="width: 100%; height: 550px;"  alt="...">
 </section>
 <section class="post-content-section">

@@ -25,6 +25,11 @@
             };
         }
 
+        function update($id){
+            
+            print_r($id);die;
+        }
+
         function view($id){
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
