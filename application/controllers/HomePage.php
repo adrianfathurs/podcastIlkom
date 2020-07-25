@@ -12,12 +12,15 @@ class HomePage extends CI_Controller {
 
 	public function index()
 	{
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
 		$data['css']="home/vhomepage_css";
 		$data['js']="home/vhomepage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
 		$data['linkPodcrast']=$this->Spotify->getLinkEpisode();
-		//var_dump($data['tanggaLagu']);
-		$this->load->view('template/header');
+		// var_dump($data['username']);die;
+		$this->load->view('template/header',$data);
 		$this->load->view('home/homePage',$data);
 		$this->load->view('template/footer'); 
 	}

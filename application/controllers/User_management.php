@@ -14,8 +14,19 @@
             $data['users']		= $this->Muser->get_users();
             $data['js']			= 'user_management/vuser_management_js';
             $data['css']			= 'user_management/vuser_management_css';
-            $data['content'] = 'user_management/vuser_management.php';
+            $data['role'] = $this->session->userdata('role');            
+            $data['id'] = $this->session->userdata('id'); 
+            $data['username'] = $this->session->userdata('username'); 
+            if ($data['role'] == '1'){
+            $data['content'] = 'user_management/vuser_management.php';            
+            $this->load->view('template/header',$data);
             $this->load->view('template/vtemplate', $data);
+            }else{
+                redirect('homepage');
+            }
+            
+            // $this->load->view('user_management/vuser_management',$data);
+            // $this->load->view('template/footer'); 
             
         }
 
