@@ -20,7 +20,7 @@
             }
         }
 
-        function loadArtikel($id,$limit,$start){
+        function loadArtikel($id){
             $this->db->where('jenis_artikel', $id);
             $query = $this->db->get('artikel');            
             return $query->result();

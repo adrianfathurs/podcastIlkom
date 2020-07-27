@@ -86,7 +86,7 @@
             else{
 
             }
-            
+            // print_r($data['asidebar']);die;
             $data['jumlah'] = $this->Martikel->getJumData($id);
             $data['artikel'] = $this->Martikel->loadArtikel($id);
             $data['content'] = 'article/vArticle.php';

@@ -49,6 +49,9 @@ h1 a {
 
 .profile-card-5 {
 	margin-top: 20px;
+	/* overflow: hidden; */
+	max-width: 350px;
+	
 }
 
 .profile-card-5 .btn {
@@ -178,7 +181,13 @@ h1 a {
 	}
 }
 
-
+.card-img-tops {
+	max-height: 300px;
+	display: block;
+	margin: auto;
+	width: 100%;
+	
+}
 
 
 
