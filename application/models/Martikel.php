@@ -36,19 +36,19 @@
         }
 /* Funtion Buat nampilin artikel hype berjumlah 3 teratas  */
 function loadArticleHypeLimit(){
-    $query="SELECT * FROM artikel where jenis_artikel=1 AND jenis_artikel=3  ORDER BY id_artikel DESC limit 3 ";
+    $query="SELECT * FROM artikel where jenis_artikel=2  ORDER BY id_artikel DESC limit 3 ";
     return $this->db->query($query)->result_array();
     }
 
 /* Funtion Buat nampilin artikel Feature berjumlah 3 teratas  */
 function loadArticleFeatureLimit(){ 
-    $query="SELECT * FROM artikel where jenis_artikel=2 AND jenis_artikel=3  ORDER BY id_artikel DESC limit 3";
+    $query="SELECT * FROM artikel where jenis_artikel=1 ORDER BY id_artikel DESC limit 3";
     return $this->db->query($query)->result_array();
 }
 
 /* Funtion Buat nampilin artikel Review berjumlah 3 teratas  */
         function loadArticleReviewLimit(){ 
-            $query="SELECT * FROM artikel where jenis_artikel=1 AND jenis_artikel=2  ORDER BY id_artikel DESC limit 3";
+            $query="SELECT * FROM artikel where jenis_artikel=3 ORDER BY id_artikel DESC limit 3";
 		return $this->db->query($query)->result_array();
         }
     }
