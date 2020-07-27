@@ -14,18 +14,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() ?>assets/images/lambang_crast.png">
 	
 	<!-- CSS tambahan untuk halaman tertentu -->
-	<?php
+  <link rel="shortcut icon" href="<?php echo base_url()?>assets/images/lambang_crast.png" width="20px">
+  <title>Crast FM</title>
+<?php
 	if (isset($css)) {
 		$this->load->view($css);
 	}
 	?>
-	<!-- Custom CSS -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="<?php echo base_url()?>assets/images/lambang_crast.png" width="20px">
-  <title>Crast FM</title>
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
@@ -49,27 +44,25 @@
     
 </head>
 
-<body class="container bg-light" >
-
+<?php
+        $this->load->view('template/header.php');		
+		?>
 	<!-- ============================================================== -->
 	<!-- Main wrapper - style you can find in pages.scss -->
 	<!-- ============================================================== -->
-	<div id="main-wrapper bg-trans">
-        <div class="site-section ">
-		<?php
-        $this->load->view('template/header.php');		
-		?>
+	
+       
+		
 		<!-- Page wrapper  -->
 		<!-- ============================================================== -->
-		<div >			
+			
 			<!-- ============================================================== -->
 			<!-- End Bread crumb and right sidebar toggle -->
 			<!-- ============================================================== -->
 			<!-- ============================================================== -->
 			<!-- Container fluid  -->
 			<!-- ============================================================== -->
-			<div>
-			</div>
+			
 			<div class="container-fluid" >
 				<!-- Content here-->
 				<?php if (isset($content)) {
@@ -77,18 +70,22 @@
 				}
 				?>
 			</div>
-			<footer class="footer text-center">
-            <?php $this->load->view('template/footer.php'); ?>
-			</footer>
+			
+			</body>
 			<!-- ============================================================== -->
 			<!-- End footer -->
 			<!-- ============================================================== -->
-		</div>
+	
 		<!-- ============================================================== -->
 		<!-- End Page wrapper  -->
         <!-- ============================================================== -->
-        </div>
-	</div>
+        
+	
+	
+	<div class="clr"></div>
+	<footer class="footer ">
+            <?php $this->load->view('template/footer.php'); ?>
+			</footer>
 	<!-- ============================================================== -->
 	<!-- End Wrapper -->
 	<!-- ============================================================== -->

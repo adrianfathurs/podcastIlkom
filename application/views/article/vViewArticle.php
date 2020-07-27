@@ -12,7 +12,7 @@
                     </div>
     <img class="image-carousel-size" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="width: 100%; height: 550px;"  alt="...">
 </section>
-<section class="post-content-section">
+<section class="post-content-section" id="main-section"> 
     <div class="container">
 
         <div class="row">
@@ -47,5 +47,8 @@
       
 
     </div> <!-- /container -->
+</section>
+<section>
+
 </section>
       

@@ -56,9 +56,39 @@
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id');    
             $data['username'] = $this->session->userdata('username'); 
-            $data['js'] = 'template/vtemplate_notif_js'; 
-            // $data['jumlah'] = $this->Martikel->getJumData($id);
-            // $data['artikel'] = $this->Martikel->loadArtikel($id);
+            $data['js'] = 'template/vtemplate_notif_js';
+            $data['css'] = 'article/varticle_css';
+            if($id==1)
+            {
+                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
+                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+                $data['asidebar'] = 'article/vasidebarFeature.php';
+                $data['jenisArtikel1']= 'Hype';
+                $data['jenisArtikel2']= 'Review';
+                
+            }
+            else if ($id==2)
+            {
+                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+                $data['asidebar'] = 'article/vasidebarHype.php';
+                $data['jenisArtikel1']= 'Feature';
+                $data['jenisArtikel2']= 'Review';
+            }
+            else if($id==3)
+            {
+                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
+                $data['asidebar'] = 'article/vasidebarReview.php';
+                $data['jenisArtikel']= 'Review';
+                
+            }
+            else{
+
+            }
+            
+            $data['jumlah'] = $this->Martikel->getJumData($id);
+            $data['artikel'] = $this->Martikel->loadArtikel($id);
             $data['content'] = 'article/vArticle.php';
             // print_r($data);die;  
 
@@ -104,6 +134,8 @@
             $this->load->view('template/vtemplate', $data);
         }
         
+        
+
         function insert(){            
             $input = $this->input->post(NULL,TRUE);
             extract($input);
@@ -135,8 +167,8 @@
                                 'foto3'=>$foto33,
                                 'fk_akun' => $creator
                             ];
-                            // print_r($data);die;
-                           $this->Martikel->insert($data);
+                            
+                        $this->Martikel->insert($data);
                             redirect('article');
                     }
         }

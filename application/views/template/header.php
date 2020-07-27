@@ -58,7 +58,14 @@
                   </li>
                   <li><a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a></li>
                   <li><a class="text-black" href="events.html">Management</a></li>
-                  <li><a class="text-black" href="about.html">Artikel</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Article </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/tanggaLagu');?>">Chart</a>
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu');?>">Playlist</a>
+                        <a class="dropdown-item music-navbar-hover" href="#">Info Music</a>
+                      </div>
+                  </li>
                   <li><a class="text-black" href="about.html">Event</a></li>
                   <li><a class="text-black" href="about.html">About US</a></li>
                   <?php if (empty($id)){ ?>
@@ -83,7 +90,7 @@
   </div>
 </div>
 
-<div class="site-mobile-menu bg-dark">
+<div class="site-mobile-menu">
   <div class="site-mobile-menu-header bg-dark ">
     <div class="site-mobile-menu-close mt-3 bg-dark ">
       <span class="icon-close2 js-menu-toggle bg-dark text-white"></span>
