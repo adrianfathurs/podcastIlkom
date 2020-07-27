@@ -5,7 +5,7 @@
 <!------ Include the above in your HEAD tag ---------->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css">
 </head>
-<section>
+<section id="main-wrapper">
     <div class="container">
       <?php if (!empty($id)) : ?>
         <div class="row">                    
@@ -22,7 +22,7 @@
               foreach($artikel as $art) :            
             ?>    
           		
-    		<div class="col-md-4 mt-4">
+    		<div class="col-md-4 mt-4  ">
     		    <div class="card profile-card-5">
                     <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
                     <div class="card-img-block">
@@ -38,4 +38,8 @@
             
     	</div>
     </div>
-</section>    
+</section> 
+<?php if (isset($asidebar)) {
+					$this->load->view($asidebar);
+				}
+				?>   

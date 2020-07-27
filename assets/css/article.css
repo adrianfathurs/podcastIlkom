@@ -1,71 +1,191 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
-body{
-    font-family: 'Open Sans', sans-serif;
-    
-}
-*:hover{
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
-section{
-    float:left;
-    width:100%;
-    padding:120px 0;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: lightblue;
 
 }
+
+*:hover {
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+section {
+	float: left;
+	width: 100%;
+	padding: 120px 0;
+
+}
+
 .bg-trans {
-    background: #ffffff00 !important; }
-    
-h1{float: left; width:100%; color:#4E5E30; margin-bottom:30px; font-size: 14px;  }
-h1 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
-h1 a{color:#131313; font-weight:bold;}
+	background: #ffffff00 !important;
+}
 
-.profile-card-5{
-    margin-top:20px;
+h1 {
+	float: left;
+	width: 100%;
+	color: #4E5E30;
+	margin-bottom: 30px;
+	font-size: 14px;
 }
-.profile-card-5 .btn{
-    border-radius:2px;
-    text-transform:uppercase;
-    font-size:12px;
-    padding:7px 20px;
+
+h1 span {
+	font-family: 'Libre Baskerville', serif;
+	display: block;
+	font-size: 45px;
+	text-transform: none;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	font-weight: 700
 }
+
+h1 a {
+	color: #131313;
+	font-weight: bold;
+}
+
+.profile-card-5 {
+	margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 7px 20px;
+}
+
 .profile-card-5 .card-img-block {
-    width: 91%;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
-    
-}
-.profile-card-5 .card-img-block img{
-    border-radius:5px;
-    box-shadow:0 0 10px rgba(0,0,0,0.63);
-}
-.profile-card-5 h5{
-    color:#4E5E30;
-    font-weight:600;
-}
-.profile-card-5 p{
-    font-size:14px;
-    font-weight:300;
-}
-.profile-card-5 .btn-primary{
-    background-color:#4E5E30;
-    border-color:#4E5E30;
+	width: 91%;
+	margin: 0 auto;
+	position: relative;
+	top: -20px;
+
 }
 
-.navbar{margin-bottom:0;}
-section{width:100%; float:left;}
-.banner-section{
-     background-size:cover; 
-     height: 380px; left: 0; 
-     position: absolute; 
-     top: 0; 
-     background-position:0;}
-.post-title-block{padding:100px 0;}
-.post-title-block h1 {color: #fff; font-size: 85px; font-weight: bold; text-transform: capitalize;}
-.post-title-block li{padding-left: 20px; font-size:20px; color: #fff;}
-.image-block{float:left; width:100%; margin-bottom:10px;}
-.footer-link{float:left; width:100%; background:#222222; text-align:center; padding:30px;}
-.footer-link a{color:#A9FD00; font-size:18px; text-transform:uppercase;}
+.profile-card-5 .card-img-block img {
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+	color: #4E5E30;
+	font-weight: 600;
+}
+
+.profile-card-5 p {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.profile-card-5 .btn-primary {
+	background-color: #4E5E30;
+	border-color: #4E5E30;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.banner-section {
+	background-size: cover;
+	height: 380px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	background-position: 0;
+}
+
+.post-title-block {
+	padding: 100px 0;
+}
+
+.post-title-block h1 {
+	color: #fff;
+	font-size: 85px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.post-title-block li {
+	padding-left: 20px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.image-block {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.footer {
+	background-color: darkslategrey;
+}
+
+.footer-link {
+	float: left;
+	width: 100%;
+	background: #222222;
+	text-align: center;
+	padding: 30px;
+}
+
+.footer-link a {
+	color: #A9FD00;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#main-wrapper {
+	float: left;
+	width: 83%;
+}
+
+
+#aside-main {
+	float: right;
+	width: 17%;
+
+
+}
+
+.asidebar {
+	margin-top: 62%;
+}
+
+@media (max-width: 1110px) {
+	#aside-main {
+		width: 100%;
+		margin: 10px auto;
+		float: none;
+		padding-left: 0;
+
+
+	}
+
+	.asidebar {
+		margin-top: 0px;
+		float: none;
+
+	}
+
+	.images-grid {
+		display: none;
+	}
+}
+
+.card-img-top {
+	width: 40px;
+	height: 15px;
+	;
+}
+
+
+
+.clr {
+	clear: both;
+}

@@ -20,8 +20,8 @@
                 <h5 class="card-title"> Form Article</h5>
                <?php echo form_open_multipart('Article/insert/');?>
                     <div class="form-group" >
-                        <label class="col-sm-4 form-control-label"> Judul Artikel:</label>  
-                        <input type="text" class="form-control " name="judul" placeholder="Judul Artikel">                                                                        
+                        <label class="col-sm-4 form-control-label" > Judul Artikel:</label>  
+                        <input type="text" class="form-control " name="judul" placeholder="Judul Artikel"minlength="30" maxlength="60">                                                                        
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 form-control-label"> Jenis Artikel:</label>  
