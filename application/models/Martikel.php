@@ -28,7 +28,7 @@
 
         function viewArtikel($id){
             $this->db->where('id_artikel', $id);
-            $query = $this->db->get('artikel'); 
+            $query = $this->db->get('artikel', $limit, $start); 
             // print_r($query);die;
 
             

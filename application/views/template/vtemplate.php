@@ -43,6 +43,9 @@
 	
 	
 	<div class="clr"></div>
-	
+
+	<footer class="footer ">
             <?php $this->load->view('template/footer.php'); ?>
-		
+			</footer>
+	
+
