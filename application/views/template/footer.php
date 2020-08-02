@@ -100,6 +100,7 @@
   <script src="<?php echo base_url(); ?>assets/js/aos.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/circleaudioplayer.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+  <script src="<?php echo base_url(); ?>assets/tinymce/tinymce.min.js"></script>
     
   </body>
 </html>

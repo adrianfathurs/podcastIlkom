@@ -1,15 +1,10 @@
 <head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag asdadadsa ---------->
 </head>
-<section class="banner-section">
-                    <div class="col-md">
-                        <div class="text-right">                        
-                        <a href="<?php echo base_url('article/update/').$artikel->id_artikel ?>" class="btn waves-effect waves-light btn-warning">Edit</a>
-                        </div>
-                    </div>
+<section class="banner-section">                    
     <img class="image-carousel-size" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="width: 100%; height: 550px;"  alt="...">
 </section>
 <section class="post-content-section" id="main-section"> 

@@ -84,6 +84,11 @@
 	
 	<div class="clr"></div>
 	<footer class="footer ">
+	<?php
+    if (isset($js)) {
+      $this->load->view($js);
+    }
+    ?>
             <?php $this->load->view('template/footer.php'); ?>
 			</footer>
 	
