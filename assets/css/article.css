@@ -4,23 +4,21 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #222831;
+	background-color: lightblue;
 
 }
-
 
 *:hover {
 	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
 }
 
-/* 
 section {
 	float: left;
 	width: 100%;
 	padding: 120px 0;
 
-} */
+}
 
 .bg-trans {
 	background: #ffffff00 !important;
@@ -53,7 +51,7 @@ h1 a {
 	margin-top: 20px;
 	/* overflow: hidden; */
 	max-width: 350px;
-
+	
 }
 
 .profile-card-5 .btn {
@@ -99,10 +97,9 @@ h1 a {
 	background-size: cover;
 	height: 380px;
 	left: 0;
-	position: abosl;
+	position: absolute;
 	top: 0;
 	background-position: 0;
-	z-index: 1;
 }
 
 .post-title-block {
@@ -155,8 +152,6 @@ h1 a {
 #aside-main {
 	float: right;
 	width: 17%;
-	box-sizing: border-box;
-	overflow: hidden;
 
 
 }
@@ -165,13 +160,12 @@ h1 a {
 	margin-top: 62%;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1110px) {
 	#aside-main {
 		width: 100%;
 		margin: 10px auto;
 		float: none;
 		padding-left: 0;
-
 
 
 	}
@@ -185,30 +179,6 @@ h1 a {
 	.images-grid {
 		display: none;
 	}
-
-	.wrap-widget {
-		background-color: lightblue;
-	}
-
-
-}
-
-.wrap-widget-header {
-	background-color: darkcyan;
-	box-shadow: 0px 4px 10px lightblue;
-}
-
-.wrap-widget,
-.wrap-widget-header {
-	border-radius: 10px;
-}
-
-.wrap-widget {
-	background-color: ghostwhite;
-	box-shadow: 5px 5px 3px lightslategrey;
-	margin-bottom: 7px;
-
-
 }
 
 .card-img-tops {
@@ -216,13 +186,14 @@ h1 a {
 	display: block;
 	margin: auto;
 	width: 100%;
-
+	
 }
+
+
 
 .clr {
 	clear: both;
 }
-
 
 #image-preview{
     display:none;
@@ -238,58 +209,4 @@ h1 a {
     display:none;
     width : 250px;
     height : 300px;
-
-.judul-position {
-	position: absolute;
-	z-index: 2;
-	top: 30%;
-	font-size: 60px;
-	color: whitesmoke;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	margin-left: auto;
-	text-align: center;
-	margin-right: auto;
-
-}
-
-@media(max-width:980px) {
-	.judul-position {
-		position: absolute;
-		z-index: 2;
-		top: 30%;
-		font-size: 250%;
-		color: whitesmoke;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		margin-left: auto;
-		text-align: center;
-		margin-right: auto;
-
-	}
-}
-
-
-.bg-pink {
-	background-color: deeppink;
-}
-
-.image-size-foto23 {
-	width: 900 px;
-	height: 250px;
-}
-
-@media(max-width: 362px) {
-
-	.image-size-foto23 {
-		width: 80%;
-		height: auto;
-	}
-}
-
-.text-color-blue {
-	color: dodgerblue;
-}
-
-.text-align-justify {
-	text-align: justify;
-
 }
