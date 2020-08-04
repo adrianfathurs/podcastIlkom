@@ -119,28 +119,27 @@
             // Pengaturan pagination
             $config['base_url'] = base_url('article/getArtikel/').$id.'/';
             $config['total_rows'] = $this->Martikel->get()->num_rows();
-            $config['per_page'] = 10 ;
+            $config['per_page'] = 1 ;
             $config['offset'] = $this->uri->segment(4);
 
             // Styling pagination
-            $config['first_link']       = 'First';
-        $config['last_link']        = 'Last';
-        $config['next_link']        = 'Next';
-        $config['prev_link']        = 'Prev';
-        $config['full_tag_open']    = '<div class="pagging text-center"><nav><ul class="pagination justify-content-center">';
-        $config['full_tag_close']   = '</ul></nav></div>';
-        $config['num_tag_open']     = '<li class="page-item"><span class="page-link">';
-        $config['num_tag_close']    = '</span></li>';
-        $config['cur_tag_open']     = '<li class="page-item active"><span class="page-link">';
-        $config['cur_tag_close']    = '<span class="sr-only">(current)</span></span></li>';
-        $config['next_tag_open']    = '<li class="page-item"><span class="page-link">';
-        $config['next_tagl_close']  = '<span aria-hidden="true">&raquo;</span></span></li>';
-        $config['prev_tag_open']    = '<li class="page-item"><span class="page-link">';
-        $config['prev_tagl_close']  = '</span>Next</li>';
-        $config['first_tag_open']   = '<li class="page-item"><span class="page-link">';
-        $config['first_tagl_close'] = '</span></li>';
-        $config['last_tag_open']    = '<li class="page-item"><span class="page-link">';
-        $config['last_tagl_close']  = '</span></li>';
+            $config['first_link'] = false;
+            $config['last_link'] = false;
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+
+            $config['num_tag_open'] = '<li class="waves-effect">';
+            $config['num_tag_close'] = '</li>';
+
+            $config['prev_tag_open'] = '<li class="waves-effect">';
+            $config['prev_tag_close'] = '</li>';
+
+            $config['next_tag_open'] = '<li class="waves-effect">';
+            $config['next_tag_close'] = '</li>';
+
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
 
             $this->pagination->initialize($config);
 
@@ -148,7 +147,7 @@
             // $data['pageTitle'] = 'Lowongan Kerja';
             $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'])->result();
             // $data['pageContent'] = $this->load->view('loker/lokerList', $data, TRUE);
-            // print_r($data['loker']);die;
+
             // Jalankan view template/layout
             // $this->load->view('template/layout', $data);
 
