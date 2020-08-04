@@ -19,20 +19,17 @@ if (isset($css)) {
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
       </img>
     </div>
 
     <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
       </img>
     </div>
 
     <div class="carousel-item" data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -79,7 +76,7 @@ if (isset($css)) {
       <div class="row ">
         <div class="card position-widget" style="width: 12rem;">
           <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Youtube &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"></h3></a>
-          <iframe class ="youtube-place" width="150" height="75" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+          <iframe class ="youtube-place" width="150" height="75" target="_blank" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
         </div>
       </div>
       <div class="row mt-2">
@@ -162,101 +159,75 @@ if (isset($css)) {
 
           <div class="element effect" style="display:none">
             <div class="front">
-              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_3.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="300px;" height="300px;">
             </div>
+            
             <div class="back" >
               <div class="back-content">
-                <h3 class="text-white">Senin</h3>
-                <h5 class="text-white">11.10-12.40</h5>
+                <h5 class="text-white">Senin-Jumat</h5>
+                <h5 class="text-white">08.00-10.00</h5>
               </div>
             </div>
           </div>
 
           <div class="element effect" style="display:none">
             <div class="front">
-              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_2.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="300px;" height="300px;">
             </div>
+            
             <div class="back" >
               <div class="back-content">
-                <h3 class="text-white">Selasa</h3>
-                <h5 class="text-white">11.10-12.40</h5>
+                <h5 class="text-white">Senin-Jumat</h5>
+                <h5 class="text-white">10.00-12.00</h5>
               </div>
             </div>
           </div>
 
           <div class="element effect" >
             <div class="front">
-              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_1.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
-                <h3 class="text-white">Rabu</h3>
-                <h5 class="text-white">11.10-12.40</h5>
+                <h5 class="text-white">Senin-Jumat</h5>
+                <h5 class="text-white">13.00-15.00</h5>
               </div>
             </div>
           </div>
+        </div>
 
           <div class="element effect" >
             <div class="front">
-              <img class="mySlides" src='<?php echo base_url()?>assets/images/img_1.jpg'  width="300px;" height="300px;">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png'  width="300px;" height="300px;">
             </div>
             <div class="back" >
               <div class="back-content">
-                <h3 class="text-white">Kamis</h3>
-                <h5 class="text-white">11.10-12.40</h5>
+                <p class="text-white">Sabtu,Minggu</p>
+                <h5 class="text-white">19.30/16.00</h5>
               </div>
             </div>
           </div>
-        </div>
+</div>
 
-        <div class="element effect" >
-          <div class="front">
-            <img class="mySlides" src='<?php echo base_url()?>assets/images/img_2.jpg'  width="300px;" height="300px;">
-          </div>
-          <div class="back" >
-            <div class="back-content">
-              <h3 class="text-white">Jumat</h3>
-              <h5 class="text-white">11.10-12.40</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="element effect" >
-        <div class="front">
-          <img class="mySlides" src='<?php echo base_url()?>assets/images/img_3.jpg'  width="300px;" height="300px;">
-        </div>
-        <div class="back" >
-          <div class="back-content">
-            <h3 class="text-white">Senin</h3>
-            <h5 class="text-white">11.10-12.40</h5>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="container">
       <div class="row padding-row-carousel mt-4">
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='assets/images/img_3.jpg' style="cursor:pointer" onclick="currentDiv(1)">
+        <div class="offset-col-2 offset-md-2 offset-sm-2 col col-md-2 col-sm-2 col-xs-2">
+          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png' style="cursor:pointer" onclick="currentDiv(1)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_2.jpg" style="cursor:pointer" onclick="currentDiv(2)">
+        <div class="col col-md-2 col-sm-2 col-xs-2">
+          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png" style="cursor:pointer" onclick="currentDiv(2)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_1.jpg" style="cursor:pointer" onclick="currentDiv(3)">
+        <div class="col col-md-2 col-sm-2 col-xs-2">
+          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png' style="cursor:pointer" onclick="currentDiv(3)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='assets/images/img_1.jpg' style="cursor:pointer" onclick="currentDiv(4)">
-        </div>
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_2.jpg" style="cursor:pointer" onclick="currentDiv(5)">
-        </div>
-        <div class="col col-md-2 col-sm-6 col-xs-6">
-          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="assets/images/img_1.jpg" style="cursor:pointer" onclick="currentDiv(6)">
+        <div class="col col-md-2 col-sm-2 col-xs-2">
+          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png" style="cursor:pointer" onclick="currentDiv(4)">
         </div>
       </div>
       <br>
       <center><a href="<?php echo site_url('schedule')?>"><bold>Read More</bold></a></center>
+      <br>
     </div>
   </div>
 </div>
@@ -390,10 +361,8 @@ if (isset($css)) {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
       officia, error reiciendis ab quod?</p>
     </div>
-    <div class="row">
-    <div class="row" >    
-            
-      <div class="col">                  
+    <div class="row" >      
+      <div class="col-4 col-md-4">                  
         <div class="row-md-4 mt-2">
         <?php for($j=1;$j<4;$j++){?>
           <div class="card profile-card-5 mt-5">
@@ -410,7 +379,7 @@ if (isset($css)) {
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/1')?>"><bold>Read More...</bold></a></center></div>  
         </div>
       </div>               
-      <div class="col">                  
+      <div class="col-4 col-md-4">                  
         <div class="row-md-4 mt-2">
         <?php for($j=1;$j<4;$j++){?>
           <div class="card profile-card-5 mt-5">
@@ -427,7 +396,7 @@ if (isset($css)) {
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/2')?>"><bold>Read More...</bold></a></center></div>  
         </div>
       </div>    
-      <div class="col">                  
+      <div class="col-4 col-md-4">                  
         <div class="row-md-4 mt-2">
         <?php for($j=1;$j<4;$j++){?>
           <div class="card profile-card-5 mt-5">

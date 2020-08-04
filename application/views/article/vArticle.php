@@ -17,30 +17,26 @@
                 </div>
       <?php endif; ?>
     	<div class="row">
-    	    <h1 class="text-center"><span>Article About Feature</span></h1>
+    	    <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $jenisArtikel;?></span></h1>
+          
     	    <?php 
               foreach($artikel as $art) :            
             ?>    
-          		
-    		<div class="col-md-4 mt-4  ">
-    		    <div class="card profile-card-5">
-                    <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
-                    <div class="card-img-block">
 
-    		            <img class="card-img-tops" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>" style=" height: 550px;" alt="Card image cap">
-    		            </div>
+          <div class="col-md-4 mt-4  ">
+            <div class="card profile-card-5">
+              <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
+              <div class="card-img-block">
 
-    		           
-    		        </div>
-
-                    <div class="card-body pt-0">
-                    <h5 class="card-title"><?php echo $art->judul; ?></h5></a>
-                    <p class="card-text"><?php echo substr($art->essay, 0, 100) . '...'; ?></p>
-                  </div>
-                </div>                
-    		</div>
-        <?php endforeach; ?>
-            
+                <img class="card-img-tops" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>" style=" height: 550px;" alt="Card image cap">
+              </div>
+              <div class="card-body pt-0">
+                <h5 class="card-title"><?php echo $art->judul; ?></h5></a>
+                <p class="card-text"><?php echo substr($art->essay, 0, 100) . '...'; ?></p>
+              </div>           
+            </div>
+    		  </div>
+        <?php endforeach; ?>  
     	</div>
     </div>
 </section> 
