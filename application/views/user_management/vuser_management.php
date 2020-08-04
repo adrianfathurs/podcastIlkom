@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
-  </head>
 
-  <body>
   <div class="row">
     <div class="col-xl">
         <div class="card">
@@ -139,5 +133,3 @@
 					</div><!-- /.modal-dialog -->
 				</div>
  
-  </body>
-</html>

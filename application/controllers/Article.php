@@ -12,11 +12,21 @@
         
         function index(){
             // $data = $this->Mfeature->get_all();
+            $obj = new stdClass();            
+            $obj->judul = '';
+            $obj->essay = '';
+            $obj->foto1 = '';
+            $obj->foto2 = '';
+            $obj->foto3 = '';
+            $obj->jenis_artikel = "0";
 
+            
+
+            $data['data'] = $obj; 
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
             $data['username'] = $this->session->userdata('username');    
-            $data['js'] = 'template/vtemplate_notif_js';  
+            $data['js'] = 'article/vtemplate_notif_js';  
             if ($data['role'] == '1' || $data['role'] == '2' ){     
             $data['content'] = 'article/vform.php';            
             $this->load->view('template/vtemplate', $data);
@@ -26,10 +36,17 @@
         }
 
         function update($id){
-            
-            print_r($id);die;
+            $data['role'] = $this->session->userdata('role');            
+            $data['id'] = $this->session->userdata('id'); 
+            $data['js'] = 'article/varticle_js';
+            $data['username'] = $this->session->userdata('username');             
+            $data['data'] = $this->Martikel->editArtikel($id);
+            // print_r($data['data']);die;
+            $data['content'] = 'article/vform.php';            
+            $this->load->view('template/vtemplate', $data);
+            // print_r($id);die;
         }
-
+        
         function view($id){
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
@@ -86,7 +103,7 @@
 
             }
             // print_r($kalimat);print_r($kalimat2);die;   
-            $data['js'] = 'template/vtemplate_notif_js'; 
+            $data['js'] = 'article/varticle_js'; 
             $data['css'] = 'article/varticle_css';  
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
@@ -99,7 +116,7 @@
             $this->session->set_userdata('idJenisArtikel',$id); 
             var_dump($_SESSION['idJenisArtikel']);
             $data['username'] = $this->session->userdata('username'); 
-            $data['js'] = 'template/vtemplate_notif_js';
+            $data['js'] = 'article/varticle_js';
             $data['css'] = 'article/varticle_css';
             if($id==1)
             {
@@ -109,9 +126,12 @@
                 // text asidebar yang diload
                 $data['jenisArtikel1']= 'Hype';
                 $data['jenisArtikel2']= 'Review';
+
+                $data['judul'] = 'Feature';
+
                 $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
                 $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
-                
+ 
             }
             else if ($id==2)
             {
@@ -121,8 +141,12 @@
                 // text asidebar yang diload
                 $data['jenisArtikel1']= 'Feature';
                 $data['jenisArtikel2']= 'Review';
+
+                $data['judul'] = 'Hype';
+
                 $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
                 $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+
             }
             else if($id==3)
             {
@@ -133,7 +157,11 @@
                 $data['jenisArtikel1']='Feature';
                 $data['jenisArtikel2']= 'Hype';
                 $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
-                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
+
+               
+                $data['judul'] = 'Review';
+                
+
             }
             else{
 
@@ -145,16 +173,17 @@
             // print_r($data);die;  
 
 
-            $config['total_rows'] = $this->Martikel->getJumData($id); //total row
-            $config['base_url'] = site_url('article/getArtikel/3'); //site url
-        $config['per_page'] = 1;  //show record per halaman
-        $config["uri_segment"] = 4;  // uri parameter
-        $choice = $config["total_rows"] / $config["per_page"];
-        // print_r($choice);die;
-        $config["num_links"] = floor($choice);
+            // Load library pagination
+            $this->load->library('pagination');
 
-        // Membuat Style pagination untuk BootStrap v4
-        $config['first_link']       = 'First';
+            // Pengaturan pagination
+            $config['base_url'] = base_url('article/getArtikel/').$id.'/';
+            $config['total_rows'] = $this->Martikel->get()->num_rows();
+            $config['per_page'] = 10 ;
+            $config['offset'] = $this->uri->segment(4);
+
+            // Styling pagination
+            $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
         $config['next_link']        = 'Next';
         $config['prev_link']        = 'Prev';
@@ -173,14 +202,15 @@
         $config['last_tag_open']    = '<li class="page-item"><span class="page-link">';
         $config['last_tagl_close']  = '</span></li>';
 
-        $this->pagination->initialize($config);
-        $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+            $this->pagination->initialize($config);
 
-        //panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model. 
-        // $data['data'] = $this->mahasiswa_model->get_mahasiswa_list($config["per_page"], $data['page']);   
-        $data['artikel'] = $this->Martikel->loadArtikel($id,$config["per_page"], $data['page']);        
-
-        $data['pagination'] = $this->pagination->create_links();
+            // Data untuk page index
+            // $data['pageTitle'] = 'Lowongan Kerja';
+            $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'])->result();
+            // $data['pageContent'] = $this->load->view('loker/lokerList', $data, TRUE);
+            // print_r($data['loker']);die;
+            // Jalankan view template/layout
+            // $this->load->view('template/layout', $data);
 
 
             $this->load->view('template/vtemplate', $data);
@@ -192,7 +222,12 @@
             $input = $this->input->post(NULL,TRUE);
             extract($input);
             
-
+            
+            if ($this->input->post('submit')) {
+            // print_r($input);die;
+           
+            
+            
             $foto111=$_FILES['foto1'];
             $foto222=$_FILES['foto2'];
             $foto333=$_FILES['foto3'];
@@ -204,11 +239,11 @@
 
             if(null == $foto111 && $foto111 && $foto111 ){
                 $this->session->set_userdata('typeNotif', "gagalUpload");
-                redirect('article');
+                // redirect('article');
             } else {
-                            $foto11=$this->_upload($foto111,$foto1_name);
-                            $foto22=$this->_upload($foto222,$foto2_name);
-                            $foto33=$this->_upload($foto333,$foto3_name);
+                            $foto11=$this->_upload($foto111,$foto1_name,$id_artikel);
+                            $foto22=$this->_upload($foto222,$foto2_name,$id_artikel);
+                            $foto33=$this->_upload($foto333,$foto3_name,$id_artikel);
 
                             $data=[
                                 'judul'=>$this->input->post('judul'),
@@ -220,12 +255,35 @@
                                 'fk_akun' => $creator
                             ];
                             
-                        $this->Martikel->insert($data);
-                            redirect('article');
+                        $this->Martikel->insert($data,$id_artikel);
+
+                        $this->getArtikel($jenis_artikel);
                     }
+                    
+                }else{
+                    $obj = new stdClass();            
+                    $obj->judul = '';
+                    $obj->id_artikel = '';
+                    $obj->essay = '';
+                    $obj->foto1 = '';
+                    $obj->foto2 = '';
+                    $obj->foto3 = '';
+                    $obj->jenis_artikel = "0";
+                    
+                    $data['data'] = $obj; 
+                    $data['role'] = $this->session->userdata('role');            
+                    $data['id'] = $this->session->userdata('id'); 
+                    $data['username'] = $this->session->userdata('username');
+                    $data['js'] = 'article/varticle_js'; 
+                    $data['css'] = 'article/varticle_css';      
+                    $data['content'] = 'article/vform.php';            
+                    $this->load->view('template/vtemplate', $data);
+                }
         }
 
-        function _upload($foto,$ft){
+        function _upload($foto,$ft,$id){
+                    $data = $this->Martikel->viewArtikel($id);
+                    // print_r($data);die;
                     $config['upload_path']='./assets/upload/';
 					$config['allowed_types']='jpg|png|jpeg';
 					$this->load->library('upload',$config);
@@ -235,8 +293,12 @@
 
                         if(!$this->upload->do_upload('foto1'))
                         {
+                            if($data->foto1){
+                                return $data->foto1;
+                            }else {
                             $this->session->set_userdata('typeNotif', "gagalUpload1");
-                            redirect('article');
+                            $this->update($id);
+                            }
                         }
                         else
                         {
@@ -249,8 +311,12 @@
 
                         if(!$this->upload->do_upload('foto2'))
                         {
+                            if($data->foto2){
+                                return $data->foto2;
+                            }else {
                             $this->session->set_userdata('typeNotif', "gagalUpload2");
-                            redirect('article');
+                            $this->update($id);
+                            }
                         }
                         else
                         {
@@ -263,8 +329,12 @@
 
                         if(!$this->upload->do_upload('foto3'))
                         {
+                            if($data->foto3){
+                                return $data->foto3;
+                            }else {
                             $this->session->set_userdata('typeNotif', "gagalUpload3");
-                            redirect('article');
+                            $this->update($id);
+                            }
                         }
                         else
                         {
@@ -275,6 +345,14 @@
                     else {
                         echo "tolol";
                     }
+        }
+
+        function delete($id){
+            if (!isset($id)) show_404();
+        
+            if ($query = $this->Martikel->delete($id)) {
+                $this->getArtikel($query);
+            }
         }
 
     }

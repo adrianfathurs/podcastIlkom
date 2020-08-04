@@ -19,7 +19,7 @@
             $data['username'] = $this->session->userdata('username'); 
             if ($data['role'] == '1'){
             $data['content'] = 'user_management/vuser_management.php';            
-            $this->load->view('template/header',$data);
+            // $this->load->view('template/header',$data);
             $this->load->view('template/vtemplate', $data);
             }else{
                 redirect('homepage');

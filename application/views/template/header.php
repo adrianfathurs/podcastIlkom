@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/header.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/homearticle.css">
+  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
   <script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/jquery-migrate-3.0.1.min.js"></script>
 
@@ -62,8 +63,10 @@
                     <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Article </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/1');?>">Feature</a>
-                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu/2');?>">Hype</a>
-                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu/2');?>">Review</a>
+
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/2');?>">Hype</a>
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/3');?>">Review</a>
+
                       </div>
                   </li>
                   <li><a class="text-black" href="about.html">Event</a></li>

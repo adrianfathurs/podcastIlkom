@@ -1,12 +1,17 @@
 
+
 <?php
         $this->load->view('template/header.php');		
 		?>
-		<?php
+  <?php
 	if (isset($css)) {
 		$this->load->view($css);
 	}
 	?>
+	<!-- ============================================================== -->
+	<!-- Main wrapper - style you can find in pages.scss -->
+	<!-- ============================================================== -->
+
 	
 			
 			<div class="container-fluid" >
@@ -30,6 +35,7 @@
 	
 	<div class="clr"></div>
 
+
 <div class="bg-pink" data-aos="fade">
   <div class="container">
     <div class="row">
@@ -42,7 +48,7 @@
     </div>
   </div>
 </div>
+
             <?php $this->load->view('template/footer.php'); ?>
 			
 	
-
