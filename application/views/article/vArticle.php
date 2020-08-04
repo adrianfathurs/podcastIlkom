@@ -17,6 +17,7 @@
                 </div>
       <?php endif; ?>
     	<div class="row">
+
     	    <h1 class="text-center"><span>Article About <?php echo $judul ?></span></h1>
     	    <?php 
               foreach($loker as $art) :            
@@ -38,6 +39,7 @@
                 <?php endif; ?>
     		</div>                      
         <?php endforeach; ?>            
+
     	</div>
     </div>
     <div class="center-align">

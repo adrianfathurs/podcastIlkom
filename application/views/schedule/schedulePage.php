@@ -6,30 +6,31 @@ $this->load->view($css);
 ?>
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="1000">
-            <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
-                <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-            </img>
-        </div>
-        <div class="carousel-item " data-interval="2000">
-            <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
-                <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-            </img>
-        </div>
-        <div class="carousel-item" data-interval="2000">
-            <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
-                <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+   <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="1000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
+      </img>
     </div>
+
+    <div class="carousel-item " data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
+      </img>
+    </div>
+
+    <div class="carousel-item" data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
@@ -73,17 +74,17 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Morning Sunshine</td>
                             <td class="text-center">08.00-10.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
                             <td class="text-center">12.00-13.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Traffic Zone</td>
                             <td class="text-center">13.00-15.00</td>
                         </tr>
@@ -97,17 +98,17 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Morning Sunshine</td>
                             <td class="text-center">08.00-10.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
                             <td class="text-center">12.00-13.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Traffic Zone</td>
                             <td class="text-center">13.00-15.00</td>
                         </tr>
@@ -121,17 +122,17 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Morning Sunshine</td>
                             <td class="text-center">08.00-10.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
                             <td class="text-center">12.00-13.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Traffic Zone</td>
                             <td class="text-center">13.00-15.00</td>
                         </tr>
@@ -145,17 +146,17 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Morning Sunshine</td>
                             <td class="text-center">08.00-10.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
                             <td class="text-center">12.00-13.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Traffic Zone</td>
                             <td class="text-center">13.00-15.00</td>
                         </tr>
@@ -169,17 +170,17 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Morning Sunshine</td>
                             <td class="text-center">08.00-10.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
                             <td class="text-center">12.00-13.00</td>
                         </tr>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Traffic Zone</td>
                             <td class="text-center">13.00-15.00</td>
                         </tr>
@@ -193,9 +194,9 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Breakdown</td>
-                            <td class="text-center">19.00-21.00</td>
+                            <td class="text-center">19.30</td>
                         </tr>
                     </tbody>
                 </table>
@@ -207,9 +208,9 @@ $this->load->view($css);
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">fkamlk</td>
+                            <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Breakdown</td>
-                            <td class="text-center">19.00-21.00</td>
+                            <td class="text-center">16.00</td>
                         </tr>
                     </tbody>
                 </table>
