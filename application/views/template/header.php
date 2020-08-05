@@ -24,11 +24,16 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/header.css" rel="stylesheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/homearticle.css">  
 =======
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/homearticle.css">
   <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 >>>>>>> parent of 057728a... revert push
+=======
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/homearticle.css">
+  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> parent of 22e56cc... backup
   <script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/jquery-migrate-3.0.1.min.js"></script>
 
