@@ -46,4 +46,30 @@
 <section>
 
 </section>
+<div class="container">
+
+<div class="container mb-3">
+		<h2 align="center" style="margin: 60px 10px 10px 10px;">Contoh Komentar PHP Ajax</h2><hr>
+		<form method="POST" id="form_komen">
+			<div class="form-group">
+				<input type="text" name="username" id="username" class="form-control" placeholder="Masukkan Nama" />
+			</div>
+            <div class="form-group">
+				<input type="text" name="username" id="email" class="form-control" placeholder="Masukkan Email" />
+			</div>
+			<div class="form-group">
+				<textarea name="komentar" id="komen" class="form-control" placeholder="Tulis Komentar" rows="5"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="hidden" name="komentar_id" id="komentar_id" value="0" />
+				<input type="submit" name="submit" id="submit" class="btn btn-info" value="Submits" />
+			</div>
+		</form>
+		<hr>
+		<h4 class="mb-3">Komentar :</h4>
+		<span id="message"></span>
+	   
+	   	<div id="display_comment"></div>
+	</div>
+</div>
       

@@ -74,7 +74,9 @@
             $data['id'] = $this->session->userdata('id');    
             $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'article/varticle_js';
+            $data['jss'] = 'article/vComment_js';
             $data['css'] = 'article/varticle_css';
+
             if($id==1)
             {
                 $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
@@ -292,6 +294,18 @@
             if ($query = $this->Martikel->delete($id)) {
                 $this->getArtikel($query);
             }
+        }
+
+        function addComment(){
+            die;
+            $data=[
+                $username => $_POST["username"],
+                $email => $_POST["email"],
+                $komentar => $_POST["komentar"],
+                $id_komentar => $_POST["komentar_id"]
+            ];
+            // print_r($data);die;
+            $this->Martikel->insertComment($data);
         }
 
     }

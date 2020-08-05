@@ -108,5 +108,10 @@
                 // Return hasil query
                 return $query;
                 }
+        
+        function insertComment($data){
+            $query = $this->db->insert('komentar',$data);
+            return $query;  
+        }
     }
 ?>
