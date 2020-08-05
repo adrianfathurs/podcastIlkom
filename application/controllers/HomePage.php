@@ -12,7 +12,6 @@ class HomePage extends CI_Controller {
 
 	public function index()
 	{
-		$data['page']="homePage";
 		$data['role'] = $this->session->userdata('role');            
 		$data['id'] = $this->session->userdata('id'); 
 		$data['username'] = $this->session->userdata('username'); 
