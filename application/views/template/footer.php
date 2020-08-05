@@ -99,6 +99,14 @@
   <script src="<?php echo base_url(); ?>assets/js/circleaudioplayer.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
   <script src="<?php echo base_url(); ?>assets/tinymce/tinymce.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#home').click(function(){
+        $('.home').addClass('nyala');
+      });
+    });
+  </script>
     
   </body>
 </html>

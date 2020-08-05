@@ -17,10 +17,9 @@
                 </div>
       <?php endif; ?>
     	<div class="row">
-
-    	    <h1 class="text-center"><span>Article About <?php echo $judul ?></span></h1>
+   <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $judul;?></span></h1>
     	    <?php 
-              foreach($loker as $art) :            
+              foreach($artikel as $art) :            
             ?>              		
     		<div class="col-md-4 mt-4  ">
     		    <div class="card profile-card-5">

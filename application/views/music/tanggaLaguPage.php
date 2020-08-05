@@ -6,22 +6,19 @@ $this->load->view($css);
 ?>
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/hero_bg_1.jpg"  style="width: 100%; height: 550px;"  alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
       </img>
     </div>
 
     <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_2.jpg" style="width: 1280px; height: 550px;"   alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
       </img>
     </div>
 
     <div class="carousel-item" data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/img_3.jpg" style="width: 1200px; height: 550px;"  alt="...">
-        <h1 class="mb-4 text-white">Turn On The Feeling With Music</h1>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -35,7 +32,6 @@ $this->load->view($css);
     </a>
   </div>
 </div>
-
 <div class="bg-primary" data-aos="fade">
   <div class="container">
     <div class="row">
