@@ -19,7 +19,7 @@
     	<div class="row">
    <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $judul;?></span></h1>
     	    <?php 
-              foreach($artikel as $art) :            
+              foreach($loker as $art) :            
             ?>              		
     		<div class="col-md-4 mt-4  ">
     		    <div class="card profile-card-5">

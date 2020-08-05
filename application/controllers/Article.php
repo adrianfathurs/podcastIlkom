@@ -103,7 +103,9 @@
 
             }
             // print_r($kalimat);print_r($kalimat2);die;   
-            $data['js'] = 'template/vtemplate_notif_js'; 
+            $data['js'] = 'article/varticle_js'; 
+            // $data['jss'] = 'article/vComment_js';
+            $data['komentar'] = 'article/vComment.php';
             $data['css'] = 'article/varticle_css';  
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
@@ -114,7 +116,7 @@
             $data['id'] = $this->session->userdata('id');    
             /* session id jenis artikel */
              $this->session->set_userdata('idJenisArtikel',$id); 
-            var_dump($_SESSION['idJenisArtikel']);
+            // var_dump($_SESSION['idJenisArtikel']);
             $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'article/varticle_js';
             $data['css'] = 'article/varticle_css';
@@ -182,7 +184,7 @@
             // Pengaturan pagination
             $config['base_url'] = base_url('article/getArtikel/').$id.'/';
             $config['total_rows'] = $this->Martikel->get()->num_rows();
-            $config['per_page'] = 10 ;
+            $config['per_page'] = 2 ;
             $config['offset'] = $this->uri->segment(4);
 
             // Styling pagination
@@ -209,13 +211,14 @@
 
             // Data untuk page index
             // $data['pageTitle'] = 'Lowongan Kerja';
-            $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'])->result();
+            $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'] ,$id)->result();
             // $data['pageContent'] = $this->load->view('loker/lokerList', $data, TRUE);
             // print_r($data['loker']);die;
             // Jalankan view template/layout
             // $this->load->view('template/layout', $data);
 
-
+            
+            // print_r($data['jss']);die;
             $this->load->view('template/vtemplate', $data);
         }
         

@@ -42,15 +42,14 @@
                 </div>
             </div>
     </div> <!-- /container -->
+    <?php $this->load->view($komentar); ?>
 </section>
 
 <?php if (isset($asidebar)) {
     $this->load->view($asidebar);
 }
 ?>   
-<div>
-    <h1>Komentar</h1>
-</div>
+
 
 
     
