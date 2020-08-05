@@ -53,13 +53,13 @@ $this->load->view($css);
                 <div class="col-lg-1 "></div>
                 <div class="col-lg-11">
                     <div class="row">
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnSenin">Senin</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnSelasa">Selasa</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnRabu">Rabu</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnKamis">Kamis</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnJumat">Jumat</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnSabtu">Sabtu</button></div>
-                        <div class="col-md"><button class="btn btn-outline-info" id="btnMinggu">Minggu</button></div>     
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnSenin" >Senin</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnSelasa">Selasa</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnRabu">Rabu</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnKamis">Kamis</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnJumat">Jumat</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnSabtu">Sabtu</button></div>
+                        <div class="col-md pb-2"><button class="btn btn-outline-info" id="btnMinggu">Minggu</button></div>     
                     </div>
                 </div>
             </div>

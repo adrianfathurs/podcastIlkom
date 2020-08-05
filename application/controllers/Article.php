@@ -63,7 +63,7 @@
                 'kalimat2' => $kalimat2,                
             );
             // print_r($kalimat);print_r($kalimat2);die;   
-            $data['js'] = 'article/varticle_js'; 
+            $data['js'] = 'template/vtemplate_notif_js'; 
             $data['css'] = 'article/varticle_css';  
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
@@ -72,6 +72,9 @@
         function getArtikel($id){
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id');    
+            /* session id jenis artikel */
+             $this->session->set_userdata('idJenisArtikel',$id); 
+            var_dump($_SESSION['idJenisArtikel']);
             $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'article/varticle_js';
             $data['jss'] = 'article/vComment_js';
@@ -84,8 +87,13 @@
                 $data['asidebar'] = 'article/vasidebarFeature.php';
                 $data['jenisArtikel1']= 'Hype';
                 $data['jenisArtikel2']= 'Review';
+
+
                 $data['judul'] = 'Feature';
+
+     
                 
+
             }
             else if ($id==2)
             {
@@ -94,16 +102,31 @@
                 $data['asidebar'] = 'article/vasidebarHype.php';
                 $data['jenisArtikel1']= 'Feature';
                 $data['jenisArtikel2']= 'Review';
+
+
                 $data['judul'] = 'Hype';
+
+               
+
+
             }
             else if($id==3)
             {
-                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
-                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
-                $data['asidebar'] = 'article/vasidebarReview.php';
-                $data['jenisArtikel']= 'Review';
+               
+
+
+               
                 $data['judul'] = 'Review';
                 
+
+                $data['jenisArtikel']= 'Review';
+                $data['asidebar'] = 'article/vasidebarReview.php';
+                // text asidebar yang diload
+                $data['jenisArtikel1']='Feature';
+                $data['jenisArtikel2']= 'Hype';
+                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit(); 
+
             }
             else{
 
