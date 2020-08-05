@@ -189,6 +189,39 @@ h1 a {
 	
 }
 
+<<<<<<< HEAD
+=======
+.clr {
+	clear: both;
+}
+
+
+#image-preview{
+    display:none;
+    width : 250px;
+    height : 300px;
+}
+#image-preview2{
+    display:none;
+    width : 250px;
+    height : 300px;
+}
+#image-preview3{
+    display:none;
+    width : 250px;
+    height : 300px;
+
+.judul-position {
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	font-size: 60px;
+	color: whitesmoke;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-left: auto;
+	text-align: center;
+	margin-right: auto;
+>>>>>>> parent of 057728a... revert push
 
 
 .clr {
@@ -205,8 +238,15 @@ h1 a {
     width : 250px;
     height : 300px;
 }
+<<<<<<< HEAD
 #image-preview3{
     display:none;
     width : 250px;
     height : 300px;
+=======
+
+.text-align-justify {
+	text-align: justify;
+
+>>>>>>> parent of 057728a... revert push
 }

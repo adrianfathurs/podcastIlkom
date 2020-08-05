@@ -1,11 +1,44 @@
 <head>
 
+<<<<<<< HEAD
+=======
+
+
+<!-- ini yang buat berantakan link bootraps dibawah ini -->
+<!--  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --> 
+
+>>>>>>> parent of 057728a... revert push
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag asdadadsa ---------->
 </head>
+<<<<<<< HEAD
 <section class="banner-section">                    
     <img class="image-carousel-size" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="width: 100%; height: 550px;"  alt="...">
+=======
+
+
+
+<!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
+<section>
+    <div class="banner-section ">
+        <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="opacity:50%; width: 100%; height: 550px;"  alt="..."></img>
+        <div class="container judul-position">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-4">
+                    
+            </div>
+            <div class="col-lg-7 col-md-8 col-sm-4">
+                <p class="fontJudul"><?php echo $artikel->judul; ?></p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+>>>>>>> parent of 057728a... revert push
 </section>
 <section class="post-content-section" id="main-section"> 
     <div class="container">

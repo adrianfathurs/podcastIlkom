@@ -3,9 +3,9 @@
     class Article extends CI_Controller {
 
         function __construct() {
-            parent::__construct();
-                               
+            parent::__construct();                           
             $this->load->library('pagination');
+            $this->load->library('session');
             $this->load->model("Martikel");
             
         }
@@ -71,7 +71,14 @@
 
         function getArtikel($id){
             $data['role'] = $this->session->userdata('role');            
+<<<<<<< HEAD
             $data['id'] = $this->session->userdata('id');    
+=======
+            $data['id'] = $this->session->userdata('id');  
+        //Session idJenisArtikel
+            $this->session->set_userdata('idJenisArtikel',$id); 
+            var_dump($_SESSION['idJenisArtikel']);
+>>>>>>> parent of 057728a... revert push
             $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'article/varticle_js';
             $data['jss'] = 'article/vComment_js';
@@ -79,21 +86,33 @@
 
             if($id==1)
             {
-                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
-                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+                // nama Page yang diload
+                $data['jenisArtikel']= 'Feature';
                 $data['asidebar'] = 'article/vasidebarFeature.php';
+                // text asidebar yang diload
                 $data['jenisArtikel1']= 'Hype';
                 $data['jenisArtikel2']= 'Review';
+<<<<<<< HEAD
                 $data['judul'] = 'Feature';
                 
+=======
+
+                $data['judul'] = 'Feature';
+
+                $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
+                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+ 
+>>>>>>> parent of 057728a... revert push
             }
             else if ($id==2)
             {
-                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
-                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+                // nama Page yang diload
+                $data['jenisArtikel']= 'Hype';
                 $data['asidebar'] = 'article/vasidebarHype.php';
+                // text asidebar yang diload
                 $data['jenisArtikel1']= 'Feature';
                 $data['jenisArtikel2']= 'Review';
+<<<<<<< HEAD
                 $data['judul'] = 'Hype';
             }
             else if($id==3)
@@ -104,6 +123,29 @@
                 $data['jenisArtikel']= 'Review';
                 $data['judul'] = 'Review';
                 
+=======
+
+                $data['judul'] = 'Hype';
+
+                $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+
+            }
+            else if($id==3)
+            {
+                // nama Page yang diload
+                $data['jenisArtikel']= 'Review';
+                $data['asidebar'] = 'article/vasidebarReview.php';
+                // text asidebar yang diload
+                $data['jenisArtikel1']='Feature';
+                $data['jenisArtikel2']= 'Hype';
+                $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+
+               
+                $data['judul'] = 'Review';
+                
+
+>>>>>>> parent of 057728a... revert push
             }
             else{
 
