@@ -1,7 +1,7 @@
 <div class="container mb-3">
         
 		<h2 align="center" style="margin: 60px 10px 10px 10px;">Contoh Komentar PHP Ajax</h2><hr>
-		<form method="POST" id="form_komen">
+		<form method="POST" id="form_komen" name="form_komen">
 			<div class="form-group">
 				<input type="text" name="nama_pengirim" id="nama_pengirim" class="form-control" placeholder="Masukkan Nama" />
 			</div>
