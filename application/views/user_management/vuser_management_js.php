@@ -19,7 +19,23 @@ $(document).on('click', '.open-modal', function () {
 			$('#modal-name-edit').text(username);
 						
 		});
+	$('.remove').on('click', function(e){
+		e.preventDefault();
+		const href = $(this).attr('href');
 
+		Swal.fire({
+				title: 'Apakah Anda Yakin ?',
+				text: "Anda akan menghapus Artikel Ini",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#DD6B55',
+				confirmButtonText: 'Ya, Hapus!'
+				}).then((result) => {
+				if (result.value) {
+					document.location.href = href;
+				}
+		});
+    });
 $("[data-tt=tooltip").tooltip();
 
 </script>

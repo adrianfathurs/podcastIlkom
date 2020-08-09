@@ -5,7 +5,7 @@
             <div class="card-body">
 				<div class="row">
 				<h4 class="col card-title">Daftar Pengguna</h4>
-					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
+					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left text-white" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
 				</div>
             <div class="table-responsive">
 					<table id="zero_config" class="table table-striped table-bordered text-black">
@@ -36,7 +36,9 @@
 											data-password="<?php echo $user->password; ?>"											
 											data-toggle="modal"
 											data-tt="tooltip"
-											data-target="#edit-user"><i class="glyphicon glyphicon-print"></i></button>
+											data-target="#edit-user"> Edit
+										</button>
+									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" id="remove" class="btn btn-danger">Hapus</a> 
 								</td>
 								<?php $no++; ?>
 							</tr>
