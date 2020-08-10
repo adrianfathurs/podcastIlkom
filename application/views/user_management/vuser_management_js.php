@@ -1,3 +1,5 @@
+<script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
+<script src="<?php echo base_url() ?>assets/js/sweetalert2.all.min.js" ></script>
 <!-- Custom script -->
 <script type="text/javascript">
 
@@ -25,7 +27,7 @@ $(document).on('click', '.open-modal', function () {
 
 		Swal.fire({
 				title: 'Apakah Anda Yakin ?',
-				text: "Anda akan menghapus Artikel Ini",
+				text: "Anda akan menghapus Akun Ini",
 				icon: 'warning',
 				showCancelButton: true,
 				confirmButtonColor: '#DD6B55',

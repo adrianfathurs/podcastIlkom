@@ -38,7 +38,7 @@
 											data-tt="tooltip"
 											data-target="#edit-user"> Edit
 										</button>
-									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" id="remove" class="btn btn-danger">Hapus</a> 
+									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger remove">Hapus</a> 
 								</td>
 								<?php $no++; ?>
 							</tr>
