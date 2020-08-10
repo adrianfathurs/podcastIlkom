@@ -11,7 +11,7 @@
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
 <section>
     <div class="banner-section ">
-        <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style="opacity:50%; width: 100%; height: 550px;"  alt="..."></img>
+        <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; height: 550px;"  alt="..."></img>
         <div class="container judul-position">
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-4">
@@ -31,15 +31,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 post-title-block">
-                <p class="text-align-justify"><?php echo $kalimat['kalimat1'];?></p>
+                <label class="text-align-justify"><?php echo $artikel->essay;?></label>
                 <div class="mb-3">
                     <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto2) ?>" class="img-responsive image-size-foto23" ></center>
                 </div>
-                    <p class="text-align-justify"><?php echo $kalimat['kalimat2']; ?></p>
+                    <label class="text-align-justify"><?php echo $artikel->essay2; ?></label>
             
                 <div class=" ">
                     <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto3) ?>" class="img-responsive image-size-foto23" ></center>
                 </div>
+                <label class="text-align-justify"><?php echo $artikel->essay3; ?></label>
             </div>
     </div> <!-- /container -->
     <?php $this->load->view($komentar); ?>

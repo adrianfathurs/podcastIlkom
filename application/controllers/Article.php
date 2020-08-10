@@ -51,24 +51,27 @@
             $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
-            /* id jenis artikel */
-            
-            var_dump($id);
+            /* id jenis artikel */                        
             $data['idArtikel']=$id;
             $this->session->set_userdata('idArtikel',$id);
             $idJenisartikel = $_SESSION['idJenisArtikel'];
             $data['username'] = $this->session->userdata('username'); 
-            $data['artikel'] = $this->Martikel->viewArtikel($id);  
+            $data['artikel'] = $this->Martikel->viewArtikel($id);              
+            // $query = $this->Martikel->viewArtikel($id);
+            // $paragraf1 = strlen($query->essay);
+            // // print_r($paragraf1);die;
+            // $num1 = $paragraf1/3;
+            // $num2 = $paragraf1/3;
+            // $num3 = $paragraf1/3;
+            // // print_r($num1);die;
+            // $kalimat1 = substr($query->essay, 0, $paragraf1/2);
+            // $kalimat2 = substr($query->essay, $paragraf1/2);
             
-            $query = $this->Martikel->viewArtikel($id);
-            $paragraf1 = strlen($query->essay);
-            $kalimat1 = substr($query->essay, 0, $paragraf1/2);
-            $kalimat2 = substr($query->essay, $paragraf1/2);
-
-            $data['kalimat'] = array(
-                'kalimat1' => $kalimat1,
-                'kalimat2' => $kalimat2,                
-            );
+            
+            // $data['kalimat'] = array(
+            //     'kalimat1' => $kalimat1,
+            //     'kalimat2' => $kalimat2,                
+            // );
 
             if($idJenisartikel==1)
             {
@@ -216,6 +219,7 @@
             // Data untuk page index
             // $data['pageTitle'] = 'Lowongan Kerja';
             $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'] ,$id)->result();
+            
             // $data['pageContent'] = $this->load->view('loker/lokerList', $data, TRUE);
             // print_r($data['loker']);die;
             // Jalankan view template/layout
@@ -260,6 +264,8 @@
                                 'judul'=>$this->input->post('judul'),
                                 'jenis_artikel'=>$this->input->post('jenis_artikel'),
                                 'essay'=>$this->input->post('essay'),
+                                'essay2'=>$this->input->post('essay2'),
+                                'essay3'=>$this->input->post('essay3'),
                                 'foto1'=>$foto11,
                                 'foto2'=>$foto22,
                                 'foto3'=>$foto33,
@@ -276,6 +282,8 @@
                     $obj->judul = '';
                     $obj->id_artikel = '';
                     $obj->essay = '';
+                    $obj->essay2 = '';
+                    $obj->essay3 = '';
                     $obj->foto1 = '';
                     $obj->foto2 = '';
                     $obj->foto3 = '';
