@@ -8,6 +8,7 @@ class HomePage extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('TanggaLagu');
 		$this->load->model('Spotify');
+		$this->load->model("Martikel");
 	}
 
 	public function index()
@@ -21,6 +22,9 @@ class HomePage extends CI_Controller {
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
 		$data['linkPodcrast']=$this->Spotify->getLinkEpisode();
 		// var_dump($data['username']);die;
+		$data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
+		$data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
+        $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit(); 
 		$this->load->view('template/header',$data);
 		$this->load->view('home/homePage',$data);
 		$this->load->view('template/footer'); 

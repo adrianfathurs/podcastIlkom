@@ -2,3 +2,18 @@
 	display: inline;
 	float: left;
 }
+
+.navbar-active {
+	background-color: #e3207b !important;
+	border-radius: 5px;
+}
+
+.navbar-active:hover {
+	background-color: #e3207b !important;
+	border-radius: 5px;
+}
+
+.bg-navbar {
+	background-color: azure;
+	opacity: 70%;
+}

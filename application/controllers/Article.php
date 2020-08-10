@@ -3,8 +3,7 @@
     class Article extends CI_Controller {
 
         function __construct() {
-            parent::__construct();
-                               
+            parent::__construct();                     
             $this->load->library('pagination');
             $this->load->model("Martikel");
             
@@ -21,7 +20,7 @@
             $obj->jenis_artikel = "0";
 
             
-
+            $data['page']="articlePage";
             $data['data'] = $obj; 
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
@@ -36,6 +35,7 @@
         }
 
         function update($id){
+            $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
             $data['js'] = 'article/varticle_js';
@@ -48,9 +48,14 @@
         }
         
         function view($id){
+            $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
             /* id jenis artikel */
+            
+            var_dump($id);
+            $data['idArtikel']=$id;
+            $this->session->set_userdata('idArtikel',$id);
             $idJenisartikel = $_SESSION['idJenisArtikel'];
             $data['username'] = $this->session->userdata('username'); 
             $data['artikel'] = $this->Martikel->viewArtikel($id);  
@@ -103,18 +108,19 @@
 
             }
             // print_r($kalimat);print_r($kalimat2);die;   
-            $data['js'] = 'template/vtemplate_notif_js'; 
+            $data['js'] = 'article/varticle_js'; 
             $data['css'] = 'article/varticle_css';  
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
         }
 
         function getArtikel($id){
+            $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id');    
             /* session id jenis artikel */
              $this->session->set_userdata('idJenisArtikel',$id); 
-            var_dump($_SESSION['idJenisArtikel']);
+            
             $data['username'] = $this->session->userdata('username'); 
             $data['js'] = 'article/varticle_js';
             $data['css'] = 'article/varticle_css';
@@ -222,6 +228,7 @@
         
 
         function insert(){            
+            $data['page']="articlePage";
             $input = $this->input->post(NULL,TRUE);
             extract($input);
             
@@ -285,6 +292,7 @@
         }
 
         function _upload($foto,$ft,$id){
+            $data['page']="articlePage";
                     $data = $this->Martikel->viewArtikel($id);
                     // print_r($data);die;
                     $config['upload_path']='./assets/upload/';
@@ -351,11 +359,47 @@
         }
 
         function delete($id){
+            $data['page']="articlePage";
             if (!isset($id)) show_404();
         
             if ($query = $this->Martikel->delete($id)) {
                 $this->getArtikel($query);
             }
+        }
+
+        /* FUNGSI KOMENTAR */
+
+        public function tambahKomen(){
+            $namaPengirim=$this->input->post('namaPengirim');
+            $komen=$this->input->post('komen');
+            $email=$this->input->post('email');
+            $idArtikel=$this->input->post('idArtikel');
+            $idArtikelint=(int) $idArtikel;
+            /* id artikel yang dipilih */
+            if($this->session->userdata('idArtikel')==null){
+                $this->session->set_flashdata('message', 'Komentar Anda Tidak Terekam');
+                
+            }else
+            {   
+                var_dump(intval($idArtikel));
+                $idArtikelint=intval($idArtikel);
+                $data=array(
+                    'parent_Id'=>"0",
+                    'username'=>$namaPengirim,
+                    'komentar'=>$komen,
+                    'email'=>$email,
+                    'fk_artikel'=>$idArtikelint
+                );
+                $this->Martikel->tambahKomen($data);
+                $this->session->set_flashdata('message', 'Komentar Anda Terekam');
+                
+                
+            }
+        }
+
+        public function ambildata(){
+            $dataKomentar=$this->Martikel->ambildata();
+            echo json_encode();
         }
 
     }

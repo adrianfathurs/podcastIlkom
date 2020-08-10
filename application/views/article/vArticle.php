@@ -28,8 +28,8 @@
     		            <img class="card-img-tops" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>" style=" height: 550px;" alt="Card image cap">
     		            </div>
                     <div class="card-body pt-0">
-                    <h5 class="card-title"><?php echo $art->judul; ?></h5></a>
-                    <p class="card-text"><?php echo substr($art->essay, 0, 100) . '...'; ?></p>
+                    <h5 class="card-title"><?php echo substr( $art->judul, 0, 50) . '...'; ?></h5></a>
+                    <p class="card-text"><?php echo substr($art->essay, 0, 50) . '...'; ?></p>
                   </div>
                 </div>
                 <?php if (!empty($id)) : ?>

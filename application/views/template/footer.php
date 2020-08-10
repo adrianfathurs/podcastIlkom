@@ -107,6 +107,12 @@
       });
     });
   </script>
+
+  <?php
+	if (isset($js)) {
+		$this->load->view($js);
+	}
+	?>
     
   </body>
 </html>

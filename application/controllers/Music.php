@@ -14,6 +14,7 @@ class Music extends CI_Controller {
 
 	public function index()
 	{
+		$data['page']="musicPage";
 		$data['css']="home/vhomepage_css";
 		$data['js']="home/vhomepage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
@@ -25,9 +26,10 @@ class Music extends CI_Controller {
 		$this->load->view('music/tanggaLaguPage',$data);
 		$this->load->view('template/footer'); 
 	}
-
+	
 	public function tanggaLagu()
 	{
+		$data['page']="musicPage";
         $data['css']="music/vtanggaLaguPage_css";
 		$data['js']="music/vtanggaLaguPage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
@@ -39,9 +41,10 @@ class Music extends CI_Controller {
 		$this->load->view('music/tanggaLaguPage',$data);
 		$this->load->view('template/footer');
 	}
-
+	
 	public function playlistLagu()
 	{
+		$data['page']="musicPage";
 		$data['css']="music/vplaylistLaguPage_css";
 		$data['js']="music/vplaylistLaguPage_js";
 		$data['linkPlaylist']=$this->Spotify->getLinkPlaylist();

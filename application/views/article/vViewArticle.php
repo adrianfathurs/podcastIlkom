@@ -38,7 +38,7 @@
                     <p class="text-align-justify"><?php echo $kalimat['kalimat2']; ?></p>
             
                 <div class=" ">
-                    <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto2) ?>" class="img-responsive image-size-foto23" ></center>
+                    <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto3) ?>" class="img-responsive image-size-foto23" ></center>
                 </div>
             </div>
     </div> <!-- /container -->
@@ -47,10 +47,42 @@
 <?php if (isset($asidebar)) {
     $this->load->view($asidebar);
 }
-?>   
-<div>
-    <h1>Komentar</h1>
+?> 
+
+<section class="container mb-3">
+<div class="alert alert-success" id="alert" role="alert"></div>
+		<form method="POST" id="form_komen">
+			<div class="form-group">
+				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control" placeholder="Masukkan Nama" />
+				
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email" />
+			</div>
+			<div class="form-group">
+				<textarea name="komen" id="komen" class="form-control" placeholder="Tulis Komentar" rows="5"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="hidden" name="idArtikel" id="idArtikel" value="<?php echo $idArtikel?>" />
+				<button type="button" name="submit" id="btnSubmit"  class="btn btn-info">Komentar</button>
+			</div>
+		</form>
+		<hr>
+		<h4 class="mb-3">Komentar :</h4>
+		
+        <div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
 </div>
+
+        <span id="message"></span>
+	   	<div id="display_comment"></div>
+</section>
 
 
     
