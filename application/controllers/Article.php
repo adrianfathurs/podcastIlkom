@@ -38,6 +38,7 @@
             $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
+            $data['css'] = 'article/varticle_css'; 
             $data['js'] = 'article/varticle_js';
             $data['username'] = $this->session->userdata('username');             
             $data['data'] = $this->Martikel->editArtikel($id);
@@ -112,7 +113,7 @@
             }
             // print_r($kalimat);print_r($kalimat2);die;   
             $data['js'] = 'article/varticle_js'; 
-            $data['css'] = 'article/varticle_css';  
+            $data['css'] = 'article/varticle_css'; 
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
         }
@@ -191,11 +192,11 @@
             // Pengaturan pagination
             $config['base_url'] = base_url('article/getArtikel/').$id.'/';
             $config['total_rows'] = $this->Martikel->get()->num_rows();
-            $config['per_page'] = 2 ;
+            $config['per_page'] = 10 ;
             $config['offset'] = $this->uri->segment(4);
 
             // Styling pagination
-            $config['first_link']       = 'First';
+        $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
         $config['next_link']        = 'Next';
         $config['prev_link']        = 'Prev';
