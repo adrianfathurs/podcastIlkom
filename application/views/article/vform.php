@@ -52,22 +52,32 @@
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 1 :</label>
                             <input type="file" class="form-control" name="foto1" id="foto1" value="<?php echo $data->foto1; ?>" onchange="previewImage();">
-                            <img src="<?php echo base_url('assets/upload/'.$data->foto1) ?>" name="foto1" id="image-preview" alt="image preview"/>
+                            <img src="<?php echo base_url('assets/upload/'.$data->foto1) ?>" name="foto1" id="image-preview" alt="image preview" style="width: 300px; height: 220px;"/>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 2 :</label>
                             <input type="file" class="form-control" name="foto2" id="foto2" value="<?php echo $data->foto2; ?>" onchange="previewImage2();"> 
-                            <img src="<?php echo base_url('assets/upload/'.$data->foto2) ?>" name="foto2" id="image-preview2" alt="image preview"/>
+                            <img src="<?php echo base_url('assets/upload/'.$data->foto2) ?>" name="foto2" id="image-preview2" alt="image preview" style="width: 300px; height: 220px;"/>
                             
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 3 :</label>
                             <input type="file" class="form-control" name="foto3" id="foto3" value="<?php echo $data->foto3; ?>" onchange="previewImage3();">  
-                            <img src="<?php echo base_url('assets/upload/'.$data->foto3) ?>" name="foto3" id="image-preview3" alt="image preview"/>
+                            <img src="<?php echo base_url('assets/upload/'.$data->foto3) ?>" name="foto3" id="image-preview3" alt="image preview" style="width: 300px; height: 220px;"/>
                         </div>                                                          
                         <div class="form-group">
-                            <label class="col-sm-4 form-control-label" >Isi Artikel :</label>
+                            <label class="col-sm-4 form-control-label" >Isi Artikel 1 :</label>
                             <textarea class="ckeditor" name="essay" ><?php echo $data->essay; ?></textarea>        
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 form-control-label" >Isi Artikel 2 :</label>
+                            <textarea class="ckeditor" name="essay2" ><?php echo $data->essay2; ?></textarea>        
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 form-control-label" >Isi Artikel 3 :</label>
+                            <textarea class="ckeditor" name="essay3" ><?php echo $data->essay3; ?></textarea>        
                             
                         </div>  
                         <div class="text-right">

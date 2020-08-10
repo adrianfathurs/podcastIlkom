@@ -1,14 +1,14 @@
 <section>
   <div class="row">
     <div class="col-xl">
-        <div class="card">
+        <div class="card">		
             <div class="card-body">
 				<div class="row">
-				<h4 class="col card-title text-black">Daftar Pengguna</h4>
-					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
+				<h4 class="col card-title">Daftar Pengguna</h4>
+					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left text-white" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
 				</div>
             <div class="table-responsive">
-					<table id="zero_config" class="table table-striped table-bordered">
+					<table id="zero_config" class="table table-striped table-bordered text-black">
 						<thead>
 						<tr class="text-center">
 							<th class="text-black">No</th>
@@ -36,7 +36,9 @@
 											data-password="<?php echo $user->password; ?>"											
 											data-toggle="modal"
 											data-tt="tooltip"
-											data-target="#edit-user"><i class="fas fa-pencil-alt"></i></button>
+											data-target="#edit-user"> Edit
+										</button>
+									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger remove">Hapus</a> 
 								</td>
 								<?php $no++; ?>
 							</tr>
@@ -45,8 +47,10 @@
 					</table>
 				</div>   
         </div>
+		
     </div>
 </div>
+
 <!-- modal add user -->
 <div id="add-user" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">

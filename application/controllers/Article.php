@@ -38,6 +38,7 @@
             $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
+            $data['css'] = 'article/varticle_css'; 
             $data['js'] = 'article/varticle_js';
             $data['username'] = $this->session->userdata('username');             
             $data['data'] = $this->Martikel->editArtikel($id);
@@ -52,9 +53,7 @@
             $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
-            /* id jenis artikel */
-            
-            var_dump($id);
+            /* id jenis artikel */                        
             $data['idArtikel']=$id;
             $this->session->set_userdata('idArtikel',$id);
             $idJenisartikel = $_SESSION['idJenisArtikel'];
@@ -73,15 +72,11 @@
             }
 
             
-            $query = $this->Martikel->viewArtikel($id);
-            $paragraf1 = strlen($query->essay);
-            $kalimat1 = substr($query->essay, 0, $paragraf1/2);
-            $kalimat2 = substr($query->essay, $paragraf1/2);
-
-            $data['kalimat'] = array(
-                'kalimat1' => $kalimat1,
-                'kalimat2' => $kalimat2,                
-            );
+            
+            // $data['kalimat'] = array(
+            //     'kalimat1' => $kalimat1,
+            //     'kalimat2' => $kalimat2,                
+            // );
 
             if($idJenisartikel==1)
             {
@@ -122,7 +117,7 @@
             }
             // print_r($kalimat);print_r($kalimat2);die;   
             $data['js'] = 'article/varticle_js'; 
-            $data['css'] = 'article/varticle_css';  
+            $data['css'] = 'article/varticle_css'; 
             $data['content'] = 'article/vViewArticle.php';            
             $this->load->view('template/vtemplate', $data);
         }
@@ -205,7 +200,7 @@
             $config['offset'] = $this->uri->segment(4);
 
             // Styling pagination
-            $config['first_link']       = 'First';
+        $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
         $config['next_link']        = 'Next';
         $config['prev_link']        = 'Prev';
@@ -228,13 +223,15 @@
 
             // Data untuk page index
             // $data['pageTitle'] = 'Lowongan Kerja';
-            $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'])->result();
+            $data['loker'] = $this->Martikel->get_offset($config['per_page'], $config['offset'] ,$id)->result();
+            
             // $data['pageContent'] = $this->load->view('loker/lokerList', $data, TRUE);
             // print_r($data['loker']);die;
             // Jalankan view template/layout
             // $this->load->view('template/layout', $data);
 
-
+            
+            // print_r($data['jss']);die;
             $this->load->view('template/vtemplate', $data);
         }
         
@@ -272,6 +269,8 @@
                                 'judul'=>$this->input->post('judul'),
                                 'jenis_artikel'=>$this->input->post('jenis_artikel'),
                                 'essay'=>$this->input->post('essay'),
+                                'essay2'=>$this->input->post('essay2'),
+                                'essay3'=>$this->input->post('essay3'),
                                 'foto1'=>$foto11,
                                 'foto2'=>$foto22,
                                 'foto3'=>$foto33,
@@ -288,6 +287,8 @@
                     $obj->judul = '';
                     $obj->id_artikel = '';
                     $obj->essay = '';
+                    $obj->essay2 = '';
+                    $obj->essay3 = '';
                     $obj->foto1 = '';
                     $obj->foto2 = '';
                     $obj->foto3 = '';

@@ -65,6 +65,11 @@
             redirect('User_management');
         }
 
+        function delete($id){
+            $this->Muser->delete($id);
+            redirect('User_management');
+        }
+
     }
 
 ?>

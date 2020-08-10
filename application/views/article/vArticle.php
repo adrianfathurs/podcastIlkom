@@ -1,6 +1,6 @@
 <head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css">
@@ -19,17 +19,17 @@
     	<div class="row">
    <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $judul;?></span></h1>
     	    <?php 
-              foreach($artikel as $art) :            
+              foreach($loker as $art) :            
             ?>              		
     		<div class="col-md-4 mt-4  ">
-    		    <div class="card profile-card-5">
+    		    <div class="card profile-card-5 text-black">
                     <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
                     <div class="card-img-block">
     		            <img class="card-img-tops" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>" style=" height: 550px;" alt="Card image cap">
     		            </div>
                     <div class="card-body pt-0">
                     <h5 class="card-title"><?php echo substr( $art->judul, 0, 50) . '...'; ?></h5></a>
-                    <p class="card-text"><?php echo substr($art->essay, 0, 50) . '...'; ?></p>
+                    <p class="card-text"><?php echo substr($art->essay, 0, 100) . '...'; ?></p>
                   </div>
                 </div>
                 <?php if (!empty($id)) : ?>

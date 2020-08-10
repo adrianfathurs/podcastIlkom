@@ -89,11 +89,12 @@
 
         }
 
-        public function get_offset($limit, $offset)
+        public function get_offset($limit, $offset, $id)
             {
             // Jalankan query
             $query = $this->db
                 ->limit($limit, $offset)
+                ->where('jenis_artikel', $id)
                 ->get('artikel');
 
             // Return hasil query

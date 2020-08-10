@@ -35,6 +35,11 @@
             }
         }
 
+        function delete($id){
+            $this->db->delete('akun', array("id_akun" => $id));
+            return true;
+        }
+
 
     }
 
