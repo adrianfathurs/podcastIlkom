@@ -114,7 +114,11 @@
                   <?php if (empty($id)){ ?>
                     <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
                   <?php } else { ?>
-                  <li class="nav-item dropdown">
+                    <?php if($page=="authPage"){?>
+                  <li class="nav-item navbar-active dropdown">
+                    <?php }else{?>
+                    <li class="nav-item dropdown">
+                    <?php }?>  
                     <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $username ?> </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
                         <?php if ($role == '1') {?>                                   

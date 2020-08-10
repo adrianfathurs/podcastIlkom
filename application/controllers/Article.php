@@ -49,6 +49,7 @@
         }
         
         function view($id){
+            
             $data['page']="articlePage";
             $data['role'] = $this->session->userdata('role');            
             $data['id'] = $this->session->userdata('id'); 
@@ -57,16 +58,19 @@
             $this->session->set_userdata('idArtikel',$id);
             $idJenisartikel = $_SESSION['idJenisArtikel'];
             $data['username'] = $this->session->userdata('username'); 
-            $data['artikel'] = $this->Martikel->viewArtikel($id);              
-            // $query = $this->Martikel->viewArtikel($id);
-            // $paragraf1 = strlen($query->essay);
-            // // print_r($paragraf1);die;
-            // $num1 = $paragraf1/3;
-            // $num2 = $paragraf1/3;
-            // $num3 = $paragraf1/3;
-            // // print_r($num1);die;
-            // $kalimat1 = substr($query->essay, 0, $paragraf1/2);
-            // $kalimat2 = substr($query->essay, $paragraf1/2);
+            $data['artikel'] = $this->Martikel->viewArtikel($id);
+            
+            $jumlahidkomentar=COUNT($this->Martikel->ambildata($id));
+
+            if($jumlahidkomentar!=0)
+            {
+                $data['jumlahidkomentar']=$jumlahidkomentar;
+                $data['komentar']=$this->Martikel->ambildata($id);
+            }
+            else {
+                $data['jumlahidkomentar']=0;
+            }
+
             
             
             // $data['kalimat'] = array(
@@ -401,15 +405,20 @@
                     'fk_artikel'=>$idArtikelint
                 );
                 $this->Martikel->tambahKomen($data);
-                $this->session->set_flashdata('message', 'Komentar Anda Terekam');
+                $this->session->set_flashdata('message', 'Komentar Anda Terekam, Refresh Browser Anda');
+                $this->view($idArtikel);
+                
+                
                 
                 
             }
         }
 
         public function ambildata(){
-            $dataKomentar=$this->Martikel->ambildata();
-            echo json_encode();
+            
+            var_dump($id);die();
+            $dataKomentar=$this->Martikel->ambildata($id);
+            echo json_encode($dataKomentar);
         }
 
     }

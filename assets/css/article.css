@@ -283,3 +283,26 @@ h1 a {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.img-ava-komentar {
+	height: 50px;
+	width: 50px;
+}
+
+#img-komentar-admin img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+#img-komentar-member img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+#img-komentar-user img {
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+}

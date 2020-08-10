@@ -91,40 +91,32 @@
 
 <script>
   $(document).ready(function(){
+  
 
-        $.ajax({
-          type:"POST",
-          url:'<?php echo base_url()."article/ambildata"?>',
-          dataType:'json',
-          success:function(data){
-            console.log(data);
-          }
-        });
-
-       $('#btnSubmit').click(function(){
+      /*  $('#btnSubmit').click(function(){ */
         /* var postForm={
         'namaPengirim': document.getElementById("namaPengirim").value,
         'komen'       : document.getElementById("komen").value
       }; */
 
-      var namaPengirim= document.getElementById("namaPengirim").value;
+     /*  var namaPengirim= document.getElementById("namaPengirim").value;
       var komen= document.getElementById("komen").value;
       var email= document.getElementById("email").value;
       var idArtikel= document.getElementById("idArtikel").value;
-
+ */
     
-      
+     /*  
         $.ajax({
           type:"POST",
           url:'<?php echo base_url('article/tambahKomen')?>',
           // data: postForm,
            data: 'namaPengirim='+namaPengirim+'&komen='+komen+'&email='+email+'&idArtikel='+idArtikel,
           success: function(hasil){
-            $('#alert').append("<p>KOMENTAR BERHASIL TEREKAM</p>")
+            $('#alert').append("<center><p>KOMENTAR BERHASIL TEREKAM,REFRESH BROWSER</p></center>")
             
           }
         });
-      });
+      }); */
     
   });
 </script>

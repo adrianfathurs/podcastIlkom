@@ -11,21 +11,21 @@
 					<table id="zero_config" class="table table-striped table-bordered text-black">
 						<thead>
 						<tr class="text-center">
-							<th>No</th>
-							<th>Username</th>
-							<th>password</th>
-							<th>Hak Akses</th>							
-							<th>Aksi</th>
+							<th class="text-black">No</th>
+							<th class="text-black">Username</th>
+							<th class="text-black">password</th>
+							<th class="text-black">Hak Akses</th>							
+							<th class="text-black">Aksi</th>
 						</tr>
 						</thead>
 						<tbody>
 							<?php $no = 1; ?>
 							<?php foreach($users as $user) : ?>
 							<tr>
-								<td ><?php echo $no; ?></td>
-								<td ><?php echo $user->username; ?></td>
-								<td ><?php echo $user->password; ?></td>
-								<td ><?php if($user->role == "1"){ ?> Admin
+								<td class="text-black" ><?php echo $no; ?></td>
+								<td class="text-black"><?php echo $user->username; ?></td>
+								<td class="text-black"><?php echo $user->password; ?></td>
+								<td class="text-black"><?php if($user->role == "1"){ ?> Admin
 								<?php	}else{ ?> Member <?php } ?> </td>
 								<td class="text-center">
 									<button type="button" class="open-modal btn btn-warning"

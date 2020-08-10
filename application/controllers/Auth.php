@@ -10,6 +10,7 @@ class Auth extends CI_Controller {
 
 
     public function index(){
+		$data['page']="authPage";
         $is_login = $this->session->userdata('is_login');
 
 		if ($is_login == true) {
@@ -20,6 +21,7 @@ class Auth extends CI_Controller {
     }
 
     function login(){
+		$data['page']="authPage";
         $input = $this->input->post(NULL, TRUE);
 		extract($input);
 
@@ -34,6 +36,7 @@ class Auth extends CI_Controller {
 
 
     public function logout(){
+		$data['page']="authPage";
 		$data = array (
 			'id', 'username', 'role', 'is_login'
 		);

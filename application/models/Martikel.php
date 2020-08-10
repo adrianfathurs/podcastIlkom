@@ -117,7 +117,8 @@
         }
 
         public function ambildata($id){
-            $query="SELECT * FROM komentar where id_artikel=$id ";
+            $query="SELECT * FROM komentar where fk_artikel=$id";
+            return $this->db->query($query)->result_array();
         }
     }
 ?>
