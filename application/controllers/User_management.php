@@ -11,6 +11,7 @@
         function index(){
             // $data = $this->Mfeature->get_all();
             // $this->load->view('article/vform');
+            $data['page']="userManagement";
             $data['users']		= $this->Muser->get_users();
             $data['js']			= 'user_management/vuser_management_js';
             $data['css']			= 'user_management/vuser_management_css';
@@ -31,6 +32,7 @@
         }
 
         function insert(){
+            $data['page']="userManagement";
             $input = $this->input->post(NULL, TRUE);
             extract($input);
             
@@ -51,6 +53,7 @@
         }
 
         function update($id){
+            $data['page']="userManagement";
             $input = $this->input->post(NULL, TRUE);
             extract($input);
             $data_user = array(

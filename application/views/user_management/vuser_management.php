@@ -1,31 +1,31 @@
-
+<section>
   <div class="row">
     <div class="col-xl">
         <div class="card">
             <div class="card-body">
 				<div class="row">
-				<h4 class="col card-title">Daftar Pengguna</h4>
+				<h4 class="col card-title text-black">Daftar Pengguna</h4>
 					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
 				</div>
             <div class="table-responsive">
 					<table id="zero_config" class="table table-striped table-bordered">
 						<thead>
 						<tr class="text-center">
-							<th>No</th>
-							<th>Username</th>
-							<th>password</th>
-							<th>Hak Akses</th>							
-							<th>Aksi</th>
+							<th class="text-black">No</th>
+							<th class="text-black">Username</th>
+							<th class="text-black">password</th>
+							<th class="text-black">Hak Akses</th>							
+							<th class="text-black">Aksi</th>
 						</tr>
 						</thead>
 						<tbody>
 							<?php $no = 1; ?>
 							<?php foreach($users as $user) : ?>
 							<tr>
-								<td ><?php echo $no; ?></td>
-								<td ><?php echo $user->username; ?></td>
-								<td ><?php echo $user->password; ?></td>
-								<td ><?php if($user->role == "1"){ ?> Admin
+								<td class="text-black" ><?php echo $no; ?></td>
+								<td class="text-black"><?php echo $user->username; ?></td>
+								<td class="text-black"><?php echo $user->password; ?></td>
+								<td class="text-black"><?php if($user->role == "1"){ ?> Admin
 								<?php	}else{ ?> Member <?php } ?> </td>
 								<td class="text-center">
 									<button type="button" class="open-modal btn btn-warning"
