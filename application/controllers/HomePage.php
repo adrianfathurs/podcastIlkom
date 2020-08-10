@@ -8,6 +8,7 @@ class HomePage extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('TanggaLagu');
 		$this->load->model('Spotify');
+		$this->load->model("Martikel");
 	}
 
 	public function index()
