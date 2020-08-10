@@ -14,6 +14,7 @@ class Schedule extends CI_Controller {
 
 	public function index()
 	{
+		$data['page']="schedulePage";
 		$data['css']="schedule/vschedulePage_css";
 		$data['js']="schedule/vschedulePage_js";
 		//var_dump($data['tanggaLagu']);

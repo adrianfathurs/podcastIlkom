@@ -11,6 +11,7 @@ class Management extends CI_Controller {
 
 	public function index()
 	{
+		$data['page']="managementPage";
 		$data['css']="management/vmanagementPage_css";
 		$data['js']="management/vmanagementPage_js";
 		$data['role'] = $this->session->userdata('role');            

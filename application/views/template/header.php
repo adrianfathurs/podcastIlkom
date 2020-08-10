@@ -33,7 +33,7 @@
 <body>
 
   <div class="site-wrap fixed-top">
-    <div class="site-navbar mt-4 bg-light">
+    <div class="site-navbar mt-4  bg-navbar opacity">
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-5 col-md-5 col-lg-1">
@@ -45,11 +45,25 @@
             <nav class="site-navigation text-right text-md-right" role="navigation">
               <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
-                  <li class="home active" id="home">
-                  <a class="text-black" href="<?php echo base_url('homePage');?>">Home</a>
+                  <?php if($page=="homePage"){?>
+                  <li class="home navbar-active" id="home">
+                  <?php } else {?>
+                  <li class="home" id="home">
+                  <?php } ?>
+                    <a class="text-black" href="<?php echo base_url('homePage');?>">Home</a>
                   </li>
-                  <li><a class="text-black" href="<?php echo site_url('Schedule')?>">Schedule</a></li>
-                  <li class="nav-item dropdown">
+                  <?php if($page=="schedulePage"){?>
+                  <li class="schedule navbar-active">
+                  <?php } else {?>
+                  <li class="schedule">
+                  <?php }?>
+                    <a class="text-black" href="<?php echo site_url('Schedule')?>">Schedule</a>
+                  </li>
+                  <?php if($page=="musicPage"){?>
+                  <li class="nav-item dropdown navbar-active">
+                  <?php } else {?>
+                  <li class="nav-item dropdown ">
+                    <?php }?>
                     <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/tanggaLagu');?>">Chart</a>
@@ -57,20 +71,46 @@
                         <a class="dropdown-item music-navbar-hover" href="#">Info Music</a>
                       </div>
                   </li>
-                  <li><a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a></li>
-                  <li><a class="text-black" href="<?php echo site_url('management')?>">Management</a></li>
-                  <li class="nav-item dropdown">
+                  <?php if($page=="announcerPage"){?>
+                  <li class="announcer navbar-active">
+                  <?php } else {?>
+                  <li class="announcer">
+                  <?php }?>
+                    <a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a>
+                  </li>
+                  <?php if($page=="managementPage"){?>
+                  <li class="managementPage navbar-active">
+                  <?php } else {?>
+                  <li class="managementPage ">
+                  <?php }?>
+                  <a class="text-black" href="<?php echo site_url('management')?>">Management</a>
+                  </li>
+                  <?php if($page=="articlePage"){?>
+                  <li class="nav-item navbar-active dropdown">
+                  <?php } else {?>
+                  <li class="nav-item  dropdown">
+                  <?php }?>
                     <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Article </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/1');?>">Feature</a>
-
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/2');?>">Hype</a>
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/3');?>">Review</a>
-
                       </div>
                   </li>
-                  <li><a class="text-black" href="about.html">Event</a></li>
-                  <li><a class="text-black" href="about.html">About US</a></li>
+                  <?php if($page=="eventPage"){?>
+                  <li class="navbar-active">
+                  <?php } else {?>
+                  <li class="">
+                    <?php }?>
+                    <a class="text-black" href="about.html">Event</a>
+                  </li>
+                  <?php if($page=="aboutPage"){?>
+                  <li class="navbar-active">
+                  <?php } else {?>
+                  <li class="">
+                  <?php }?>
+                  <a class="text-black" href="about.html">About US</a>
+                  </li>
                   <?php if (empty($id)){ ?>
                     <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
                   <?php } else { ?>

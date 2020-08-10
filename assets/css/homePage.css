@@ -300,3 +300,22 @@
 	color: #B22222;
 	font-size: 38px;
 }
+
+.visibility-users {
+	visibility: visible;
+}
+
+.visibility-user {
+	visibility: hidden;
+}
+
+@media(max-width:715px) {
+	.visibility-user {
+		visibility: visible;
+	}
+
+	.visibility-users {
+		visibility: hidden;
+	}
+
+}

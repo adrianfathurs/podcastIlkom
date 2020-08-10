@@ -109,5 +109,15 @@
                 // Return hasil query
                 return $query;
                 }
+
+        /* Fungsi Komen */
+
+        public function tambahKomen($data){
+             $query = $this->db->insert('komentar',$data);
+        }
+
+        public function ambildata($id){
+            $query="SELECT * FROM komentar where id_artikel=$id ";
+        }
     }
 ?>

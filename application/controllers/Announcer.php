@@ -11,6 +11,7 @@ class Announcer extends CI_Controller {
 
 	public function index()
 	{
+		$data['page']="announcerPage";
 		$data['css']="announcer/vannouncerPage_css";
 		$data['js']="announcer/vannouncerPage_js";
 		$data['role'] = $this->session->userdata('role');            

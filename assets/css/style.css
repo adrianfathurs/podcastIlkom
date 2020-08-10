@@ -2579,3 +2579,7 @@ figure figcaption {
 	background-color: fuchsia;
 	;
 }
+
+.navbar-opacity {
+	opacity: 90%;
+}

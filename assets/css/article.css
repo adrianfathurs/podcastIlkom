@@ -63,7 +63,7 @@ h1 a {
 	padding: 7px 20px;
 }
 
-.profile-card-5 .card-img-block .card-img-tops {
+.profile-card-5 .card-img-block {
 	width: 91%;
 	margin: 0 auto;
 	position: relative;
@@ -276,4 +276,10 @@ h1 a {
 
 .text-align-justify {
 	text-align: justify;
+}
+
+#wrap-form {
+	margin-top: 110px;
+	margin-left: auto;
+	margin-right: auto;
 }

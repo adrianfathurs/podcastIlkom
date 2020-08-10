@@ -361,58 +361,70 @@ if (isset($css)) {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
       officia, error reiciendis ab quod?</p>
     </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Feature</h3></div>
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Hype</h3></div>
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Review</h3></div>
+    </div>
     <div class="row" >      
-      <div class="col-4 col-md-4">                  
+      <div class="col-lg-4 col-md-4 col-sm-12">   
+        <h3 class="text-center visibility-user">Feature</h3>               
         <div class="row-md-4 mt-2">
-        <?php for($j=1;$j<4;$j++){?>
+         <?php foreach($artikelFeatureLimit as $feature):?>
           <div class="card profile-card-5 mt-5">
             <a href="#">
               <div class="card-img-block">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$feature['foto1'])?>"  style=" height: 350px;" alt="Card image cap">
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">Feature <?php echo $j; ?> </h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">"<?php echo substr($feature['judul'], 0, 26) . '[..]'; ?>"</h5></a>
+                <p class="card-text"><?php echo substr($feature['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
-          <?php } ?> 
+         <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/1')?>"><bold>Read More...</bold></a></center></div>  
         </div>
-      </div>               
-      <div class="col-4 col-md-4">                  
+      </div> 
+      
+      <div class="col-lg-4 col-md-4 col-sm-12">  
+        <h3 class="text-center visibility-user">Hype</h3>                  
         <div class="row-md-4 mt-2">
-        <?php for($j=1;$j<4;$j++){?>
+        <?php foreach($artikelHypeLimit as $hype):?>
           <div class="card profile-card-5 mt-5">
             <a href="#">
               <div class="card-img-block">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$hype['foto1'])?>" style=" height: 350px;" alt="Card image cap" >
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">Hype ke <?php echo $j; ?> </h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">"<?php echo substr( $hype['judul'], 0, 26) . '[..]'; ?>"</h5></a>
+                <p class="card-text"><?php echo substr($hype['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
-          <?php } ?> 
+        <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/2')?>"><bold>Read More...</bold></a></center></div>  
         </div>
-      </div>    
-      <div class="col-4 col-md-4">                  
+      </div>  
+
+      <div class="col-lg-4 col-md-4 col-sm-12">      
+        <h3 class="text-center visibility-user">Review</h3>            
         <div class="row-md-4 mt-2">
-        <?php for($j=1;$j<4;$j++){?>
+        <?php foreach($artikelReviewLimit as $review):?>
           <div class="card profile-card-5 mt-5">
             <a href="#">
               <div class="card-img-block">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$review['foto1'])?>" style=" height: 350px;" alt="Card image cap" >
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">Review ke <?php echo $j; ?> </h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">"<?php echo substr( $review['judul'], 0, 26) . '[..]'; ?>"</h5></a>
+                <p class="card-text"><?php echo substr($review['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
-          <?php } ?> 
+        <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/3')?>"><bold>Read More...</bold></a></center></div>  
         </div>
-      </div>               
+      </div>  
+
+
     </div>   
   </div>
 </div>
