@@ -1,13 +1,9 @@
 <script src="<?php echo base_url() ?>assets/js/sweetalert2.all.min.js" ></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/ckeditor/ckeditor.js"></script>
-<script src="<?php base_url()?>assets/tinymce/tinymce.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         
-        <script>
-        tinymce.init({
-        selector: '#mytextarea'
-        });
-        </script>
+     
 
 
 <script type="text/javascript">

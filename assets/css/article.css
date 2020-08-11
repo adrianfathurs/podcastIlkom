@@ -306,3 +306,8 @@ h1 a {
 	border-style: solid;
 	border-color: black;
 }
+
+ul {
+	display: inline;
+	list-style-type: circle;
+}

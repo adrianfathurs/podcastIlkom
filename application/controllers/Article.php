@@ -57,8 +57,10 @@
             $data['idArtikel']=$id;
             $this->session->set_userdata('idArtikel',$id);
             $idJenisartikel = $_SESSION['idJenisArtikel'];
+            // print_r($idJenisartikel);die;
             $data['username'] = $this->session->userdata('username'); 
             $data['artikel'] = $this->Martikel->viewArtikel($id);
+            $query = $this->Martikel->viewArtikel($id);
             
             $jumlahidkomentar=COUNT($this->Martikel->ambildata($id));
 
@@ -78,7 +80,7 @@
             //     'kalimat2' => $kalimat2,                
             // );
 
-            if($idJenisartikel==1)
+            if($query->jenis_artikel==1)
             {
                 // nama Page yang diload
                 $data['jenisArtikel']= 'Feature';
@@ -90,7 +92,7 @@
                 $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
                 
             }
-            else if ($idJenisartikel==2)
+            else if ($query->jenis_artikel==2)
             {
                 // nama Page yang diload
                 $data['jenisArtikel']= 'Hype';
@@ -101,7 +103,7 @@
                 $data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  
                 $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
             }
-            else if($idJenisartikel==3)
+            else if($query->jenis_artikel==3)
             {
                 // nama Page yang diload
                 $data['jenisArtikel']= 'Review';
