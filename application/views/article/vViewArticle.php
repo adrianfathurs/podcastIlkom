@@ -3,31 +3,22 @@
 <!--  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --> 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
 <!------ Include the above in your HEAD tag asdadadsa ---------->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css">
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css"> -->
 </head>
 
 
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
 <section>
-    <div class="banner-section ">
+    <div class="banner-section mb-5 " data-aos="fade-down">
         <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; height: 550px;"  alt="..."></img>
-        <div class="container judul-position">
-            <div class="row">
-                <div class="col-lg-3 col-md-2 col-sm-4">
-                    
-            </div>
-            <div class="col-lg-7 col-md-8 col-sm-4">
-                <p class="fontJudul"><?php echo $artikel->judul; ?></p>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-4">
-                
-                </div>
-            </div>
-        </div>
+        
+                <center><p class="fontJudul"><?php echo $artikel->judul; ?></p></center>
+           
     </div>
 </section>
-<section id="main-wrapper">
+<section  id="main-wrapper" data-aos="fade-up">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 post-title-block text-white">
@@ -43,7 +34,7 @@
                 <label class="text-align-justify"><?php echo $artikel->essay3; ?></label>
             </div>
     </div> <!-- /container -->
-    
+   
 </section>
 
 <?php if (isset($asidebar)) {
@@ -51,28 +42,26 @@
 }
 ?> 
 
-<section class="container mb-3">
-
-<div class="alert alert-success" id="alert" role="alert"></div>
-		
+<section class="bg-komentar container mb-3 " data-aos="fade-up">
+    <h3>KOMENTAR :</h3>
+    <hr>
         <form method="POST" id="form_komen" action="<?php echo base_url('article/tambahKomen')?>">
 			<div class="form-group ">
-				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control text-white" placeholder="Masukkan Nama" />
-				
+				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control text-white" required=""  placeholder="Masukkan Nama" />
 			</div>
 			<div class="form-group text-white">
-				<input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email" />
+				<input type="email" name="email" id="email" class="form-control" required="" placeholder="Masukkan Email" />
 			</div>
 			<div class="form-group text-white">
-				<textarea name="komen" id="komen" class="form-control" placeholder="Tulis Komentar" rows="5"></textarea>
+				<textarea name="komen" id="komen" class="form-control" required="" placeholder="Tulis Komentar" rows="5"></textarea>
 			</div>
 			<div class="form-group">
 				<input type="hidden" name="idArtikel" id="idArtikel" value="<?php echo $idArtikel?>" />
-				<button type="submit" name="submit" id="btnSubmit"  class="btn btn-info">Komentar</button>
 			</div>
+				<button type="submit" name="btnSubmit" id="btnSubmit" value="submit" class="btn btn-info">Komentar</button>
 		</form>
 		<hr>
-		<h4 class="mb-3">Komentar :</h4>
+		<h4 class="mb-3 text-white">Komentar :</h4>
 <?php if ($jumlahidkomentar !=0){ foreach ($komentar as $key) :?>        
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
