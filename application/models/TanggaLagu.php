@@ -9,4 +9,19 @@ class TanggaLagu extends CI_Model {
 		return $this->db->query($query)->result_array();
 	
 	}
+
+	function get(){
+		$user = $this->db->get('tangga_lagu');
+		return $user->result();
+	}
+	function update($data, $id){
+		$this->db->where('id_lagu ', $id);
+		if ($this->db->update('tangga_lagu', $data)) {
+			$this->session->set_userdata('typeNotif', 'successEdited');
+			return true;
+		} else {
+			$this->session->set_userdata('typeNotif', 'errorEdited');
+			return false;
+		}
+	}
 }
