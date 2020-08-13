@@ -15,8 +15,8 @@ class management_link extends CI_Controller {
 	public function index()
 	{
 		$data['page']="announcerPage";
-		// $data['css']="management_link/vmanagement_link_css";
-		$data['js']="management_link/vmanagement_link_js";
+		$data['css']="management_link/vmanagement_link_css.php";
+		$data['js']="management_link/vmanagement_link_js.php";
 		$data['role'] = $this->session->userdata('role');            
 		$data['id'] = $this->session->userdata('id'); 
 		$data['username'] = $this->session->userdata('username'); 
@@ -24,9 +24,11 @@ class management_link extends CI_Controller {
 		$data['TanggaLagu'] = $this->TanggaLagu->get();
 		// $data['Youtube'] = $this->Martikel->viewArtikel($id);
 		// print_r($data['TanggaLagu']);die;
-		$this->load->view('template/header',$data);
-		$this->load->view('management_link/vmanagement_link',$data);
-		$this->load->view('template/footer'); 
+		// $this->load->view('template/header',$data);
+		// $this->load->view('management_link/vmanagement_link',$data);
+		// $this->load->view('template/footer'); 
+		$data['content'] = 'management_link/vmanagement_link.php';            
+		$this->load->view('template/vtemplate', $data);
 	}
 
 	function update($id){

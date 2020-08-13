@@ -1,13 +1,13 @@
 
-<section>
-<div class="card">
+
+
 <div class="container text-center ">
     <div class="row">
-        <div class="" style="padding-bottom: 30px;">
-            <center><p class="text-black">Management Link</p></center>
-        </div>
+       
     </div>
 </div>
+<div class="card">
+<section>
 <div class=" container text-center  ">
 	<div class=" row ">
 		<div class="" role="tabpanel">
@@ -35,15 +35,33 @@
                     
                 </ul>
             </div>
+			</div>
+			
             <div class=" text-black">
                 <!-- Tab panes -->
                 <div class="tab-content " id="tabs-collapse">            
                     <div role="tabpanel" class="tab-pane fade in active" id="dustin">
-                        <div class="tab-inner">                    
-                            <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
-                            <hr>
-                            <p><strong class="text-uppercase">Dustin Lamont</strong></p>
-                            <p><em class="text-capitalize"> Senior web developer</em> at <a href="#">Apple</a></p>                 
+					<div class="tab-inner">
+                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+							<hr>
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered text-black">
+									<thead>
+									<tr class="text-center">
+										<th class="text-black">No</th>
+										<th class="text-black">Username</th>
+										<th class="text-black">password</th>
+										<th class="text-black">Hak Akses</th>							
+										<th class="text-black">Aksi</th>
+									</tr>
+									</thead>
+									<tbody>
+										
+									</tbody>
+								</table>
+							</div> 
+                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
+                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
                         </div>
                     </div>                    
                     <div role="tabpanel" class="tab-pane fade" id="daksh">
@@ -139,6 +157,7 @@
         </div>
 	</div>
 </div>
+</section>
 <div id="edit-chart" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content text-black">
@@ -201,4 +220,4 @@
 				</div>
  
 
-</div>
+				

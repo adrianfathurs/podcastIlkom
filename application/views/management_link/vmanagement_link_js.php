@@ -1,8 +1,11 @@
-<script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
+
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url() ?>assets/js/datatables.min.js" ></script>
 <script src="<?php echo base_url() ?>assets/js/datatable-basic.init.js" ></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function(){
+
 
 $(document).on('click', '.open-modal', function () {
 			var id			= $(this).data('id');
@@ -27,6 +30,6 @@ $(document).on('click', '.open-modal', function () {
 						
 		});
 	
-$("[data-tt=tooltip").tooltip();
+	});
 
 </script>
