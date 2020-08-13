@@ -26,7 +26,7 @@
                 <div class="mb-3">
                     <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto2) ?>" class="img-responsive image-size-foto23" ></center>
                 </div>
-                    <label class="text-align-justify"><?php echo $artikel->essay2; ?></label>
+                    <label id="essay" class="text-align-justify"><?php echo $artikel->essay2; ?></label>
             
                 <div class=" ">
                     <center><img src="<?php echo base_url('assets/upload/'.$artikel->foto3) ?>" class="img-responsive image-size-foto23" ></center>
