@@ -1,4 +1,4 @@
-<div id="aside-main" >
+<div id="aside-main" data-aos="fade-left">
   <div class="asidebar">
     <div class="wrap-widget">
         <div class="wrap-widget-header">

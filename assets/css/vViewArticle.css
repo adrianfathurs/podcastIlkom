@@ -1,0 +1,141 @@
+section {
+	padding: 0;
+}
+
+#main-wrapper {
+	float: left;
+	width: 83%;
+}
+
+
+#aside-main {
+	float: right;
+	width: 17%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+
+}
+
+.asidebar {
+	margin-top: 10%;
+}
+
+@media (max-width: 980px) {
+	#aside-main {
+		width: 100%;
+		margin: 10px auto;
+		float: none;
+		padding-left: 0;
+
+
+
+	}
+
+	.asidebar {
+		margin-top: 0px;
+		float: none;
+
+	}
+
+	.images-grid {
+		display: none;
+	}
+
+	.wrap-widget {
+		background-color: lightblue;
+	}
+
+
+}
+
+.wrap-widget-header {
+	background-color: darkcyan;
+	box-shadow: 0px 4px 10px lightblue;
+}
+
+.wrap-widget,
+.wrap-widget-header {
+	border-radius: 10px;
+}
+
+.wrap-widget {
+	background-color: ghostwhite;
+	box-shadow: 5px 5px 3px lightslategrey;
+	margin-bottom: 7px;
+
+
+}
+
+#wrap-form {
+	margin-top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-ava-komentar {
+	height: 50px;
+	width: 50px;
+}
+
+#img-komentar-admin img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+#img-komentar-member img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+#img-komentar-user img {
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+}
+
+.image-size-foto23 {
+	width: 900 px;
+	height: 250px;
+}
+
+@media(max-width: 362px) {
+
+	.image-size-foto23 {
+		width: 80%;
+		height: auto;
+	}
+}
+
+.text-color-blue {
+	color: dodgerblue;
+}
+
+.text-white {
+	color: honeydew;
+}
+
+.bg-komentar {
+
+	border-radius: 5px;
+}
+
+.form-control {
+	color: whitesmoke;
+}
+
+.clr {
+	clear: both;
+}
+
+.bg-pink {
+	background-color: deeppink;
+}
+
+.fontJudul {
+	font-size: 48px;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+}

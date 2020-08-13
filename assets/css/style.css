@@ -2356,6 +2356,7 @@ a:hover {
 }
 
 .team-member {
+	text-align: center;
 	position: relative;
 	float: left;
 	width: 100%;
@@ -2363,6 +2364,8 @@ a:hover {
 }
 
 .team-member img {
+	width: 1242px;
+	height: 400px;
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease;
@@ -2389,11 +2392,14 @@ a:hover {
 	transition: .3s all ease;
 }
 
+
 .team-member .text {
+
 	top: 50%;
+
 	text-align: center;
 	position: absolute;
-	padding: 20px;
+	padding: 83px;
 	-webkit-transform: translateY(-30%);
 	-ms-transform: translateY(-30%);
 	transform: translateY(-30%);
