@@ -378,7 +378,7 @@ if (isset($css)) {
               </div>
               <div class="card-body pt-0">
                 <h5 class="card-title">"<?php echo substr($feature['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-              
+                <p class="card-text"><?php echo substr($feature['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
          <?php endforeach; ?> 
@@ -397,7 +397,7 @@ if (isset($css)) {
               </div>
               <div class="card-body pt-0">
                 <h5 class="card-title">"<?php echo substr( $hype['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-                
+                <p class="card-text"><?php echo substr($hype['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
         <?php endforeach; ?> 
@@ -416,7 +416,7 @@ if (isset($css)) {
               </div>
               <div class="card-body pt-0">
                 <h5 class="card-title">"<?php echo substr( $review['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-                
+                <p class="card-text"><?php echo substr($review['essay'], 0, 20) . '[..]';?></p>
               </div>
           </div>
         <?php endforeach; ?> 

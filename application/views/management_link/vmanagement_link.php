@@ -15,48 +15,67 @@
                 <!-- Nav tabs -->
                 <ul class=" nav nav-justified " id="nav-tabs" role="tablist">
                     <li role="presentation" class="active">
-                        <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="<?php echo base_url(); ?>assets/images/logo_yt.png" style="width: 120px; height: 120px;" title="Link Youtube" />
-                            
+                        <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">                            
+                            <img class="img-circle" src="<?php echo base_url(); ?>assets/images/logo_sp.png" style="width: 120px; height: 120px;" title="Link PlayList"/>
                         </a>
                     </li>
                     <li role="presentation" class="">
-                        <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="<?php echo base_url(); ?>assets/images/logo_sp.png" style="width: 120px; height: 120px;" title="Link PlayList"/>
-                            
+                        <a href="#edit-chart"  aria-controls="daksh" role="tab" data-toggle="tab">
+						<img class="open-modal img-circle" data-toggle="modal" data-target="#edit-youtube" src="<?php echo base_url(); ?>assets/images/logo_yt.png" style="width: 120px; height: 120px;" title="Link Youtube" />
+                        
                         </a>
                     </li>
                     <li role="presentation" class="">
                         <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="<?php echo base_url(); ?>assets/images/logo_song.png" style="width: 120px; height: 120px;" title="Link Tangga Lagu"/>
-                            
+                            <img class="img-circle" src="<?php echo base_url(); ?>assets/images/logo_song.png" style="width: 120px; height: 120px;" title="Link Tangga Lagu"/>                            
                         </a>
                     </li>
                     
                 </ul>
             </div>
-			</div>
-			
+		</div>
+		
+		
             <div class=" text-black">
                 <!-- Tab panes -->
                 <div class="tab-content " id="tabs-collapse">            
                     <div role="tabpanel" class="tab-pane fade in active" id="dustin">
 					<div class="tab-inner">
-                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+                            <p class="lead text-white">.....................................................................................................................</p>
 							<hr>
 							<div class="table-responsive">
 								<table class="table table-striped table-bordered text-black">
 									<thead>
 									<tr class="text-center">
-										<th class="text-black">No</th>
-										<th class="text-black">Username</th>
-										<th class="text-black">password</th>
-										<th class="text-black">Hak Akses</th>							
+										
+										<th class="text-black">Link</th>
+										<th class="text-black">Kategori</th>										
 										<th class="text-black">Aksi</th>
 									</tr>
 									</thead>
 									<tbody>
-										
+									<?php $no = 1; ?>
+										<?php foreach($Spotify as $lagu) : ?>
+										<tr>											
+											<td class="text-black"><?php echo $lagu->link_spotify; ?></td>
+												<?php if($lagu->role==1){?>
+												<td><p> PlayList Lagu</p></td>
+												<?php } else{?>
+													<td><p> PlayList Podcast</p></td>
+												<?php } ?>											
+											<td class="text-center">
+												<button type="button" class="open-modal btn btn-warning"
+														title="Ubah"
+														data-id_spt="<?php echo $lagu->id_spotify; ?>"
+														data-link_spt="<?php echo $lagu->link_spotify; ?>"
+														data-rolespt="<?php echo $lagu->role; ?>"																									
+														data-toggle="modal"
+														data-tt="tooltip"
+														data-target="#edit-spotify"> Edit
+													</button>												 
+											</td>																																											
+										</tr>
+										<?php endforeach ?>
 									</tbody>
 								</table>
 							</div> 
@@ -69,20 +88,7 @@
                             <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
 							<hr>
 							<div class="table-responsive">
-								<table class="table table-striped table-bordered text-black">
-									<thead>
-									<tr class="text-center">
-										<th class="text-black">No</th>
-										<th class="text-black">Username</th>
-										<th class="text-black">password</th>
-										<th class="text-black">Hak Akses</th>							
-										<th class="text-black">Aksi</th>
-									</tr>
-									</thead>
-									<tbody>
-										
-									</tbody>
-								</table>
+								
 							</div> 
                             <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
                             <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
@@ -194,7 +200,7 @@
 									<div class="form-group row">
 										<div class="col-12 ">
 											<label>kategori</label>
-											<input id="modal-kategori" class="form-control" type="text" required=" " placeholder="kategori lagu" name="kategori" value="">
+											<input id="modal-kate" class="form-control" type="text" required=" " placeholder="kategori lagu" name="kategori" value="">
 										</div>
 									</div>									
 									<div class="form-group row">
@@ -202,8 +208,9 @@
 											<label>status</label>
 											<select id="select-status" class="form-control" name="status">
 												<option  disabled selected> --- Pilih hak akses ---</option>
-												<option value="1"> Admin </option>
-												<option value="2"> Member </option>
+												<option value="0"> Bertahan </option>
+												<option value="1"> Naik </option>
+												<option value="2"> Turun </option>
 											</select>
 										</div>
 									</div>																			
@@ -219,5 +226,59 @@
 					</div><!-- /.modal-dialog -->
 				</div>
  
+<div id="edit-youtube" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content text-black">
+							<div class="modal-header">
+								<h4 class="modal-title">Edit untuk Link Youtube </h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+							<?php foreach($Youtube as $Youtube){
 
-				
+							};?>
+							<div class="modal-body">
+								<form id="form-modal-edit-ytb" class="form-horizontal m-t-20 " action="" method="post">																									
+									<div class="form-group row">
+										<div class="col-12 ">
+											<label>link</label>
+											<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="linkytb" value="<?php echo $Youtube->link_youtube ?>">										
+										</div>
+									</div>
+																										
+									<div class="row d-flex">
+										<div class="ml-auto mr-2">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+											<button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>	
+<div id="edit-spotify" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content text-black">
+							<div class="modal-header">
+								<h4 class="modal-title">Edit untuk Link  <span id="modal-name-edits" style="color: red;"></span></h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>							
+							<div class="modal-body">
+								<form id="form-modal-edit-spt" class="form-horizontal m-t-20 " action="" method="post">																									
+									<div class="form-group row">
+										<div class="col-12 ">
+											<label>link</label>
+											<input id="modal-linkspt" class="form-control" type="text" required=" " placeholder="Link lagu spotify" name="link_spotify" value="">										
+										</div>
+									</div>																									
+									<div class="row d-flex">
+										<div class="ml-auto mr-2">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+											<button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>

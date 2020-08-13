@@ -8,27 +8,28 @@ class management_link extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model("Spotify");
 		$this->load->model("TanggaLagu");
-		// $this->load->model("Youtube");
+		$this->load->model("Youtube");
 		
 	}
 
 	public function index()
 	{
+		
 		$data['page']="announcerPage";
 		$data['css']="management_link/vmanagement_link_css.php";
 		$data['js']="management_link/vmanagement_link_js.php";
 		$data['role'] = $this->session->userdata('role');            
 		$data['id'] = $this->session->userdata('id'); 
 		$data['username'] = $this->session->userdata('username'); 
-		// $data['Spotify'] = $this->Martikel->viewArtikel($id);
+		$data['Spotify'] = $this->Spotify->get();
 		$data['TanggaLagu'] = $this->TanggaLagu->get();
-		// $data['Youtube'] = $this->Martikel->viewArtikel($id);
-		// print_r($data['TanggaLagu']);die;
-		// $this->load->view('template/header',$data);
-		// $this->load->view('management_link/vmanagement_link',$data);
-		// $this->load->view('template/footer'); 
+		$data['Youtube'] = $this->Youtube->get();		
+		if ($data['role'] == '1'){
 		$data['content'] = 'management_link/vmanagement_link.php';            
 		$this->load->view('template/vtemplate', $data);
+		}else{
+			redirect('homepage');
+		}
 	}
 
 	function update($id){
@@ -46,6 +47,19 @@ class management_link extends CI_Controller {
 		);
 		
 		$this->TanggaLagu->update($data_user,$id);
+		redirect('management_link');
+	}
+
+	function update_ytb($id){
+		$data['page']="userManagement";
+		$input = $this->input->post(NULL, TRUE);
+		extract($input);
+		// print_r($input);die;
+		$data_user = array(
+			'link_youtube' => $linkytb,			
+		);
+		
+		$this->Youtube->update($data_user,$id);
 		redirect('management_link');
 	}
 

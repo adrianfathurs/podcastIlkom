@@ -123,7 +123,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
                         <?php if ($role == '1') {?>                                   
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('User_management');?>">Manajemen Pengguna</a>
-                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('');?>">Manajemen Komentar</a>
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('Komen_management');?>">Manajemen Komentar</a>
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('management_link');?>">Manajemen Link</a>
                         <?php } ?>
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">LogOut</a>                                                
