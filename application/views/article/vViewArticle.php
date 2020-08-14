@@ -10,15 +10,18 @@
 
 
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
-<section>
+<section>    
     <div class="banner-section mb-5 " data-aos="fade-down">
         <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; height: 550px;"  alt="..."></img>
         
-                <center><p class="fontJudul"><?php echo $artikel->judul; ?></p></center>
-           
+                <p class="fontJudul"><?php echo $artikel->judul; ?></p>
+                <p>Uploaded By <?php echo $artikel->username; ?></p>
+                <p><?php echo $artikel->create_at; ?></p>
+                <hr>
     </div>
 </section>
 <section  id="main-wrapper" data-aos="fade-up">
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 post-title-block text-white">
@@ -42,18 +45,26 @@
 }
 ?> 
 
-<section class="bg-komentar container mb-3 " data-aos="fade-up">
+<section class="bg-komentar container mb-3 text-white " data-aos="fade-up">
     <h3>KOMENTAR :</h3>
     <hr>
+    <?php
+
+if(!isset($_SESSION['submit'])){
+ $_SESSION['submit'] == true;
+}
+?>
+
+
         <form method="POST" id="form_komen" action="<?php echo base_url('article/tambahKomen')?>">
 			<div class="form-group ">
-				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control text-white" required=""  placeholder="Masukkan Nama" />
+				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control" required="" style="background: white;"  placeholder="Masukkan Nama" />
 			</div>
 			<div class="form-group text-white">
-				<input type="email" name="email" id="email" class="form-control" required="" placeholder="Masukkan Email" />
+				<input type="email" name="email" id="email" class="form-control" required="" style="background: white;" placeholder="Masukkan Email" />
 			</div>
 			<div class="form-group text-white">
-				<textarea name="komen" id="komen" class="form-control" required="" placeholder="Tulis Komentar" rows="5"></textarea>
+				<textarea name="komen" id="komen" class="form-control" required="" style="background: white;" placeholder="Tulis Komentar" rows="5"></textarea>
 			</div>
 			<div class="form-group">
 				<input type="hidden" name="idArtikel" id="idArtikel" value="<?php echo $idArtikel?>" />

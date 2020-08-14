@@ -1,15 +1,10 @@
-
-
-
-<div class="container text-center ">
-    <div class="row">
-       
-    </div>
-</div>
-<div class="card">
 <section>
-<div class=" container text-center  ">
-	<div class=" row ">
+  <div class="row">
+    <div class="col-xl">
+        <div class="card">		
+            <div class="card-body">
+			<div class=" container text-center  ">
+	<div >
 		<div class="" role="tabpanel">
             <div class="">
                 <!-- Nav tabs -->
@@ -34,8 +29,7 @@
                 </ul>
             </div>
 		</div>
-		
-		
+				
             <div class=" text-black">
                 <!-- Tab panes -->
                 <div class="tab-content " id="tabs-collapse">            
@@ -162,8 +156,8 @@
             </div>        
         </div>
 	</div>
-</div>
-</section>
+
+	</div>
 <div id="edit-chart" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content text-black">

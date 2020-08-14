@@ -15,7 +15,7 @@ class management_link extends CI_Controller {
 	public function index()
 	{
 		
-		$data['page']="announcerPage";
+		$data['page']="authPage";
 		$data['css']="management_link/vmanagement_link_css.php";
 		$data['js']="management_link/vmanagement_link_js.php";
 		$data['role'] = $this->session->userdata('role');            

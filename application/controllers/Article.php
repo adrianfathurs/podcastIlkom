@@ -60,6 +60,7 @@
             
             $data['username'] = $this->session->userdata('username'); 
             $data['artikel'] = $this->Martikel->viewArtikel($id);
+            // print_r($data['artikel']);die;
             $idJenisartikel=$this->Martikel->viewArtikel($id);
             $jumlahidkomentar=COUNT($this->Martikel->ambildata($id));
 
@@ -392,13 +393,14 @@
                 $komen=$this->input->post('komen');
                 $email=$this->input->post('email');
                 $idArtikel=$this->input->post('idArtikel');
-                var_dump($idArtikel);
+                // var_dump($idArtikel);
                 $idArtikelint=(int) $idArtikel;
                 /* id artikel yang dipilih */
-                    if(isset($Artikelint)){
-                        $this->session->set_flashdata('message', 'Komentar Anda Tidak Terekam');
+                    if(!isset($Artikelint)){
+                        
+                        echo $_SESSION['submit'] = true;
                         }else{   
-                            var_dump(intval($idArtikel));
+                            // var_dump(intval($idArtikel));
                             $idArtikelint=intval($idArtikel);
                             $data=array(
                             'parent_Id'=>"0",
@@ -422,6 +424,8 @@
             $dataKomentar=$this->Martikel->ambildata($id);
             echo json_encode($dataKomentar);
         }
+
+        
 
     }
 
