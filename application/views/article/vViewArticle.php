@@ -50,9 +50,7 @@
     <hr>
     <?php
 
-if(!isset($_SESSION['submit'])){
- $_SESSION['submit'] == true;
-}
+
 ?>
 
 
