@@ -77,19 +77,19 @@
         }
 
         function deleteImage($id){
-            $artikel = $this->db->get_where('artikel', ["id_artikel" => $id])->row();
-		
-            $filename1 = explode(".", $artikel->foto1)[0];
-            $filename2 = explode(".", $artikel->foto2)[0];
-            $filename3 = explode(".", $artikel->foto3)[0];
-
-            
-            array_map('unlink', glob(FCPATH."assets/upload/$filename1.*"));
-            array_map('unlink', glob(FCPATH."assets/upload/$filename2.*"));
-            array_map('unlink', glob(FCPATH."assets/upload/$filename3.*"));
-            // unlink("assets/upload/$filename1.*");
-            // print_r($filename3);die;
-            return $artikel->jenis_artikel;
+            $artikel = $this->db->get_where('artikel', ["id_artikel" => $id]);
+            $row = $artikel->row();
+            if (isset($row)){
+                $filename1 = explode(".", $row->foto1)[0];
+                $filename2 = explode(".", $row->foto2)[0];
+                $filename3 = explode(".", $row->foto3)[0];
+                array_map('unlink', glob(FCPATH."assets/upload/$filename1.*"));
+                array_map('unlink', glob(FCPATH."assets/upload/$filename2.*"));
+                array_map('unlink', glob(FCPATH."assets/upload/$filename3.*"));
+                // unlink("assets/upload/$filename1.*");
+                // print_r($filename3);die;
+                return $row->jenis_artikel[0];
+            }
 
         }
 
@@ -123,6 +123,15 @@
         public function ambildata($id){
             $query="SELECT * FROM komentar where fk_artikel=$id";
             return $this->db->query($query)->result_array();
+        }
+
+         public function loadData(){
+            $query="SELECT * FROM komentar ";
+            return $this->db->query($query)->result_array();
+        }
+        public function deleteKomenByIdArtikel($id){
+        $query=$this->db->where('fk_artikel',$id)
+        ->delete('komentar');
         }
     }
 ?>

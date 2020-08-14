@@ -57,8 +57,8 @@ $this->load->view($css);
           <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1"></div>
             <div class="col-lg-8 col-md-9 col-sm-10 col-xs-11">
               <div class="row">
-                <div class="col-lg-2 col-md-2  col-sm-1 offset-xs-1 col-xs-1 pb-2"><button id="btnBph" class="btn btn-outline-info">BPH</button></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pb-2"><button id="btnOnair" class="btn btn-outline-info">ON AIR</button></div>
+                <div class="col-lg-2 col-md-2  col-sm-1 offset-xs-1 col-xs-1 pb-2"><button id="btnBph" class="btn btn-outline-info">BPH</button></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pb-2"><button id="btnOffair" class="btn btn-outline-info">OFF AIR</button></div>
               </div>
             </div>
@@ -72,12 +72,12 @@ $this->load->view($css);
           <div id="bph" class="row">
             <div class="col-lg-4 pb-4 pl-4 pr-4">
               <div class="kotak-management">
-                <img id="vice" src="<?php echo base_url('assets/images/bph/FEEDS_SMVICE.jpg')?>" alt="Vice & Station Manager"  >
+                <img id="sekertaris" src="<?php echo base_url('assets/images/bph/FEEDS_SEKRETARIS.jpg')?>" alt="" >
               </div>
             </div>
             <div class="col-lg-4 pb-4 pl-4 pr-4">
               <div class="kotak-management">
-                <img id="sekertaris" src="<?php echo base_url('assets/images/bph/FEEDS_SEKRETARIS.jpg')?>" alt="" >
+                  <img id="vice" src="<?php echo base_url('assets/images/bph/FEEDS_SMVICE.jpg')?>" alt="Vice & Station Manager"  >
               </div>
             </div>
             <div class="col-lg-4 pb-4 pl-4 pr-4">

@@ -6,6 +6,8 @@
             parent::__construct();                     
             $this->load->library('pagination');
             $this->load->model("Martikel");
+            $this->load->model("Mkomentar");
+            $this->load->model('Spotify');
             
         }
         
@@ -114,6 +116,16 @@
                 $data['artikelFeatureLimit']=$this->Martikel->loadArticleFeatureLimit();  
                 $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit();  
             }
+                    else if($idJenisartikel->jenis_artikel==4)
+            {  
+                $data['judul'] = 'Info Music';
+                $data['jenisArtikel1']= 'Podcrast FM';
+                $data['asidebar'] = 'article/vasidebarInfo.php';
+                // text asidebar yang diload
+                $data['linkPlaylist']=$this->Spotify->getLinkEpisode();
+
+            }
+
             else{
 
             }
@@ -181,6 +193,17 @@
                 $data['artikelHypeLimit']=$this->Martikel->loadArticleHypeLimit(); 
 
             }
+
+            else if($id==4)
+            {  
+                $data['judul'] = 'Info Music';
+                $data['jenisArtikel1']= 'Podcrast FM';
+                $data['asidebar'] = 'article/vasidebarInfo.php';
+                // text asidebar yang diload
+                $data['linkPlaylist']=$this->Spotify->getLinkEpisode();
+
+            }
+
             else{
 
             }
@@ -376,8 +399,9 @@
         function delete($id){
             $data['page']="articlePage";
             if (!isset($id)) show_404();
-        
-            if ($query = $this->Martikel->delete($id)) {
+            $this->Martikel->deleteKomenByIdArtikel($id);
+            $query= $this->Martikel->delete($id);
+            if ($query) {
                 $this->getArtikel($query);
             }
         }
@@ -387,36 +411,65 @@
         public function tambahKomen(){
             
             if($this->input->post("btnSubmit")=="submit"){
-
-            
-                $namaPengirim=$this->input->post('namaPengirim');
+                $role = $this->session->userdata('role'); 
                 $komen=$this->input->post('komen');
+                $namaPengirim=$this->input->post('namaPengirim');
                 $email=$this->input->post('email');
                 $idArtikel=$this->input->post('idArtikel');
-                // var_dump($idArtikel);
-                $idArtikelint=(int) $idArtikel;
-                /* id artikel yang dipilih */
-                    if(!isset($Artikelint)){
+                $load=$this->Martikel->loadData();
+                foreach ($load as $L ) {
+                    if(($L['komentar']==$this->input->post('komen')) && ($L['username']==$this->input->post('namaPengirim')) && ($L['email']==$this->input->post('email'))){
+                        $hitung=1;
                         
-                        echo $_SESSION['submit'] = true;
-                        }else{   
-                            // var_dump(intval($idArtikel));
-                            $idArtikelint=intval($idArtikel);
-                            $data=array(
+                    }
+                    else{
+                        $hitung=0;
+                        
+
+                    }
+                }
+
+                if($hitung==1)
+                {
+                    $this->view($idArtikel);
+                }
+                else {
+                    if(isset($role)){
+
+                        $idArtikelint=intval($idArtikel);
+                        $data=array(
                             'parent_Id'=>"0",
                             'username'=>$namaPengirim,
                             'komentar'=>$komen,
                             'email'=>$email,
+                            'simbol'=>$role,
                             'fk_artikel'=>$idArtikelint
-                                );
-                            $this->Martikel->tambahKomen($data);
-                            $this->session->set_flashdata('message', 'Komentar Anda Terekam, Refresh Browser Anda');
-                            $this->view($idArtikel);   
-                            }
-            }else{
-                redirect('article');  
-            };
+                        );
+                        $this->Martikel->tambahKomen($data);
+                        $this->session->set_flashdata('message', 'Komentar Anda Terekam, Refresh Browser Anda');
+                        $this->view($idArtikel);
+                    }
+                    else {
+                        $idArtikelint=intval($idArtikel);
+                        $data=array(
+                            'parent_Id'=>"0",
+                            'username'=>$namaPengirim,
+                            'komentar'=>$komen,
+                            'email'=>$email,
+                            'simbol'=>0,
+                            'fk_artikel'=>$idArtikelint
+                        );
+                        $this->Martikel->tambahKomen($data);
+                        $this->session->set_flashdata('message', 'Komentar Anda Terekam, Refresh Browser Anda');
+                        $this->view($idArtikel);
+                    }
+                }
+                
+
+                
+                
         }
+    }
 
         public function ambildata(){
             

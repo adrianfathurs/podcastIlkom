@@ -38,7 +38,7 @@
         <div class="row align-items-center">
           <div class="col-5 col-md-5 col-lg-1">
             <a class="navbar-brand" href="#">
-              <img src="<?php echo base_url();?>assets/images/lambang_crast.png" width="50" height="50" alt="" loading="lazy" alt="PODCRAST" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;PODCRAST</p></strong></img>
+              <img src="<?php echo base_url();?>assets/images/lambang_crast.png" width="50" height="50" alt="" loading="lazy" alt="CRASTFM" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">&nbsp;CRAST FM</p></strong></img>
             </a>
           </div>
           <div class="col-7 col-md-7 col-lg-11">
@@ -68,7 +68,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/tanggaLagu');?>">Chart</a>
                         <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu');?>">Playlist</a>
-                        <a class="dropdown-item music-navbar-hover" href="#">Info Music</a>
+                        <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/4');?>">Info Music</a>
                       </div>
                   </li>
                   <?php if($page=="announcerPage"){?>

@@ -4,6 +4,45 @@
 	height: 250px;
 }
 
+.container-margin-bottom {
+	padding-top: 10px;
+	padding-bottom: 30px;
+
+}
+
+#main-content-homepage {
+	box-sizing: inherit;
+
+	float: left;
+	width: 70%;
+	color: lawngreen;
+
+}
+
+#aside-content-homepage {
+	box-sizing: inherit;
+	float: right;
+
+	overflow: hidden;
+}
+
+.clc {
+	clear: both;
+}
+
+
+div#podcrast-position #click-embed-podcrast {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+div#podcrast-position #youtube-position {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
 @media (max-width: 991px) {
 	.youtube-place {
 
@@ -11,6 +50,24 @@
 		position: center;
 
 	}
+}
+
+#btnplay {
+
+	width: 80px;
+	height: 80px;
+	background-color: sandybrown;
+	border-radius: 80px;
+	border: 10px solid crimson;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btnplay:hover {
+	width: 85px;
+	height: 85px;
+	background-color: orange;
+	border: 5px solid crimson;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .text-hello-crast {}
@@ -233,6 +290,31 @@
 		width: 50px;
 		height: 50px;
 	}
+
+	#main-content-homepage {
+
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+
+
+
+	}
+
+	#aside-content-homepage {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		overflow: hidden;
+	}
+
+	div#podcrast-position #click-embed-podcrast {
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+
+
+	}
 }
 
 .btn-prev {
@@ -277,6 +359,7 @@
 		padding-right: auto;
 
 	}
+
 }
 
 @media(max-width: 670px) {
@@ -286,6 +369,34 @@
 		padding-left: 190px;
 		padding-right: auto;
 
+	}
+}
+
+@media(max-width:410px) {
+	#main-content-homepage {
+
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	#aside-content-homepage {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		overflow: hidden;
+	}
+
+	div#podcrast-position #click-embed-podcrast {
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+	}
+
+	div#podcrast-position #youtube-position {
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
 	}
 }
 

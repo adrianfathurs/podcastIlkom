@@ -32,6 +32,7 @@
                     <!-- <p class="card-text"></p> -->
                   </div>
                 </div>
+                <br>
                 <?php if (!empty($id)) : ?>
                 <a href="<?php echo base_url('article/update/').$art->id_artikel?>" class="btn waves-effect waves-light btn-warning">Edit</a>                                             
                 <a href="<?php echo base_url('article/delete/').$art->id_artikel?>" class="btn btn-danger remove">Hapus</a> 

@@ -86,10 +86,14 @@
 </script>
 
 <script>
-  $(document).ready(function(){
-  
-
-      
-    
-  });
+$(document).ready(function() {
+	$('#komen').keyup(function() {
+	var len = this.value.length;
+	if (len >= 150) {
+	this.value = this.value.substring(0, 150);
+	}
+	$('#hitung').text(150 - len);
+	});
+});
+</script>
 </script>

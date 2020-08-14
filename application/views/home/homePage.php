@@ -57,10 +57,36 @@ if (isset($css)) {
   </div>
 </div>
 
-<div class="container-fluid container-margin bg-dark"> 
-  <div class="row">
-    <div class="col-md-2"><!-- KOSONG --></div>
-      <div class="col-md-5 offset-md-1">
+<div class="container-fluid  bg-dark container-margin-bottom">
+  <div id="main-content-homepage">
+    <img class="tengah" src="<?php echo base_url('')?>assets/images/lambang_crast.png" width="300" height="200" class="d-inline-block align-top" alt="" loading="lazy">
+   <a href="http://jogjastreamers.com/crastfm.html" target="_blank"> <button class="tengah" id="btnplay" ><strong>Play</strong></button></a>
+    <br>
+  </div>
+  <div id="aside-content-homepage">
+    <div id="youtube-position">
+      <h3>Youtube</h3>
+      <hr>
+      <iframe  width="250" height="125" target="_blank" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+      </div>
+      <hr>
+      <br>
+    <div id="podcrast-position">
+      <h3>PodCrast FM</h3>
+      <hr>
+      <?php foreach ($linkPodcrast as $LP) :?>
+        <iframe  id="click-embed-podcrast"  width= "320px" height="120px" src="https://open.spotify.com/embed/episode/<?php echo $LP['link_spotify']; ?> "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+      <?php endforeach;?> 
+      <hr>
+    </div>
+  </div>
+  <div class="clc"></div>
+</div>
+
+<!-- <div class="container-fluid container-margin bg-dark"> --> 
+  <!-- <div class="row"> -->
+    <!-- <div class="col-md-2"> --><!-- KOSONG --><!-- </div> -->
+     <!--  <div class="col-md-5 offset-md-1">
         <div class="row">
           <h2 class=" tengah text-hello-crast animated infinite bounce animated.slow  text-white">HELLO FROM CRASTFM</h2>
         </div>
@@ -83,14 +109,14 @@ if (isset($css)) {
         <div class="card " style="width: 12rem;">
           <h3 class="card-header  bg-secondary mb-2 px-1 text-black" style="font-size: 14px;"><b>Podcrast &nbsp;</b><a href="https://www.youtube.com/embed/videoseries?list=PLY1KVBn1ubF53_D9EWM2syCRkFjGSDXiw"></h3></a>
           <!-- Link buat menampilkan podcrast playlist spotify -->
-          <?php foreach ($linkPodcrast as $LP) :?>
+          <!-- <?php foreach ($linkPodcrast as $LP) :?>
             <iframe class= "px-4 card-podcrast " id="click-embed-podcrast" src="https://open.spotify.com/embed/episode/<?php echo $LP['link_spotify']; ?> "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
             <?php endforeach;?>  
         </div>
       </div>
     </div> 
   </div>
-</div>
+</div> --> 
 <!-- https://open.spotify.com/show/095GreX08Xkfo299FxrPim?si=L1JafZJ9QdC2V1KgE6mp5w
         https://open.spotify.com/show/095GreX08Xkfo299FxrPim?si=L1JafZJ9QdC2V1KgE6mp5w
         playlist/L1JafZJ9QdC2V1KgE6mp5w
@@ -212,16 +238,16 @@ if (isset($css)) {
 
     <div class="container">
       <div class="row padding-row-carousel mt-4">
-        <div class="offset-col-2 offset-md-2 offset-sm-2 col col-md-2 col-sm-2 col-xs-2">
+        <div class="offset-col-2 offset-md-2 offset-sm-2 col col-md-2 col-sm-6 col-xs-2 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png' style="cursor:pointer" onclick="currentDiv(1)">
         </div>
-        <div class="col col-md-2 col-sm-2 col-xs-2">
+        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png" style="cursor:pointer" onclick="currentDiv(2)">
         </div>
-        <div class="col col-md-2 col-sm-2 col-xs-2">
+        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png' style="cursor:pointer" onclick="currentDiv(3)">
         </div>
-        <div class="col col-md-2 col-sm-2 col-xs-2">
+        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png" style="cursor:pointer" onclick="currentDiv(4)">
         </div>
       </div>
@@ -231,6 +257,12 @@ if (isset($css)) {
     </div>
   </div>
 </div>
+
+<!-- COBA -->
+<!-- COBA -->
+
+
+
 <div class="site-section bg-dark block-13">
   <div class="container" data-aos="fade-up">
     <div class="row">
@@ -242,7 +274,7 @@ if (isset($css)) {
     <div class="nonloop-block-13 owl-carousel">
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Megan Smith</h3>
@@ -252,7 +284,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brooke Cagle</h3>
@@ -262,7 +294,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_3.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_3.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Philip Martin</h3>
@@ -272,7 +304,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Steven Ericson</h3>
@@ -282,7 +314,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Nathan Dumlao</h3>
@@ -292,7 +324,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>
@@ -302,7 +334,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('')?>assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>
@@ -372,14 +404,14 @@ if (isset($css)) {
         <div class="row-md-4 mt-2">
          <?php foreach($artikelFeatureLimit as $feature):?>
           <div class="card profile-card-5 mt-5">
-            <a href="#">
+            <a href="<?php echo site_url('article/view/').$feature['id_artikel'];?>">
               <div class="card-img-block">
                 <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$feature['foto1'])?>"  style=" height: 350px;" alt="Card image cap">
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">"<?php echo substr($feature['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-                <p class="card-text"><?php echo substr($feature['essay'], 0, 20) . '[..]';?></p>
+                <h5 class="card-title" title="<?php echo $feature['judul']?>">"<?php echo substr($feature['judul'], 0, 26) . '[..]'; ?>"</h5>
               </div>
+            </a>              
           </div>
          <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/1')?>"><bold>Read More...</bold></a></center></div>  
@@ -391,14 +423,14 @@ if (isset($css)) {
         <div class="row-md-4 mt-2">
         <?php foreach($artikelHypeLimit as $hype):?>
           <div class="card profile-card-5 mt-5">
-            <a href="#">
+            <a href="<?php echo site_url('article/view/').$hype['id_artikel'];?>">
               <div class="card-img-block">
                 <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$hype['foto1'])?>" style=" height: 350px;" alt="Card image cap" >
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">"<?php echo substr( $hype['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-                <p class="card-text"><?php echo substr($hype['essay'], 0, 20) . '[..]';?></p>
+                <h5 class="card-title" title="<?php echo $hype['judul']?>">"<?php echo substr( $hype['judul'], 0, 28) . '[..]'; ?>"</h5>
               </div>
+            </a>    
           </div>
         <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/2')?>"><bold>Read More...</bold></a></center></div>  
@@ -410,14 +442,14 @@ if (isset($css)) {
         <div class="row-md-4 mt-2">
         <?php foreach($artikelReviewLimit as $review):?>
           <div class="card profile-card-5 mt-5">
-            <a href="#">
+            <a href="<?php echo site_url('article/view/').$review['id_artikel'];?>">
               <div class="card-img-block">
                 <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$review['foto1'])?>" style=" height: 350px;" alt="Card image cap" >
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title">"<?php echo substr( $review['judul'], 0, 26) . '[..]'; ?>"</h5></a>
-                <p class="card-text"><?php echo substr($review['essay'], 0, 20) . '[..]';?></p>
+                <h5 class="card-title" title="<?php echo $review['judul']?>">"<?php echo substr( $review['judul'], 0, 28) . '[..]'; ?>"</h5>
               </div>
+            </a>
           </div>
         <?php endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/3')?>"><bold>Read More...</bold></a></center></div>  

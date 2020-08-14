@@ -58,16 +58,17 @@ if(!isset($_SESSION['submit'])){
 
         <form method="POST" id="form_komen" action="<?php echo base_url('article/tambahKomen')?>">
 			<div class="form-group ">
-				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control" required="" style="background: white;"  placeholder="Masukkan Nama" />
+				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control " style="background-color:white" required=""  placeholder="Masukkan Nama" />
 			</div>
 			<div class="form-group text-white">
-				<input type="email" name="email" id="email" class="form-control" required="" style="background: white;" placeholder="Masukkan Email" />
+				<input type="email" name="email" id="email" class="form-control" style="background-color:white" required="" placeholder="Masukkan Email" />
 			</div>
 			<div class="form-group text-white">
-				<textarea name="komen" id="komen" class="form-control" required="" style="background: white;" placeholder="Tulis Komentar" rows="5"></textarea>
+				<textarea name="komen" id="komen" class="form-control" required="" style="background-color:white" placeholder="Tulis Komentar" rows="5"></textarea>
+                <small class="text-gray-100">Tersisa : <span id="hitung">150</span> Karakter</small>
 			</div>
 			<div class="form-group">
-				<input type="hidden" name="idArtikel" id="idArtikel" value="<?php echo $idArtikel?>" />
+                <input type="hidden" name="idArtikel" id="idArtikel" value="<?php echo $idArtikel?>" />
 			</div>
 				<button type="submit" name="btnSubmit" id="btnSubmit" value="submit" class="btn btn-info">Komentar</button>
 		</form>
@@ -76,19 +77,19 @@ if(!isset($_SESSION['submit'])){
 <?php if ($jumlahidkomentar !=0){ foreach ($komentar as $key) :?>        
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
-    <div class="col-md-2">
-         <?php if($role==1){?>
-      <img  class="card-img" src="<?php echo base_url('assets/images/avatar04.png')?>" style="width:100px;height:50px;" alt="Komentar Admin">
-      <?php } elseif ($role==2) {?>
-        <img class="card-img" src="<?php echo base_url('assets/images/avatar.png')?>" style="width:50px;height:50px;" alt="Komentar Member">
-        <?php } else{?>
-            <img class="card-img" src="<?php echo base_url('assets/images/avatar2.png')?>" style="width:50px;height:50px;" alt="Komentar User">
-             <?php }?>
+    <div class="col-md-2" id="image-komentar">
+         <?php if($key['simbol']==1 || $key['simbol']==2 ){?>
+      <img  class="card-img" src="<?php echo base_url('assets/images/admin.png')?>"  alt="Komentar Admin">
+      <?php } else{?>
+        <img class="card-img" src="<?php echo base_url('assets/images/2-users.png')?>" alt="Komentar User">
+        <?php }?>
+            
     </div>
     <div class="col-md-10">
       <div class="card-body">
-        <h5 class="card-title text-black"><?php echo $key['username']?></h5>
-        <p class="card-text text-black"><?php echo $key['komentar']?></p>
+        <h5 class="card-title text-black pl-3"><strong><?php echo $key['username']?></strong></h5>
+        
+        <p class="card-text text-black text-align-justify  pl-3"><span class="text-grey">Comment :</span><?php echo $key['komentar']?></p>
       </div>
     </div>
   </div>
