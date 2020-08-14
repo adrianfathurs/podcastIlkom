@@ -81,7 +81,7 @@ $this->load->view($css);
                         <tr>
                             <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
-                            <td class="text-center">12.00-13.00</td>
+                            <td class="text-center">10.00-12.00</td>
                         </tr>
                         <tr>
                             <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
@@ -105,7 +105,7 @@ $this->load->view($css);
                         <tr>
                             <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
-                            <td class="text-center">12.00-13.00</td>
+                            <td class="text-center">10.00-12.00</td>
                         </tr>
                         <tr>
                             <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
@@ -129,7 +129,7 @@ $this->load->view($css);
                         <tr>
                             <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
-                            <td class="text-center">12.00-13.00</td>
+                            <td class="text-center">10.00-12.00</td>
                         </tr>
                         <tr>
                             <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
@@ -153,7 +153,7 @@ $this->load->view($css);
                         <tr>
                             <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
-                            <td class="text-center">12.00-13.00</td>
+                            <td class="text-center">10.00-12.00</td>
                         </tr>
                         <tr>
                             <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>
@@ -177,7 +177,7 @@ $this->load->view($css);
                         <tr>
                             <td class="text-center"><img src='<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png'  width="150px;" height="150px;"></td>
                             <td class="text-center">Crast Hour</td>
-                            <td class="text-center">12.00-13.00</td>
+                            <td class="text-center">10.00-12.00</td>
                         </tr>
                         <tr>
                             <td class="text-center"><img  src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="150px;" height="150px;"></td>

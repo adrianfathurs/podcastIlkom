@@ -139,3 +139,20 @@ section {
 	color: white;
 	font-family: 'Fjalla One', sans-serif;
 }
+
+#image-komentar img {
+	padding: 5px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	border: 6px solid darkslategrey;
+}
+
+#image-komentar {
+	padding: 5px;
+
+}
+
+.text-grey {
+	color: darkslategrey;
+}

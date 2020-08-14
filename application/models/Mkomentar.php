@@ -16,5 +16,6 @@ class Mkomentar extends CI_Model {
        
     }
     
+    
 }
 ?>
