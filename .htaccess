@@ -4,6 +4,7 @@ RewriteBase /podcastilkom/
 
 
 
+
 # Prevent CI index.php
 
 RewriteCond %{REQUEST_FILENAME} !-f

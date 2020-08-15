@@ -13,7 +13,7 @@
           <div class="row mt-2">
             <hr>
                   <div class="col-4"> <img class="card-img-top" src="<?php echo base_url('assets/upload/'.$feature['foto1']) ?>" alt="Card image cap"></div>
-                  <div class="col-8"><b><a class="text-color-blue" href="<?php echo base_url('article/view/').$feature['id_artikel']?>">"<?php echo $feature['judul']; ?>"</a></p></b></div>
+                  <div class="col-8"><b><a class="text-color-mustard" href="<?php echo base_url('article/view/').$feature['id_artikel']?>">"<?php echo $feature['judul']; ?>"</a></p></b></div>
              <hr>   
           </div>
               <?php endforeach;?>
@@ -32,7 +32,7 @@
           <div class="row mt-2">
             <hr>
             <div class="col-4"> <img class="card-img-top" src="<?php echo base_url('assets/upload/'.$Review['foto1']) ?>" alt="Card image cap"></div>
-            <div class="col-8"><b><a class="text-color-blue" href="<?php echo base_url('article/view/').$Review['id_artikel']?>">"<?php echo $Review['judul']; ?>"</a></b></div>
+            <div class="col-8"><b><a class="text-color-mustard" href="<?php echo base_url('article/view/').$Review['id_artikel']?>">"<?php echo $Review['judul']; ?>"</a></b></div>
             <hr>
           </div>
               <?php endforeach;?>

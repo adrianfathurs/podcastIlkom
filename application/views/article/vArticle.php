@@ -31,7 +31,7 @@
                     <h5 class="card-title" title="<?php echo $art->judul?>"><?php echo substr( $art->judul, 0, 50) . '...'; ?></h5></a>
                     <!-- <p class="card-text"></p> -->
                   </div>
-                </div>
+            </div>
                 <br>
                 <?php if (!empty($id)) : ?>
                 <a href="<?php echo base_url('article/update/').$art->id_artikel?>" class="btn waves-effect waves-light btn-warning">Edit</a>                                             

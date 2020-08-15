@@ -29,36 +29,37 @@
                 </ul>
             </div>
 		</div>
-				
-            <div class=" text-black">
-                <!-- Tab panes -->
+
+
+	<div class=" text-black">
+		<!-- Tab panes -->
                 <div class="tab-content " id="tabs-collapse">            
-                    <div role="tabpanel" class="tab-pane fade in active" id="dustin">
-					<div class="tab-inner">
-                            <p class="lead text-white">.....................................................................................................................</p>
+					<div role="tabpanel" class="tab-pane fade in active" id="dustin">
+						<div class="tab-inner">
+							<p class="lead text-white">.....................................................................................................................</p>
 							<hr>
 							<div class="table-responsive">
 								<table class="table table-striped table-bordered text-black">
 									<thead>
-									<tr class="text-center">
+										<tr class="text-center">
 										
-										<th class="text-black">Link</th>
-										<th class="text-black">Kategori</th>										
-										<th class="text-black">Aksi</th>
-									</tr>
+											<th class="text-black">Link</th>
+											<th class="text-black">Kategori</th>										
+											<th class="text-black">Aksi</th>
+										</tr>
 									</thead>
 									<tbody>
-									<?php $no = 1; ?>
+										<?php $no = 1; ?>
 										<?php foreach($Spotify as $lagu) : ?>
 										<tr>											
 											<td class="text-black"><?php echo $lagu->link_spotify; ?></td>
-												<?php if($lagu->role==1){?>
+											<?php if($lagu->role==1){?>
 												<td><p> PlayList Lagu</p></td>
 												<?php } else{?>
 													<td><p> PlayList Podcast</p></td>
-												<?php } ?>											
-											<td class="text-center">
-												<button type="button" class="open-modal btn btn-warning"
+													<?php } ?>											
+													<td class="text-center">
+														<button type="button" class="open-modal btn btn-warning"
 														title="Ubah"
 														data-id_spt="<?php echo $lagu->id_spotify; ?>"
 														data-link_spt="<?php echo $lagu->link_spotify; ?>"
@@ -78,70 +79,70 @@
                         </div>
                     </div>                    
                     <div role="tabpanel" class="tab-pane fade" id="daksh">
-                        <div class="tab-inner">
-                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+						<div class="tab-inner">
+							<p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
 							<hr>
 							<div class="table-responsive">
 								
-							</div> 
-                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
+								</div> 
+								<p><strong class="text-uppercase">Daksh Bhagya</strong></p>
                             <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
                         </div>
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="anna">
-					<div class="tab-inner">
-                            <p ><strong class="text-uppercase">Update Untuk Tangga Lagu</strong></p>
+						<div class="tab-inner">
+							<p ><strong class="text-uppercase">Update Untuk Tangga Lagu</strong></p>
 							<hr>
 							<div class="table-responsive">
 								<table  class="table table-striped table-bordered text-black">
 									<thead>
-									<tr class="text-center">
-										<th class="text-black">No</th>
-										<th class="text-black">Link Lagu</th>
-										<th class="text-black">Judul Lagu</th>
-										<th class="text-black">Genre Lagu</th>							
-										<th class="text-black">Artis</th>
-										<th class="text-black">Kategori Lagu</th>
-										<th class="text-black">Status Lagu</th>
-										<th class="text-black">Aksi</th>
-									</tr>
+										<tr class="text-center">
+											<th class="text-black">No</th>
+											<th class="text-black">Link Lagu</th>
+											<th class="text-black">Judul Lagu</th>
+											<th class="text-black">Genre Lagu</th>							
+											<th class="text-black">Artis</th>
+											<th class="text-black">Kategori Lagu</th>
+											<th class="text-black">Status Lagu</th>
+											<th class="text-black">Aksi</th>
+										</tr>
 									</thead>
 									<tbody>
-									<?php $no = 1; ?>
+										<?php $no = 1; ?>
 										<?php foreach($TanggaLagu as $lagu) : ?>
-										<tr>
-											<td class="text-black" ><?php echo $no; ?></td>
-											<td class="text-black"><?php echo $lagu->link_lagu; ?></td>
+											<tr>
+												<td class="text-black" ><?php echo $no; ?></td>
+												<td class="text-black"><?php echo $lagu->link_lagu; ?></td>
 											<td class="text-black"><?php echo $lagu->judul_lagu	; ?></td>
 											<td class="text-black"><?php echo $lagu->genre_lagu; ?></td>
 											<td class="text-black"><?php echo $lagu->artist_lagu; ?></td>
 											<td class="text-black"><?php echo $lagu->kategori_lagu; ?></td>
-																					
-												<?php if($lagu->status_lagu==1){?>
+											
+											<?php if($lagu->status_lagu==1){?>
 												<td class="visibility1" title="Naik" ><p class="text-center"><img src="<?php echo base_url()?>assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
 												<?php } elseif ($lagu->status_lagu==2){?>
-												<td class="visibility1" title="Turun"><p class="text-center"><img src="<?php echo base_url()?>assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
+													<td class="visibility1" title="Turun"><p class="text-center"><img src="<?php echo base_url()?>assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
 												<?php } else {?>
-												<td class="visibility1" title="Bertahan"><p class="text-center"><img src="<?php echo base_url()?>assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
+													<td class="visibility1" title="Bertahan"><p class="text-center"><img src="<?php echo base_url()?>assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
 												<?php };?>											
-										
-											<td class="text-center">
-												<button type="button" class="open-modal btn btn-warning"
-														title="Ubah"
-														data-id="<?php echo $lagu->id_lagu; ?>"
-														data-link="<?php echo $lagu->link_lagu; ?>"
-														data-judul="<?php echo $lagu->judul_lagu; ?>"
-														data-genre="<?php echo $lagu->genre_lagu; ?>"
-														data-artis="<?php echo $lagu->artist_lagu; ?>"
-														data-kategori="<?php echo $lagu->kategori_lagu; ?>"
+												
+												<td class="text-center">
+													<button type="button" class="open-modal btn btn-warning"
+													title="Ubah"
+													data-id="<?php echo $lagu->id_lagu; ?>"
+													data-link="<?php echo $lagu->link_lagu; ?>"
+													data-judul="<?php echo $lagu->judul_lagu; ?>"
+													data-genre="<?php echo $lagu->genre_lagu; ?>"
+													data-artis="<?php echo $lagu->artist_lagu; ?>"
+													data-kategori="<?php echo $lagu->kategori_lagu; ?>"
 														data-status="<?php echo $lagu->status_lagu; ?>"											
 														data-toggle="modal"
 														data-tt="tooltip"
 														data-target="#edit-chart"> Edit
 													</button>												 
-											</td>																					
-											<?php $no++; ?>
+												</td>																					
+												<?php $no++; ?>
 										</tr>
 										<?php endforeach ?>
 									</tbody>
@@ -156,39 +157,40 @@
             </div>        
         </div>
 	</div>
-
-	</div>
+	
+</div>
+	
 <div id="edit-chart" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content text-black">
-							<div class="modal-header">
-								<h4 class="modal-title">Edit untuk Lagu <span id="modal-name-edit" style="color: red;"></span></h4>
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							</div>
-							<div class="modal-body">
-								<form id="form-modal-edit" class="form-horizontal m-t-20 " action="" method="post">									
-									<div class="form-group row ">
-										<div class="col-12 ">
-											<label>Judul</label>
-											<input id="modal-judul" class="form-control" type="text" required=" " placeholder="judul lagu" name="judul" value="">
-										</div>
-									</div>								
-									<div class="form-group row">
-										<div class="col-12 ">
-											<label>link</label>
-											<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="links" value="">
-										</div>
-									</div>
-									<div class="form-group row">
-										<div class="col-12 ">
-											<label>genre</label>
-											<input id="modal-genre" class="form-control" type="text" required=" " placeholder="genre lagu" name="genre" value="">
-										</div>
-									</div>
-									<div class="form-group row">
-										<div class="col-12 ">
-											<label>artis</label>
-											<input id="modal-artis" class="form-control" type="text" required=" " placeholder="artis lagu" name="artis" value="">
+	<div class="modal-dialog">
+		<div class="modal-content text-black">
+			<div class="modal-header">
+				<h4 class="modal-title">Edit untuk Lagu <span id="modal-name-edit" style="color: red;"></span></h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<div class="modal-body">
+				<form id="form-modal-edit" class="form-horizontal m-t-20 " action="" method="post">									
+					<div class="form-group row ">
+						<div class="col-12 ">
+							<label>Judul</label>
+							<input id="modal-judul" class="form-control" type="text" required=" " placeholder="judul lagu" name="judul" value="">
+						</div>
+					</div>								
+					<div class="form-group row">
+						<div class="col-12 ">
+							<label>link</label>
+							<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="links" value="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-12 ">
+							<label>genre</label>
+							<input id="modal-genre" class="form-control" type="text" required=" " placeholder="genre lagu" name="genre" value="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-12 ">
+							<label>artis</label>
+							<input id="modal-artis" class="form-control" type="text" required=" " placeholder="artis lagu" name="artis" value="">
 										</div>
 									</div>
 									<div class="form-group row">
@@ -219,39 +221,40 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div>
- 
-<div id="edit-youtube" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				
+				<div id="edit-youtube" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content text-black">
 							<div class="modal-header">
 								<h4 class="modal-title">Edit untuk Link Youtube </h4>
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							</div>
-							<?php foreach($Youtube as $Youtube){
-
-							};?>
-							<div class="modal-body">
-								<form id="form-modal-edit-ytb" class="form-horizontal m-t-20 " action="" method="post">																									
-									<div class="form-group row">
-										<div class="col-12 ">
-											<label>link</label>
-											<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="linkytb" value="<?php echo $Youtube->link_youtube ?>">										
+							</div>							
+								<div class="modal-body">
+									<form id="form-modal-edit-ytb" class="form-horizontal m-t-20 " action="" method="post">																									
+										<div class="form-group row">
+											<div class="col-12 ">
+												<label>link</label>
+												<?php foreach ($Youtube as $Y ) : ?>
+												
+												<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="linkytb" value="<?php echo $Y['link_youtube'] ?>">										
+												<?php endforeach;?>
+												<small >Contoh Submit Link:<span><b> <?php echo $Y['link_youtube']?></b></span></small>
+											</div>
 										</div>
-									</div>
-																										
-									<div class="row d-flex">
-										<div class="ml-auto mr-2">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-											<button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
+										
+										<div class="row d-flex">
+											<div class="ml-auto mr-2">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+												<button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
+											</div>
 										</div>
-									</div>
-								</form>
-							</div>
+									</form>
+								</div>
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div>	
 <div id="edit-spotify" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
+	<div class="modal-dialog">
 						<div class="modal-content text-black">
 							<div class="modal-header">
 								<h4 class="modal-title">Edit untuk Link  <span id="modal-name-edits" style="color: red;"></span></h4>
@@ -276,3 +279,7 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div>
+
+</section>	
+
+<section>	

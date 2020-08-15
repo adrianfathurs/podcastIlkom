@@ -8,7 +8,7 @@ class Youtube extends CI_Model {
 	function get(){
         $this->db->where('id_youtube', 1);
 		$user = $this->db->get('youtube');
-		return $user->result();
+		return $user->result_array();
 	}
 	function update($data, $id){
 		$this->db->where('id_youtube ', $id);

@@ -3,7 +3,7 @@
     <div class="wrap-widget">
         <div class="wrap-widget-header">
             <hr>
-            <h5 class="text-center"><img class="images-grid" src="<?php echo base_url('./assets/images/grid.png')?>" alt="" width="20px">&nbsp;<strong>  <?php echo $jenisArtikel1 ?></strong></img></h4>
+            <h5 class="text-center text-black"><img class="images-grid" src="<?php echo base_url('./assets/images/grid.png')?>" alt="" width="20px">&nbsp;<strong>  <?php echo $jenisArtikel1 ?></strong></img></h4>
             <hr>
         </div>
         <div class="container pb-3">

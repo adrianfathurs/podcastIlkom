@@ -23,7 +23,8 @@ class management_link extends CI_Controller {
 		$data['username'] = $this->session->userdata('username'); 
 		$data['Spotify'] = $this->Spotify->get();
 		$data['TanggaLagu'] = $this->TanggaLagu->get();
-		$data['Youtube'] = $this->Youtube->get();		
+		$data['Youtube'] = $this->Youtube->get();
+	
 		if ($data['role'] == '1'){
 		$data['content'] = 'management_link/vmanagement_link.php';            
 		$this->load->view('template/vtemplate', $data);
