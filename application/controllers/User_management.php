@@ -11,7 +11,7 @@
         function index(){
             // $data = $this->Mfeature->get_all();
             // $this->load->view('article/vform');
-            $data['page']="userManagement";
+            $data['page']="authPage";
             $data['users']		= $this->Muser->get_users();
             $data['js']			= 'user_management/vuser_management_js';
             $data['css']			= 'user_management/vuser_management_css';

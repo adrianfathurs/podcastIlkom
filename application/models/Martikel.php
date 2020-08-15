@@ -33,12 +33,16 @@
         }
 
         function viewArtikel($id){
-            $this->db->where('id_artikel', $id);
-            $query = $this->db->get('artikel'); 
+            // $this->db->where('id_artikel', $id);
+            // $query = $this->db->get('artikel'); 
             // print_r($query);die;
 
+            $this->db->select('artikel.*, akun.*');
+            $this->db->from('artikel');
+            $this->db->join('akun', 'akun.id_akun = artikel.fk_akun');
+            $this->db->where('artikel.id_artikel',$id);
             
-            return $query->row();
+            return $this->db->get()->row();
         }
 
         function editArtikel($id){

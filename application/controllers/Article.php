@@ -62,6 +62,7 @@
             
             $data['username'] = $this->session->userdata('username'); 
             $data['artikel'] = $this->Martikel->viewArtikel($id);
+            // print_r($data['artikel']);die;
             $idJenisartikel=$this->Martikel->viewArtikel($id);
             $jumlahidkomentar=COUNT($this->Martikel->ambildata($id));
 
@@ -476,6 +477,8 @@
             $dataKomentar=$this->Martikel->ambildata($id);
             echo json_encode($dataKomentar);
         }
+
+        
 
     }
 

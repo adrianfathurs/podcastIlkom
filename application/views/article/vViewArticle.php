@@ -10,15 +10,18 @@
 
 
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
-<section>
+<section>    
     <div class="banner-section mb-5 " data-aos="fade-down">
         <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; height: 550px;"  alt="..."></img>
         
-                <center><p class="fontJudul"><?php echo $artikel->judul; ?></p></center>
-           
+                <p class="fontJudul"><?php echo $artikel->judul; ?></p>
+                <p>Uploaded By <?php echo $artikel->username; ?></p>
+                <p><?php echo $artikel->create_at; ?></p>
+                <hr>
     </div>
 </section>
 <section  id="main-wrapper" data-aos="fade-up">
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 post-title-block text-white">
@@ -42,9 +45,15 @@
 }
 ?> 
 
-<section class="bg-komentar container mb-3 " data-aos="fade-up">
+<section class="bg-komentar container mb-3 text-white " data-aos="fade-up">
     <h3>KOMENTAR :</h3>
     <hr>
+    <?php
+
+
+?>
+
+
         <form method="POST" id="form_komen" action="<?php echo base_url('article/tambahKomen')?>">
 			<div class="form-group ">
 				<input type="text" name="namaPengirim" id="namaPengirim" class="form-control " style="background-color:white" required=""  placeholder="Masukkan Nama" />
