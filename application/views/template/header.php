@@ -3,7 +3,9 @@
 <head> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <link rel="shortcut icon" href="<?php echo base_url()?>assets/images/lambang_crast.png" width="20px">
   <title>Crast FM</title>
 
@@ -32,17 +34,16 @@
 
 </head>
 <body>
-
-<div class="site-wrap fixed-top opacity  ">
-  <div class="site-navbar mt-4 bg-navbar ">
-    <div class="container py-1">
-      <div class="row align-items-center">
-        <div class="col-5 col-md-5 col-lg-1 col-sm-4">
+  <div class="site-wrap fixed-top opacity  ">
+    <div class="site-navbar mt-4 bg-navbar ">
+      <div class="container py-1">
+        <div class="row align-items-center">
+          <div class="col-5 col-md-5 col-lg-1 col-sm-4">
           <a class="navbar-brand" href="#">
             <img src="<?php echo base_url();?>assets/images/lambang_crast.png" width="50" height="50" alt="" loading="lazy" alt="CRASTFM" class="logo-brand-display"><strong><p class="text-style-brand pt-2 text-black">CRASTFM</p></strong></img>
           </a>
         </div>
-          
+        
         <div class="col-7 col-md-7 col-lg-11 col-sm-8">
           <nav class="site-navigation text-right text-md-right" role="navigation">
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
@@ -53,24 +54,24 @@
             <ul class="site-menu js-clone-nav d-none d-lg-block">
               <?php if($page=="homePage"){?>
                 <li class="home navbar-active" id="home">
-              <?php } else {?>
-                <li class="home" id="home">
-              <?php } ?>
-                  <a class="text-black" href="<?php echo base_url('homePage');?>">Home</a>
-                </li>
-              <?php if($page=="schedulePage"){?>
-                <li class="schedule navbar-active">
-              <?php } else {?>
-                <li class="schedule">
-              <?php }?>
-                  <a class="text-black" href="<?php echo site_url('Schedule')?>">Schedule</a>
-                </li>
-              <?php if($page=="musicPage"){?>
+                  <?php } else {?>
+                    <li class="home" id="home">
+                      <?php } ?>
+                      <a class="text-black" href="<?php echo base_url('homePage');?>">Home</a>
+                    </li>
+                    <?php if($page=="schedulePage"){?>
+                      <li class="schedule navbar-active">
+                        <?php } else {?>
+                          <li class="schedule">
+                            <?php }?>
+                            <a class="text-black" href="<?php echo site_url('Schedule')?>">Schedule</a>
+                          </li>
+                          <?php if($page=="musicPage"){?>
                 <li class="nav-item dropdown navbar-active">
-              <?php } else {?>
-                <li class="nav-item dropdown ">
-              <?php }?>
-                <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music </a>
+                  <?php } else {?>
+                    <li class="nav-item dropdown ">
+                      <?php }?>
+                      <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/tanggaLagu');?>">Chart</a>
                     <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu');?>">Playlist</a>
@@ -79,62 +80,62 @@
                 </li>
               <?php if($page=="announcerPage"){?>
                 <li class="announcer navbar-active">
-              <?php } else {?>
+                  <?php } else {?>
                 <li class="announcer">
-              <?php }?>
-                    <a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a>
+                  <?php }?>
+                  <a class="text-black" href="<?php echo site_url('announcer')?>">Announcer</a>
                 </li>
-              <?php if($page=="managementPage"){?>
+                <?php if($page=="managementPage"){?>
                 <li class="managementPage navbar-active">
-              <?php } else {?>
-                <li class="managementPage ">
-              <?php }?>
-                  <a class="text-black" href="<?php echo site_url('management')?>">Management</a>
+                  <?php } else {?>
+                    <li class="managementPage ">
+                      <?php }?>
+                      <a class="text-black" href="<?php echo site_url('management')?>">Management</a>
                 </li>
-              <?php if($page=="articlePage"){?>
-                <li class="nav-item navbar-active dropdown">
+                <?php if($page=="articlePage"){?>
+                  <li class="nav-item navbar-active dropdown">
               <?php } else {?>
                 <li class="nav-item  dropdown">
-              <?php }?>
+                  <?php }?>
                   <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Article </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/1');?>">Feature</a>
-                      <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/2');?>">Hype</a>
-                      <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/3');?>">Review</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/1');?>">Feature</a>
+                    <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/2');?>">Hype</a>
+                    <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/3');?>">Review</a>
                     </div>
-                </li>
+                  </li>
               <?php if($page=="eventPage"){?>
                 <li class="navbar-active">
-              <?php } else {?>
+                  <?php } else {?>
                 <li class="">
-              <?php }?>
+                  <?php }?>
                   <a class="text-black" href="about.html">Event</a>
                 </li>
               <?php if($page=="aboutPage"){?>
                 <li class="navbar-active">
-              <?php } else {?>
-                <li class="">
-              <?php }?>
-                  <a class="text-black" href="about.html">About US</a>
-                </li>
-              <?php if (empty($id)){ ?>
-                <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
+                  <?php } else {?>
+                    <li class="">
+                      <?php }?>
+                      <a class="text-black" href="about.html">About US</a>
+                    </li>
+                    <?php if (empty($id)){ ?>
+                      <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
               <?php } else { ?>
-              <?php if($page=="authPage"){?>
-                <li class="nav-item navbar-active dropdown">
-              <?php }else{?>
+                <?php if($page=="authPage"){?>
+                  <li class="nav-item navbar-active dropdown">
+                    <?php }else{?>
                 <li class="nav-item dropdown">
-              <?php }?>  
+                  <?php }?>  
                   <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $username ?> </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
                     <?php if ($role == '1') {?>                                   
                       <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('User_management');?>">Manajemen Pengguna</a>
                       <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('Komen_management');?>">Manajemen Komentar</a>
                       <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('management_link');?>">Manajemen Link</a>
                     <?php } ?>
-                      <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">LogOut</a>                                                  
+                    <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('auth/logout');?>">LogOut</a>                                                  
                     </div>
-                </li>
+                  </li>
               <?php }; ?>
             </ul>
           </nav>
@@ -146,10 +147,12 @@
 
 
 <div class="site-mobile-menu ">
-    <div class="site-mobile-menu-header  ">
-      <div class="site-mobile-menu-close mt-3 ">
-        <span class="icon-close2 js-menu-toggle"></span>
+  <div class="site-mobile-menu-header  ">
+    <div class="site-mobile-menu-close mt-3 ">
+      <span class="icon-close2 js-menu-toggle"></span>
       </div>
     </div>
     <div class="site-mobile-menu-body  "></div>
   </div> <!-- .site-mobile-menu -->
+
+  

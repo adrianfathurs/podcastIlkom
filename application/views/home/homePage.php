@@ -16,33 +16,35 @@ if (isset($css)) {
   </div>
 </div>  -->
 
+
+
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
-      </img>
+        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"   style="width: 100%; height: 550px;"  alt="...">  </img>
     </div>
-
+    
     <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
-      </img>
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="..."></img>
     </div>
-
+  
     <div class="carousel-item" data-interval="2000">
       <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
     </div>
-
+  
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-
+  
     <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 </div> 
+
+
 
 <div class="bg-primary" data-aos="fade">
   <div class="container">
@@ -352,7 +354,7 @@ if (isset($css)) {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
       officia, error reiciendis ab quod?</p>
     </div>
-    <table class="table table-hover table-dark">
+    <table class="table-responsive table-hover table-dark">
       <thead>
         <tr>
           <th  scope="col" class="visibility2"><p class="text-center">Chart Number</p></th>
@@ -473,6 +475,7 @@ if (isset($css)) {
         </div>
       </div>
     </div>
+
     <!-- Script Js Content -->
     <?php
     if (isset($js)) {
