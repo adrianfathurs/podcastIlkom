@@ -99,6 +99,7 @@
             $query = $this->db
                 ->limit($limit, $offset)
                 ->where('jenis_artikel', $id)
+                ->order_by('id_artikel', 'DESC')
                 ->get('artikel');
 
             // Return hasil query
