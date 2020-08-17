@@ -17,18 +17,4 @@
 	});
 
 
-	$(function() {
-		// Cek apakah antara password dan confirm-password sama atau tidak
-		$('#password, #confirm-password').on('keyup', function () {
-			if ($('#password').val() !== $('#confirm-password').val()) {
-				$('#message').html('Password berbeda');
-				$('#message').addClass('alert-danger p-2');
-				$('#btn-submit').prop('disabled', true);
-			} else {
-				$('#message').html('');
-				$('#message').removeClass('alert-danger p-2');
-				$('#btn-submit').prop('disabled', false);
-			}
-		});
-	});
 </script>
