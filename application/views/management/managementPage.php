@@ -137,7 +137,7 @@ $this->load->view($css);
     </div>        
   </div>
   
-  <div class="bg-primary" data-aos="fade">
+  <div class="bg-mustard" data-aos="fade">
     <div class="container">
       <div class="row">
         <a href="https://www.twitter.com/CrastFM/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>

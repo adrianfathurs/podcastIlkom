@@ -3,8 +3,9 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">About PodCrast</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+              <h3 class="footer-heading mb-4">Address CRAST FM</h3>
+              <p>Gedung Ahmad Yani Lantai 2, Jalan Tambak Bayan Nomor 2, Janti, Caturtunggal, Depok,
+Sleman, Daerah Istimewa Yogyakarta. 55281</p>
             </div>
             <!-- <div class="mb-5">
               <h3 class="footer-heading mb-4">Subscribe</h3>

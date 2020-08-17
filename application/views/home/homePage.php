@@ -1,4 +1,5 @@
 <!-- Script css content -->
+
 <?php
 if (isset($css)) {
   $this->load->view($css);
@@ -46,7 +47,7 @@ if (isset($css)) {
 
 
 
-<div class="bg-primary" data-aos="fade">
+<div class="bg-mustard" data-aos="fade">
   <div class="container">
     <div class="row">
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
@@ -348,7 +349,7 @@ if (isset($css)) {
 </div>  
 
 <div class="site-section">
-  <div class="container-fluid" data-aos="fade-up">
+  <div class="container" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
       <h2 class="mb-5">Top 10 Chart</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
@@ -357,30 +358,30 @@ if (isset($css)) {
     <table class="table-responsive table-hover table-dark">
       <thead>
         <tr>
-          <th  scope="col" class="visibility2"><p class="text-center">Chart Number</p></th>
-          <th  scope="col" class="visibility2"><p class="text-center">Song Title</p></th>
-          <th  scope="col" class="visibility2"><p class="text-center">Play</p></th>
-          <th  scope="col" class="visibility1"><p class="text-center">Song Artist</p></th>
-          <th  scope="col" class="visibility1"><p class="text-center">Song Genre</th>
-          <th  scope="col" class="visibility1"><p class="text-center">Chart Category</th>
-          <th  scope="col" class="visibility1"><p class="text-center">Chart Status</th>
+          <th  scope="col" ><p class="text-center">Chart Number</p></th>
+          <th  scope="col"><p class="text-center">Song Title</p></th>
+          <th  scope="col" ><p class="text-center">Play</p></th>
+          <th  scope="col" class=""><p class="text-center">Song Artist</p></th>
+          <th  scope="col" class=""><p class="text-center">Song Genre</th>
+          <th  scope="col" class=""><p class="text-center">Chart Category</th>
+          <th  scope="col" class=""><p class="text-center">Chart Status</th>
         </tr>  
       </thead>
       <tbody>
       <?php foreach ($tanggaLagu as $tL):?>
         <tr>
-          <td  class="visibility2" ><p class="text-center"><?=$tL['id_lagu']?></p></td>
-          <td class="visibility2"><p class="text-center"><?= $tL['judul_lagu']?></p></td>
-          <td class="visibility2"><p class="text-center"><iframe class= "px-4 card-podcrast" src="https://open.spotify.com/embed/track/<?= $tL['link_lagu']?>" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['artist_lagu']?></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['genre_lagu']?></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
+          <td  class="" ><p class="text-center"><?=$tL['id_lagu']?></p></td>
+          <td class=""><p class="text-center"><?= $tL['judul_lagu']?></p></td>
+          <td class=""><p class="text-center"><iframe class= "px-4 card-podcrast" src="https://open.spotify.com/embed/track/<?= $tL['link_lagu']?>" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></td>
+          <td class=""><p class="text-center"><?=$tL['artist_lagu']?></p></td>
+          <td class=""><p class="text-center"><?=$tL['genre_lagu']?></p></td>
+          <td class=""><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
           <?php if($tL['status_lagu']==1){?>
-          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <td class=""><p class="text-center"><img src="<?php echo base_url()?>assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
           <?php } elseif ($tL['status_lagu']==2){?>
-          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
+          <td class=""><p class="text-center"><img src="<?php echo base_url()?>assets/images/down-arrow.png" alt="up" width="20px" height="20px"></p></td>
           <?php } else {?>
-          <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
+          <td class=""><p class="text-center"><img src="<?php echo base_url()?>assets/images/sort.png" alt="up" width="30px" height="30px"></p></td>
           <?php };?>
         </tr>
       <?php endforeach;?>
@@ -463,7 +464,7 @@ if (isset($css)) {
   </div>
 </div>
 
-    <div class="bg-primary" data-aos="fade">
+    <div class="bg-mustard" data-aos="fade">
       <div class="container">
         <div class="row">
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>

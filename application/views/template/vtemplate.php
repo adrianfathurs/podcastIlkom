@@ -36,7 +36,7 @@
 	<div class="clr"></div>
 
 
-<div class="bg-pink" data-aos="fade">
+<div class="bg-mustard" data-aos="fade">
   <div class="container">
     <div class="row">
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>

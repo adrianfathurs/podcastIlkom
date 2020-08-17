@@ -4,13 +4,17 @@
 }
 
 .navbar-active {
-	background-color: #e3207b !important;
+	background-color: #d4a328 !important;
 	border-radius: 5px;
 }
 
 .navbar-active:hover {
-	background-color: #e3207b !important;
+	background-color: #d4a328 !important;
 	border-radius: 5px;
+}
+
+.bg-mustard {
+	background-color: #d4a328 !important;
 }
 
 .bg-navbar {

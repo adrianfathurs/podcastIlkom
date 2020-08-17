@@ -116,7 +116,7 @@
                   <?php } else {?>
                     <li class="">
                       <?php }?>
-                      <a class="text-black" href="about.html">About US</a>
+                      <a class="text-black" href="<?php echo site_url('AboutUs')?>">About US</a>
                     </li>
                     <?php if (empty($id)){ ?>
                       <li><a class="text-black" href="<?php echo site_url('auth/login');?>">Login</a></li>
