@@ -8,6 +8,9 @@
             if (!$user) {  // jika usernya tidak ada
                 $this->session->set_userdata('typeNotif', 'userNotFound');
                 return false;
+            } else if($user->status == 0){
+                $this->session->set_userdata('typeNotif', 'userNotFound');
+                return false;
             } else {  // pengecekan login
                 if ($user->password == $password) {
                     $data = array (
