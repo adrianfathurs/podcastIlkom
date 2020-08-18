@@ -52,27 +52,28 @@ $this->load->view($css);
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
       officia, error reiciendis ab quod?</p>
     </div>
+    <div class="table-responsive">
     <table class="table table-hover table-dark">
       <thead>
         <tr>
-          <th  scope="col" class="visibility2"><p class="text-center">Chart Number</p></th>
-          <th  scope="col" class="visibility2"><p class="text-center">Song Title</p></th>
-          <th  scope="col" class="visibility2"><p class="text-center">Play</p></th>
-          <th  scope="col" class="visibility1"><p class="text-center">Song Artist</p></th>
-          <th  scope="col" class="visibility1"><p class="text-center">Song Genre</th>
-          <th  scope="col" class="visibility1"><p class="text-center">Chart Category</th>
-          <th  scope="col" class="visibility1"><p class="text-center">Chart Status</th>
+          <th  scope="col"><p class="text-center">Chart Number</p></th>
+          <th  scope="col"><p class="text-center">Song Title</p></th>
+          <th  scope="col"><p class="text-center">Play</p></th>
+          <th  scope="col"><p class="text-center">Song Artist</p></th>
+          <th  scope="col"><p class="text-center">Song Genre</th>
+          <th  scope="col"><p class="text-center">Chart Category</th>
+          <th  scope="col"><p class="text-center">Chart Status</th>
         </tr>  
       </thead>
       <tbody>
       <?php foreach ($tanggaLagu as $tL):?>
         <tr>
-          <td  class="visibility2" ><p class="text-center"><?=$tL['id_lagu']?></p></td>
-          <td class="visibility2"><p class="text-center"><?= $tL['judul_lagu']?></p></td>
-          <td class="visibility2"><p class="text-center"><iframe class= "px-4 card-podcrast" src="https://open.spotify.com/embed/track/<?= $tL['link_lagu']?>" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['artist_lagu']?></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['genre_lagu']?></p></td>
-          <td class="visibility1"><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
+          <td   ><p class="text-center"><?=$tL['id_lagu']?></p></td>
+          <td ><p class="text-center"><?= $tL['judul_lagu']?></p></td>
+          <td ><p class="text-center"><iframe class= "px-4 card-podcrast" src="https://open.spotify.com/embed/track/<?= $tL['link_lagu']?>" width="120px" height="75px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p></td>
+          <td ><p class="text-center"><?=$tL['artist_lagu']?></p></td>
+          <td ><p class="text-center"><?=$tL['genre_lagu']?></p></td>
+          <td ><p class="text-center"><?=$tL['kategori_lagu']?></p></td>
           <?php if($tL['status_lagu']==1){?>
           <td class="visibility1"><p class="text-center"><img src="<?php echo base_url()?>assets/images/up-arrow.png" alt="up" width="20px" height="20px"></p></td>
           <?php } elseif ($tL['status_lagu']==2){?>
@@ -84,6 +85,7 @@ $this->load->view($css);
       <?php endforeach;?>
       </tbody>
     </table>
+    </div>
   </div>
 </div>
 <div class="bg-mustard" data-aos="fade">
