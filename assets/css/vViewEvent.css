@@ -1,0 +1,149 @@
+section {
+	padding: 0;
+}
+
+#main-wrapper {
+	float: left;
+	width: 90%;
+	margin-top: 90px;
+}
+
+
+#aside-main {
+	float: right;
+	width: 10%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+
+}
+
+.asidebar {
+	margin-top: 10%;
+}
+
+#judulEvent {
+	font-size: 45px;
+	margin-top: 20px;
+
+}
+
+#judulEvent2 {
+	font-size: 40px;
+
+
+}
+
+.judul-center {
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: auto;
+	padding-left: auto;
+}
+
+#keterangan p {
+	color: white;
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+
+	font-size: 20px;
+}
+
+.clr {
+	clear: both;
+}
+
+@media (max-width: 980px) {
+	#main-wrapper {
+		float: none;
+		width: 100%;
+	}
+
+	#aside-main {
+		width: 100%;
+		margin: 10px auto;
+		float: none;
+		padding-left: 0;
+
+
+
+	}
+
+	#judulEvent2 {
+		font-size: 120%;
+
+
+	}
+
+	#keterangan p {
+		padding-left: 20px;
+		padding-right: 10px;
+		color: white;
+		font-size: 90%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#judulEvent {
+		margin-top: 40px;
+		font-size: 180%;
+
+	}
+
+	.judul-center {
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: auto;
+		padding-left: auto;
+	}
+
+
+
+	.asidebar {
+		margin-top: 0px;
+		float: none;
+
+	}
+
+	.clr {
+		clear: both;
+	}
+
+	.images-grid {
+		display: none;
+	}
+
+	.wrap-widget {
+		background-color: lightblue;
+	}
+
+	div#imageEvent img {
+		width: 85%;
+		height: 150%;
+	}
+
+}
+
+.wrap-widget-header {
+	background-color: #d4a328;
+	box-shadow: 0px 4px 10px lightblue;
+}
+
+.wrap-widget,
+.wrap-widget-header {
+	border-radius: 10px;
+}
+
+.wrap-widget {
+	background-color: ghostwhite;
+	box-shadow: 5px 5px 3px lightslategrey;
+	margin-bottom: 7px;
+
+
+}
+
+.text-color-mustard {
+	color: #d4a328;
+}
