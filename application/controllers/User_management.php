@@ -45,7 +45,8 @@
                 $data_user = array(
                     'username' => $username,
                     'password' => $password,
-                    'role'     => $role
+                    'role'     => $role,
+                    'status'   => 1
                 );
                 $this->Muser->insert($data_user);
                 redirect('User_management');
@@ -56,6 +57,14 @@
             $data['page']="userManagement";
             $input = $this->input->post(NULL, TRUE);
             extract($input);
+            
+            $username_exist	= empty($this->Muser->get_by_username($username));
+
+            if (empty($username_exist)) {
+                $this->session->set_userdata('typeNotif', 'usernameAlreadyExist');
+                redirect('user_management');
+            } else {
+            
             $data_user = array(
                 'username' => $username,
                 'password' => $password,
@@ -63,10 +72,30 @@
             );
             $this->Muser->update($data_user,$id);
             redirect('User_management');
+            };
         }
 
         function delete($id){
-            $this->Muser->delete($id);
+            $query = $this->Muser->get_by_id($id);
+            if ($query->status==0){
+                $data_user = array(
+                'username' => $query->username,
+                'password' => $query->password,
+                'role'     => $query->role,
+                'status'   => 1
+            );
+            // print_r($data_user);die;
+            // die;
+            } else {
+                $data_user = array(
+                    'username' => $query->username,
+                    'password' => $query->password,
+                    'role'     => $query->role,
+                    'status'   => 0
+                );  
+            }
+            // print_r($data_user);die;
+            $this->Muser->update($data_user,$id);
             redirect('User_management');
         }
 

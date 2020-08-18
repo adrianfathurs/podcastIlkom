@@ -12,7 +12,7 @@
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
 <section>    
     <div class="banner-section mb-5 " data-aos="fade-down">
-        <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; height: 550px;"  alt="..."></img>
+        <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; max-height: 550px;"  alt="..."></img>
         
                 <p class="fontJudul"><?php echo $artikel->judul; ?></p>
                 <p>Uploaded By <?php echo $artikel->username; ?></p>

@@ -29,11 +29,28 @@ $(document).on('click', '.open-modal', function () {
 
 		Swal.fire({
 				title: 'Apakah Anda Yakin ?',
-				text: "Anda akan menghapus Akun Ini",
+				text: "Anda akan menonaktifkan Akun Ini",
 				icon: 'warning',
 				showCancelButton: true,
 				confirmButtonColor: '#DD6B55',
-				confirmButtonText: 'Ya, Hapus!'
+				confirmButtonText: 'Ya, Nonaktifkan!'
+				}).then((result) => {
+				if (result.value) {
+					document.location.href = href;
+				}
+		});
+    });
+	$('.active').on('click', function(e){
+		e.preventDefault();
+		const href = $(this).attr('href');
+
+		Swal.fire({
+				title: 'Apakah Anda Yakin ?',
+				text: "Anda akan mengaktifkan Akun Ini",
+				icon: 'succes',
+				showCancelButton: true,
+				confirmButtonColor: '#7cbd1e',
+				confirmButtonText: 'Ya, Aktifkan!'
 				}).then((result) => {
 				if (result.value) {
 					document.location.href = href;

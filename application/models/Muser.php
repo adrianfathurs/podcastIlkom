@@ -36,8 +36,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
 
         function delete($id){
-            $this->db->delete('akun', array("id_akun" => $id));
+            $this->db->where('id_akun', $id);
+            
+            // $this->db->delete('akun', array("id_akun" => $id));
             return true;
+        }
+
+        function get_by_id($id) {
+            $this->db->where('id_akun', $id);
+            $query = $this->db->get('akun');
+            return $query->row();
         }
 
 

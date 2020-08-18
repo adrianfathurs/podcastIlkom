@@ -1,12 +1,14 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="<?php echo base_url()?>assets/images/lambang_crast.png" width="20px">
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign In</title>
+
+  <title>Crast FM</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -26,9 +28,9 @@
 			<div class="card-header">
 				<h3>Sign In</h3>
 				<div class="d-flex justify-content-end social_icon">
-					<a href="https://www.facebook.com/"><span><i class="fab fa-facebook-square"></i></span></a>
-					<a href="https://www.gmail.com/"><span><i class="fab fa-google-plus-square"></i></span></a>
-					<a href="https://www.twitter.com/"><span><i class="fab fa-twitter-square"></i></span></a>
+					<a href="https://www.youtube.com/channel/UCVw2hX3tXPK44WR7a-qXAVg/featured"><span><i class="fab fa-youtube"></i></span></a>
+					<a href="https://www.instagram.com/crast1078fm/"><span><i class="fab fa-instagram"></i></span></a>
+					<a href="https://www.twitter.com/CrastFM/"><span><i class="fab fa-twitter-square"></i></span></a>
 				</div>
 			</div>
 			<div class="card-body">
@@ -53,6 +55,7 @@
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Login" class="btn float-right login_btn">
+						<button type="button" class="btn btn-secondary" onclick="history.back();">Kembali </button>
 					</div>
 				</form>
 			</div>			

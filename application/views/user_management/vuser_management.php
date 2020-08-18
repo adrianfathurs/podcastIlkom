@@ -38,7 +38,11 @@
 											data-tt="tooltip"
 											data-target="#edit-user"> Edit
 										</button>
-									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger remove">Hapus</a> 
+									<?php if($user->status == 1){ ?>
+									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger active" title="nonaktifkan user ini">Deactive</a> 
+									<?php } else { ?>
+										<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-success remove" title="aktifkan user ini">Active</a> 
+									<?php }; ?>
 								</td>
 								<?php $no++; ?>
 							</tr>
