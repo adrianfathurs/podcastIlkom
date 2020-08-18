@@ -334,6 +334,15 @@ if (isset($css)) {
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('')?>assets/images/announcer/penyiar/Nicola.JPG" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
@@ -412,7 +421,7 @@ if (isset($css)) {
                 <img class="card-img-top" src="<?php echo base_url('/assets/upload/'.$feature['foto1'])?>"  style=" height: 350px;" alt="Card image cap">
               </div>
               <div class="card-body pt-0">
-                <h5 class="card-title" title="<?php echo $feature['judul']?>">"<?php echo substr($feature['judul'], 0, 26) . '[..]'; ?>"</h5>
+                <h5 class="card-title" title="<?php echo $feature['judul']?>">"<?php echo substr($feature['judul'], 0, 28) . '[..]'; ?>"</h5>
               </div>
             </a>              
           </div>

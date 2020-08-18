@@ -377,7 +377,7 @@ $this->load->view($css);
 <!-- Fotonya tidak ada -->
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nicola.JPG')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Nicola Cavalera</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -500,7 +500,7 @@ $this->load->view($css);
         <div class="row">
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="team-member">
-                    <img src="<?php echo base_url('/assets/images/announcer/Produser/Boba.png')?>" alt="Image" class="img-fluid">
+                    <img src="<?php echo base_url('/assets/images/announcer/Produser/babby.jpg')?>" alt="Image" class="img-fluid">
                         <div class="text">
                             <h2 class="mb-2 font-weight-light h4 text-center">Babby Brissa Chantika</h2>
                             <span class="d-block mb-2 text-white-opacity-05">Producer</span>
@@ -540,8 +540,8 @@ $this->load->view($css);
         </div>
         <!-- Fotonya belu ketemu -->
         <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-                <img src="<?php echo base_url('/assets/images/announcer/Produser/Meyta.JPG')?>" alt="Image" class="img-fluid">
+            <div class="team-member">jpg
+                <img src="<?php echo base_url('/assets/images/announcer/Produser/Rohani.JPG')?>" alt="Image" class="img-fluid">
                     <div class="text">
                         <h2 class="mb-2 font-weight-light h4 text-center">Rohani Luneria Siburian</h2>
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
@@ -650,19 +650,7 @@ $this->load->view($css);
                     </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-                <img src="<?php echo base_url('/assets/images/announcer/Produser/Dhimas.JPG')?>" alt="Image" class="img-fluid">
-                    <div class="text">
-                        <h2 class="mb-2 font-weight-light h4 text-center">Dhimas Lingga Haryo Pamungkas</h2>
-                        <span class="d-block mb-2 text-white-opacity-05">Producer</span>
-                        <p class="mb-4"></p>
-                        <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
-                        </p>
-                    </div>
-            </div>
-        </div>
+       
 
         <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
             <div class="team-member">
