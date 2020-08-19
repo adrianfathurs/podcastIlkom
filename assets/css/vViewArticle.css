@@ -131,8 +131,8 @@ section {
 }
 
 .image-size-foto23 {
-	width: 900 px;
-	height: 250px;
+	max-width: 80%;
+    max-height: 350px;
 }
 
 @media(max-width: 362px) {

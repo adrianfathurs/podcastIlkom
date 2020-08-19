@@ -29,7 +29,7 @@ class Spotify extends CI_Model {
 	}
 	function update($data, $id){
 		$this->db->where('id_spotify ', $id);
-		if ($this->db->update('youtube', $data)) {
+		if ($this->db->update('spotify', $data)) {
 			$this->session->set_userdata('typeNotif', 'successEdited');
 			return true;
 		} else {

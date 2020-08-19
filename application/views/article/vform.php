@@ -51,18 +51,18 @@
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 1 :</label>
-                            <input type="file" class="form-control" name="foto1" id="foto1" required value="<?php echo $data->foto1; ?>" onchange="previewImage();">
+                            <input type="file" class="form-control" name="foto1" id="foto1" value="<?php echo $data->foto1; ?>" onchange="previewImage();">
                             <img src="<?php echo base_url('assets/upload/'.$data->foto1) ?>" name="foto1" id="image-preview" alt="image preview" style="width: 300px; height: 220px;"/>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 2 :</label>
-                            <input type="file" class="form-control" name="foto2" id="foto2" required value="<?php echo $data->foto2; ?>" onchange="previewImage2();"> 
+                            <input type="file" class="form-control" name="foto2" id="foto2" value="<?php echo $data->foto2; ?>" onchange="previewImage2();"> 
                             <img src="<?php echo base_url('assets/upload/'.$data->foto2) ?>" name="foto2" id="image-preview2" alt="image preview" style="width: 300px; height: 220px;"/>
                             
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 form-control-label" >Gambar 3 :</label>
-                            <input type="file" class="form-control" name="foto3" id="foto3" required value="<?php echo $data->foto3; ?>" onchange="previewImage3();">  
+                            <input type="file" class="form-control" name="foto3" id="foto3" value="<?php echo $data->foto3; ?>" onchange="previewImage3();">  
                             <img src="<?php echo base_url('assets/upload/'.$data->foto3) ?>" name="foto3" id="image-preview3" alt="image preview" style="width: 300px; height: 220px;"/>
                         </div>                                                          
                         <div class="form-group">
