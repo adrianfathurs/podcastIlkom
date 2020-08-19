@@ -64,6 +64,19 @@ class management_link extends CI_Controller {
 		redirect('management_link');
 	}
 
+	function update_spt($id){
+		$data['page']="userManagement";
+		$input = $this->input->post(NULL, TRUE);
+		extract($input);
+		// print_r($input);die;
+		$data_user = array(
+			'link_spotify' => $link_spotify,			
+		);
+		
+		$this->Spotify->update($data_user,$id);
+		redirect('management_link');
+	}
+
 
 }
 ?>
