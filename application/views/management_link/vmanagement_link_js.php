@@ -54,3 +54,4 @@ $(document).on('click', '.open-modal', function () {
 	});
 
 </script>
+

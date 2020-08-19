@@ -8,6 +8,7 @@ class HomePage extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('TanggaLagu');
 		$this->load->model('Spotify');
+		$this->load->model('Youtube');
 		$this->load->model("Martikel");
 	}
 
@@ -20,6 +21,8 @@ class HomePage extends CI_Controller {
 		$data['css']="home/vhomepage_css";
 		$data['js']="home/vhomepage_js";
 		$data['tanggaLagu']=$this->TanggaLagu->getAll();
+		$data['youtube']=$this->Youtube->get();
+		
 		$data['linkPodcrast']=$this->Spotify->getLinkEpisode();
 		// var_dump($data['username']);die;
 		$data['artikelReviewLimit']=$this->Martikel->loadArticleReviewLimit();  

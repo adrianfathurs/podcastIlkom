@@ -59,7 +59,7 @@
 													<td><p> PlayList Podcast</p></td>
 													<?php } ?>											
 													<td class="text-center">
-														<button type="button" class="open-modal btn btn-warning"
+														<button type="button"  class="open-modal btn btn-warning"
 														title="Ubah"
 														data-id_spt="<?php echo $lagu->id_spotify; ?>"
 														data-link_spt="<?php echo $lagu->link_spotify; ?>"
@@ -238,7 +238,11 @@
 												
 												<input id="modal-links" class="form-control" type="text" required=" " placeholder="id lagu spotify" name="linkytb" value="<?php echo $Y['link_youtube'] ?>">										
 												<?php endforeach;?>
-												<small >Contoh Submit Link:<span><b> <?php echo $Y['link_youtube']?></b></span></small>
+												<small >Contoh Submit Link Playlist  : https://www.youtube.com/embed/<span><b>haxkJKkdTac</b></span></small>
+												<small >Contoh Submit Link Videoseries : https://www.youtube.com/embed/videoseries?list=<span><b>PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG</b></b></span></small>
+												<br>
+												<br>
+												<small >NB : Huruf yg di Bold = Id(dapat ditemukan disaat anda mengklik video tersebut di YT)</small>
 											</div>
 										</div>
 										
@@ -269,7 +273,8 @@
 										</div>
 									</div>																									
 									<div class="row d-flex">
-										<div class="ml-auto mr-2">
+										<div id="dataSubmit" class="ml-auto mr-2">
+											
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
 											<button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
 										</div>

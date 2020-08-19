@@ -53,16 +53,16 @@ if (isset($css)) {
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
       <a href="https://www.twitter.com/CrastFM/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
       <a href="https://www.instagram.com/crast1078fm/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-      <a href=""   class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+      <a href="#"   class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
       <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
-      <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+      <a href="https://www.youtube.com/channel/UCVw2hX3tXPK44WR7a-qXAVg/featured" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
     </div>
   </div>
 </div>
 
 <div class="container-fluid  bg-dark container-margin-bottom">
   <div id="main-content-homepage">
-    <img class="tengah" src="<?php echo base_url('')?>assets/images/lambang_crast.png" width="300" height="200" class="d-inline-block align-top" alt="" loading="lazy">
+    <img class="tengah" src="<?php echo base_url('')?>assets/images/lambang_crast.png" width="40px" height="400px" class="d-inline-block align-top" alt="" loading="lazy">
    <a href="http://jogjastreamers.com/crastfm.html" target="_blank"> <button class="tengah" id="btnplay" ><strong>Play</strong></button></a>
     <br>
   </div>
@@ -70,8 +70,10 @@ if (isset($css)) {
     <div id="youtube-position">
       <h3>Youtube</h3>
       <hr>
-      <iframe  width="250" height="125" target="_blank" src="https://www.youtube.com/embed/videoseries?list=PLelgONxZAasx0aTReRHqYHz---NYmA6mn" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
+      <?php foreach ($youtube as $yt):?>
+      <iframe  width="250" height="125" target="_blank" src="<?php echo $yt['link_youtube']?>" frameborder="0" allow="autoplay; encrypted-media" alt="PlaylistYoutube" allowfullscreen></iframe>
       </div>
+      <?php endforeach;?>
       <hr>
       <br>
     <div id="podcrast-position">
@@ -481,7 +483,7 @@ if (isset($css)) {
           <a href="https://www.instagram.com/crast1078fm/" target="_blank" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
           <a href="https://twitter.com/CrastFM/" target="_blank"  class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+          <a href="https://www.youtube.com/channel/UCVw2hX3tXPK44WR7a-qXAVg/featured" target="_blank"class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
         </div>
       </div>
     </div>

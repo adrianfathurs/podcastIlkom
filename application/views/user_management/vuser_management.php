@@ -4,7 +4,7 @@
         <div class="card">		
             <div class="card-body">
 				<div class="row">
-				<h4 class="col card-title">Daftar Pengguna</h4>
+				<h4 class="col card-title"><b> Daftar Pengguna </b></h4>
 					<button type="button" class="col-md-2 btn btn-success mt-10 mb-3 float-left text-white" data-toggle="modal" data-target="#add-user">Tambah Pengguna</button>
 				</div>
             <div class="table-responsive">
@@ -15,6 +15,7 @@
 							<th class="text-black">Username</th>
 							<th class="text-black">password</th>
 							<th class="text-black">Hak Akses</th>							
+							<th class="text-black">Status Akun</th>							
 							<th class="text-black">Aksi</th>
 						</tr>
 						</thead>
@@ -27,6 +28,8 @@
 								<td class="text-black"><?php echo $user->password; ?></td>
 								<td class="text-black"><?php if($user->role == "1"){ ?> Admin
 								<?php	}else{ ?> Member <?php } ?> </td>
+								<td class="text-black"><?php if($user->status == "1"){ ?> Active
+								<?php	}else{ ?> Deactive <?php } ?> </td>
 								<td class="text-center">
 									<button type="button" class="open-modal btn btn-warning"
 											title="Ubah"
@@ -39,9 +42,9 @@
 											data-target="#edit-user"> Edit
 										</button>
 									<?php if($user->status == 1){ ?>
-									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger active" title="nonaktifkan user ini">Deactive</a> 
+									<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-danger remove" title="nonaktifkan user ini">Deactive</a> 
 									<?php } else { ?>
-										<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-success remove" title="aktifkan user ini">Active</a> 
+										<a type="button" href="<?php echo base_url('User_management/delete/').$user->id_akun ?>" class="btn btn-success active" title="aktifkan user ini">Active</a> 
 									<?php }; ?>
 								</td>
 								<?php $no++; ?>

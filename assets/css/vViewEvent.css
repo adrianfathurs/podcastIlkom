@@ -4,14 +4,14 @@ section {
 
 #main-wrapper {
 	float: left;
-	width: 90%;
+	width: 78%;
 	margin-top: 90px;
 }
 
 
 #aside-main {
 	float: right;
-	width: 10%;
+	width: 20%;
 	box-sizing: border-box;
 	overflow: hidden;
 
@@ -19,7 +19,7 @@ section {
 }
 
 .asidebar {
-	margin-top: 10%;
+	margin-top: 30%;
 }
 
 #judulEvent {

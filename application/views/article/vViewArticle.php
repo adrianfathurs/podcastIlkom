@@ -10,17 +10,17 @@
 
 
 <!-- Untuk upload foto thumb nail sebaiknya memiliki lebar 1900px -->
-<section>    
+<div class="margin-top">    
     <div class="banner-section mb-5 " data-aos="fade-down">
         <img class="image-carousel-size img-responsive" src="<?php echo base_url('assets/upload/'.$artikel->foto1) ?>"  style=" width: 100%; max-height: 550px;"  alt="..."></img>
         
                 <p class="fontJudul"><?php echo $artikel->judul; ?></p>
-                <p>Uploaded By <?php echo $artikel->username; ?></p>
-                <p><?php echo $artikel->create_at; ?></p>
+                <p class="font-id">Uploaded By <?php echo $artikel->username; ?></p>
+                <p class="font-id"><?php echo $artikel->create_at; ?></p>
                 <hr>
     </div>
-</section>
-<section  id="main-wrapper" data-aos="fade-up">
+</div>
+<div  id="main-wrapper" data-aos="fade-up">
     
     <div class="container">
         <div class="row">
@@ -36,9 +36,10 @@
                 </div>
                 <label class="essay text-align-justify"><?php echo $artikel->essay3; ?></label>
             </div>
+        </div>   
     </div> <!-- /container -->
    
-</section>
+</div>
 
 <?php if (isset($asidebar)) {
     $this->load->view($asidebar);

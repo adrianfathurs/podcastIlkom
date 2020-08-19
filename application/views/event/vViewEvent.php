@@ -3,7 +3,7 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/article.css">
+
 </head>
 <section id="main-wrapper" data-aos="fade-up">
         <div class="judul-center">
