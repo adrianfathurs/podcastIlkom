@@ -1,11 +1,18 @@
 <section></section>
 
-    <div class="float-right">
-        <a href="<?php echo site_url('event/insert')?>"><button class="btn btn-success">Tambah Event</button></a>  
+<div class="card">
+  
+  <div class="card-body">
+    <div class="row">
+      <div class="col-lg-10 col-md-8 col-sm-2 col-xs-2">
+        <h3><b> Daftar Event </b></h3>
+      </div>
+    <div class="col-lg-2 col-md-4 col-sm-2 col-xs-6 float-right">
+      <a href="<?php echo site_url('event/insert')?>"><button class="btn btn-success">Tambah Event</button></a>  
     </div>
-
+  </div>
     <div class="table-responsive">
-
+  
         <table class="table bg-white table-hover">  
             <thead>
                 <tr>
@@ -35,6 +42,12 @@
             </tbody>
         </table>
     </div>
+  </div>
+</div>
+    
+    
+
+    
     <!-- Modal Remove Koment -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">

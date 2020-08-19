@@ -80,13 +80,16 @@ if (isset($css)) {
       <h3>PodCrast FM</h3>
       <hr>
       <?php foreach ($linkPodcrast as $LP) :?>
-        <iframe  id="click-embed-podcrast"  width= "320px" height="120px" src="https://open.spotify.com/embed/episode/<?php echo $LP['link_spotify']; ?> "width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+        <iframe  id="click-embed-podcrast"  width= "320px" height="120px" src="<?php echo $LP['link_spotify']?>" width="200px" height="150px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
       <?php endforeach;?> 
+      <!-- https://open.spotify.com/embed/show/095GreX08Xkfo299FxrPim?si=QFlNkF2vRPSAyBrC-IrLHA -->
       <hr>
     </div>
   </div>
   <div class="clc"></div>
 </div>
+
+
 
 <!-- <div class="container-fluid container-margin bg-dark"> --> 
   <!-- <div class="row"> -->

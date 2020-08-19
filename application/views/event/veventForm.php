@@ -1,5 +1,4 @@
-<section>
-</section>
+
 <section>
     <div id="wrap-form">
         <div class="row">
@@ -9,7 +8,7 @@
                     <center><h3><b> INPUT EVENT</b></h3></center>
                 </div>
                 <div class="card-body text-white">
-                    <?php if (!empty($this->session->userdata('typeNotif'))) : ?>
+                    <!-- <?php if (!empty($this->session->userdata('typeNotif'))) : ?>
                         <div id="alerttype" class="alert p-3 mb-2">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close" required> <span aria-hidden="true">×</span> </button>
                             <h5 id="alerttitle"></h5>
@@ -17,7 +16,7 @@
                             <i id="alerticon"></i>
                         </div>
                         <?php endif; ?>
-                        <h5 class="card-title"> Form Article</h5>
+                     -->    <h5 class="card-title"> Form Article</h5>
                         <?php echo form_open_multipart('Event/insert/');?>
                         <div class="form-group text-black" >
                             <label class="col-sm-4 form-control-label" > Judul Event:</label>  

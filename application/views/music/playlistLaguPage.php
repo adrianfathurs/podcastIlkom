@@ -54,7 +54,7 @@ $this->load->view($css);
             </div>
             <!-- databse spotify  -->
             <?php foreach ($linkPlaylist as $LP) :?>
-            <iframe class="playlist-lagu-position" src="https://open.spotify.com/embed/playlist/<?php echo $LP['link_spotify']?>" width="1028px" height="500px" frameborder="2" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="playlist-lagu-position" src="<?php echo $LP['link_spotify']?>" width="1028px" height="500px" frameborder="2" allowtransparency="true" allow="encrypted-media"></iframe>
             <?php endforeach;?>
         </div>
     </div>

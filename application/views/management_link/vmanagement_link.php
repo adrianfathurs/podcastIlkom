@@ -54,9 +54,9 @@
 										<tr>											
 											<td class="text-black"><?php echo $lagu->link_spotify; ?></td>
 											<?php if($lagu->role==1){?>
-												<td><p> PlayList Lagu</p></td>
+												<td><p> PlayList Podcast</p></td>
 												<?php } else{?>
-													<td><p> PlayList Podcast</p></td>
+													<td><p> PlayList Lagu</p></td>
 													<?php } ?>											
 													<td class="text-center">
 														<button type="button"  class="open-modal btn btn-warning"
