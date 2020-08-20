@@ -17,21 +17,21 @@
                 </div>
       <?php endif; ?>
     	<div class="row">
-   <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $judul;?></span></h1>
-    	    <?php 
-              foreach($loker as $art) :            
-            ?>              		
+          <h1 class="text-center" style="color:#ffffff"><span>Article About <?php echo $judul;?></span></h1>
+    	    <?php foreach($loker as $art) :   ?>              		
     		<div class="col-md-4 mt-4  ">
-    		    <div class="card profile-card-5 text-black">
+    		    <div class="">
                     <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
-                    <div class="card-img-block">
-    		            <img class="card-img-tops" src="<?php echo base_url('assets/upload/'.$art->foto1) ?>"  alt="Card image cap">
+                    <div class="kotak">
+    		            <img  src="<?php echo base_url('assets/upload/'.$art->foto1) ?>"  alt="Card image cap">
     		            </div>
-                    <div class="card-body pt-0">
-                    <h5 class="card-title" title="<?php echo $art->judul?>"><?php echo substr( $art->judul, 0, 28) . '...'; ?></h5></a>
+                    <div class=""><div class="kotak-judul1">
+                  <p  title="<?php echo $art->judul?>"><?php echo strtoupper(substr($art->judul, 0, 32)) . '[..]'; ?></p>
+                </div>
+              </a>
                     <!-- <p class="card-text"></p> -->
-                  </div>
             </div>
+        </div>
                 <br>
                 <?php if (!empty($id)) : ?>
                 <a href="<?php echo base_url('article/update/').$art->id_artikel?>" class="btn waves-effect waves-light btn-warning">Edit</a>                                             

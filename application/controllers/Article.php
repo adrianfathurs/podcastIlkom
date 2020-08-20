@@ -300,7 +300,7 @@
                                 'foto3'=>$foto33,
                                 'fk_akun' => $creator
                             ];
-                            
+                            // print_r($data);die;
                         $this->Martikel->insert($data,$id_artikel);
 
                         $this->getArtikel($jenis_artikel);
@@ -345,6 +345,7 @@
                             if($data->foto1){
                                 return $data->foto1;
                             }else {
+                                return "default.png";
                             $this->session->set_userdata('typeNotif', "gagalUpload1");
                             $this->update($id);
                             }
@@ -363,6 +364,7 @@
                             if($data->foto2){
                                 return $data->foto2;
                             }else {
+                                return "default.png";
                             $this->session->set_userdata('typeNotif', "gagalUpload2");
                             $this->update($id);
                             }
@@ -381,6 +383,7 @@
                             if($data->foto3){
                                 return $data->foto3;
                             }else {
+                                return "default.png";
                             $this->session->set_userdata('typeNotif', "gagalUpload3");
                             $this->update($id);
                             }
