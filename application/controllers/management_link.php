@@ -34,6 +34,9 @@ class management_link extends CI_Controller {
 	}
 
 	function update($id){
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
 		$data['page']="userManagement";
 		$input = $this->input->post(NULL, TRUE);
 		extract($input);
@@ -52,6 +55,9 @@ class management_link extends CI_Controller {
 	}
 
 	function update_ytb($id){
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
 		$data['page']="userManagement";
 		$input = $this->input->post(NULL, TRUE);
 		extract($input);
@@ -65,6 +71,9 @@ class management_link extends CI_Controller {
 	}
 
 	function update_spt($id){
+		$data['role'] = $this->session->userdata('role');            
+		$data['id'] = $this->session->userdata('id'); 
+		$data['username'] = $this->session->userdata('username'); 
 		$data['page']="userManagement";
 		$input = $this->input->post(NULL, TRUE);
 		extract($input);

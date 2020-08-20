@@ -38,6 +38,90 @@
 }
 
 
+
+
+/* sudah jadi */
+.kotak {
+	width: 350px;
+	width: 150px;
+}
+
+.kotak img {
+	position: relative;
+	max-width: 350px;
+	height: 250px;
+	padding-bottom: 15px;
+	z-index: 1;
+	opacity: 80%;
+
+}
+
+.kotak img:hover {
+	position: relative;
+	max-width: 350px;
+	height: 250px;
+	padding-bottom: 15px;
+	z-index: 1;
+	opacity: 40%;
+
+}
+
+.kotak-judul1 {
+	box-sizing: inherit;
+	width: 350px;
+	height: 60px;
+
+	position: absolute;
+	z-index: 2;
+
+	top: 225px;
+
+
+}
+
+.kotak-judul2 {
+	box-sizing: inherit;
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	z-index: 2;
+	top: 480px;
+
+
+}
+
+.kotak-judul3 {
+	box-sizing: inherit;
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	z-index: 2;
+	top: 725px;
+
+
+}
+
+.kotak-judul1 p {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.kotak-judul2 p {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.kotak-judul3 p {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: bold;
+	color: white;
+}
+
 div#podcrast-position #click-embed-podcrast {
 	margin-left: auto;
 	margin-right: auto;
@@ -263,22 +347,25 @@ div#podcrast-position #youtube-position {
 
 }
 
+
+.padding-row-carousel {
+	padding-left: 100px;
+
+}
+
 @media (max-width: 681px) {
 	.padding-row-carousel {
-		padding: auto;
+		padding-left: 0px;
 	}
 
 	.image-size-second-carousel {
-		width: 60%;
-		height: 60%;
+		width: 40%;
+		height: 40%;
 	}
 
 }
 
-.padding-row-carousel {
-	padding-left: 60px;
 
-}
 
 .image-size-second-carousel {
 	width: 100px;

@@ -140,7 +140,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lili.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lili.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Laili Widyastuti</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>

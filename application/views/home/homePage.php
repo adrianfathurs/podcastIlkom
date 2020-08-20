@@ -60,7 +60,7 @@ if (isset($css)) {
   </div>
 </div>
 
-<div class="container-fluid  bg-dark container-margin-bottom">
+<div class="container-fluid  bg-dark container-margin-bottom" data-aos="fade-up">
   <div id="main-content-homepage">
     <img class="tengah" src="<?php echo base_url('')?>assets/images/lambang_crast.png" width="40px" height="400px" class="d-inline-block align-top" alt="" loading="lazy">
    <a href="http://jogjastreamers.com/crastfm.html" target="_blank"> <button class="tengah" id="btnplay" ><strong>Play</strong></button></a>
@@ -176,7 +176,7 @@ if (isset($css)) {
 
 </div>
 
-<div class="site-section clear-float">
+<div class="site-section clear-float" data-aos="fade-up">
   <div class="container">
     <div class="row">
       <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -246,16 +246,16 @@ if (isset($css)) {
 
     <div class="container">
       <div class="row padding-row-carousel mt-4">
-        <div class="offset-col-2 offset-md-2 offset-sm-2 col col-md-2 col-sm-6 col-xs-2 pb-2">
+        <div class=" col-lg col-md col-sm col-xs pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png' style="cursor:pointer" onclick="currentDiv(1)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
+        <div class="col-lg col-md col-sm col-xs pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png" style="cursor:pointer" onclick="currentDiv(2)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
+        <div class="col-lg col-md col-sm col-xs pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png' style="cursor:pointer" onclick="currentDiv(3)">
         </div>
-        <div class="col col-md-2 col-sm-6 col-xs-2 pb-2">
+        <div class="col-lg col-md col-sm col-xs pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png" style="cursor:pointer" onclick="currentDiv(4)">
         </div>
       </div>
@@ -403,7 +403,7 @@ if (isset($css)) {
     </table>
   </div>
 </div>
-<div class="site-section bg-dark">
+<!-- <div class="site-section bg-dark">
   <div class="container" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
       <h2 class="mb-5">Articles</h2>
@@ -469,6 +469,75 @@ if (isset($css)) {
             </a>
           </div>
         <?php endforeach; ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/3')?>"><bold>Read More...</bold></a></center></div>  
+        </div>
+      </div>  
+
+
+    </div>   
+  </div>
+</div> -->
+
+<div class="site-section bg-dark">
+  <div class="container" data-aos="fade-up">
+    <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+      <h2 class="mb-5">Articles</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
+      officia, error reiciendis ab quod?</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Feature</h3></div>
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Hype</h3></div>
+      <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Review</h3></div>
+    </div>
+    <div class="row" >      
+      <div class="col-lg-4 col-md-4 col-sm-12">   
+        <h3 class="text-center visibility-user">Feature</h3>               
+        <div class="row-md-4 mt-2">
+         <?php $no=1; foreach($artikelFeatureLimit as $feature):?>
+          <div class="kotak">
+            <a href="<?php echo site_url('article/view/').$feature['id_artikel'];?>">
+              <img  src="<?php echo base_url('/assets/upload/'.$feature['foto1'])?>" alt="Card image cap" >
+                <div class="kotak-judul<?php echo $no?>">
+                  <p  title="<?php echo $feature['judul']?>"><?php echo strtoupper(substr($feature['judul'], 0, 32)) . '[..]'; ?></p>
+                </div>
+            </a>
+          </div> 
+         <?php $no++; endforeach; ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/1')?>"><bold>Read More...</bold></a></center></div>  
+        </div>
+      </div> 
+      
+      <div class="col-lg-4 col-md-4 col-sm-12">  
+        <h3 class="text-center visibility-user">Hype</h3>                  
+        <div class="row-md-4 mt-2">
+        <?php $no=1; foreach($artikelHypeLimit as $hype):?>
+          <div class="kotak">
+           <a href="<?php echo site_url('article/view/').$hype['id_artikel'];?>"> 
+              <img  src="<?php echo base_url('/assets/upload/'.$hype['foto1'])?>" alt="Card image cap" >
+                <div class="kotak-judul<?php echo $no?>">
+                  <p  title="<?php echo $hype['judul']?>"><?php echo strtoupper(substr($hype['judul'], 0, 32)) . '[..]'; ?></p>
+                </div>
+            </a>
+          </div> 
+        <?php $no++; endforeach; ?> 
+          <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/2')?>"><bold>Read More...</bold></a></center></div>  
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-md-4 col-sm-12">      
+        <h3 class="text-center visibility-user">Review</h3>            
+        <div class="row-md-4 mt-2">
+        <?php $no=1; foreach($artikelReviewLimit as $review):?>
+          <div class="kotak">
+           <a href="<?php echo site_url('article/view/').$review['id_artikel'];?>"> 
+              <img  src="<?php echo base_url('/assets/upload/'.$review['foto1'])?>" alt="Card image cap" >
+                <div class="kotak-judul<?php echo $no?>">
+                  <p  title="<?php echo $review['judul']?>"><?php echo strtoupper(substr($review['judul'], 0, 32)) . '[..]'; ?></p>
+                </div>
+            </a>
+          </div> 
+        <?php $no++; endforeach; ?> 
           <div class="mt-3"><center><a href="<?php echo base_url('article/getArtikel/3')?>"><bold>Read More...</bold></a></center></div>  
         </div>
       </div>  
