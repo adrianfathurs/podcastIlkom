@@ -859,3 +859,32 @@ ul {
 		color: white;
 	}
 }
+
+@media (min-width: 768px) {
+	.col-md-4 {
+		-webkit-box-flex: 4;
+    -ms-flex: 0 0 33.33333%;
+    flex: 1 0 65.33333%;
+    max-width: 53.33333%;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-4 {
+		-webkit-box-flex: 4;
+    -ms-flex: 0 0 33.33333%;
+    flex: 1 0 65.33333%;
+    max-width: 43.33333%;
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	.col-md-4 {
+		-webkit-box-flex: 4;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+	}
+}
