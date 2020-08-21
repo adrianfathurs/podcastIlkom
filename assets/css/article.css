@@ -690,7 +690,8 @@ ul {
 	padding-bottom: 0px;
 	z-index: 1;
 	opacity: 80%;
-
+	border-style: outset;
+	border-color: rgb(2, 2, 24);
 
 
 }

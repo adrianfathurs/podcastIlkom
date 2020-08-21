@@ -19,7 +19,7 @@
     		    <div class="card profile-card-5 text-black">
                     <a href="<?php echo base_url('event/viewEvent/').$ev['id_event'] ?>">
                     <div class="card-img-block">
-    		            <img class="card-img-tops" src="<?php echo base_url('assets/event/'.$ev['foto']) ?>" style=" max-height: 550px;" alt="Card image cap">
+    		            <img class="card-img-tops" src="<?php echo base_url('assets/event/'.$ev['foto']) ?>" style="max-width: 450px; max-height: 450px;" alt="Card image cap">
     		            </div>
                     
             </div>
