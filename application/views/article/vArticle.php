@@ -21,12 +21,12 @@
     	    <?php foreach($loker as $art) :   ?>              		
     		<div class="col-md-4 mt-4  ">
     		    <div class="">
-                    <a href="<?php echo base_url('article/view/').$art->id_artikel ?>">
+                    <a href="<?php echo base_url('article/view/').$art->id_artikel ?>" title="<?php echo $art->judul?>"> 
                     <div class="kotak">
     		            <img  src="<?php echo base_url('assets/upload/'.$art->foto1) ?>"  alt="Card image cap">
     		            </div>
                     <div class=""><div class="kotak-judul1">
-                  <p  title="<?php echo $art->judul?>"><?php echo strtoupper(substr($art->judul, 0, 32)) . '[..]'; ?></p>
+                  <p  ><?php echo strtoupper(substr($art->judul, 0, 32)) . '[..]'; ?></p>
                 </div>
               </a>
                     <!-- <p class="card-text"></p> -->
