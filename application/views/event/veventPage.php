@@ -19,12 +19,9 @@
     		    <div class="card profile-card-5 text-black">
                     <a href="<?php echo base_url('event/viewEvent/').$ev['id_event'] ?>">
                     <div class="card-img-block">
-    		            <img class="card-img-tops" src="<?php echo base_url('assets/event/'.$ev['foto']) ?>" style=" height: 550px;" alt="Card image cap">
+    		            <img class="card-img-tops" src="<?php echo base_url('assets/event/'.$ev['foto']) ?>" style=" max-height: 550px;" alt="Card image cap">
     		            </div>
-                    <div class="card-body pt-0">
-                    <h5 class="card-title" title="<?php echo $ev['judul']?>"><?php echo substr( $ev['judul'], 0, 50) . '...'; ?></h5></a>
-                    <!-- <p class="card-text"></p> -->
-                  </div>
+                    
             </div>
                 <br>
     		</div>                      
