@@ -14,7 +14,7 @@
         <?php foreach ($event as $ev) :?>
         <p id="judulEvent2" class="text-center" style="color:#ffffff"><span><?php echo $ev['judul']?></span></p>
         <div id="imageEvent">
-            <center><img class="image-responsive" src="<?php echo base_url('assets/event/').$ev['foto']?>" width="940px" height="600px" alt="<?php echo $ev['judul'] ?>"></center>
+            <center><img class="image-responsive" src="<?php echo base_url('assets/event/').$ev['foto']?>" width="940px" max-height="600px" alt="<?php echo $ev['judul'] ?>"></center>
         </div>
         
         <div id="keterangan">
