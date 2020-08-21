@@ -74,8 +74,7 @@
 									</tbody>
 								</table>
 							</div> 
-                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
-                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
+                           
                         </div>
                     </div>                    
                     <div role="tabpanel" class="tab-pane fade" id="daksh">
@@ -85,8 +84,7 @@
 							<div class="table-responsive">
 								
 								</div> 
-								<p><strong class="text-uppercase">Daksh Bhagya</strong></p>
-                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
+								
                         </div>
                     </div>
                     
