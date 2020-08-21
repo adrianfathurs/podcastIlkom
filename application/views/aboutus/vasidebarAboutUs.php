@@ -1,4 +1,4 @@
-<div id="aside-main" data-aos="fade-left">
+<!-- <div id="aside-main" data-aos="fade-left">
   <div class="asidebar">
     <div class="wrap-widget">
         <div class="wrap-widget-header">
@@ -53,4 +53,54 @@
     </div>
                 
     </div>
+</div> -->
+
+<div id="aside-main" data-aos="fade-left">
+  <div class="asidebar">
+    <div class="">
+        <div class="">
+            <hr>
+            <h5 class="text-center text-white">&nbsp;<strong> Artikel <?php echo $jenisArtikel2 ?></strong></img></h4>
+            <hr>
+        </div>
+        <div class="container pb-3">
+          <?php $no=1; foreach($artikelFeatureLimit  as $feature) :  ?>  
+          <div class="row mt-2">
+            <div class="kotak-asidebar">
+              <a href="<?php echo site_url('article/view/').$feature['id_artikel'];?>"> 
+                <img  src="<?php echo base_url('/assets/upload/'.$feature['foto1'])?>" alt="Card image cap" >
+                  <div class="kotak-judul-asidebar<?php echo $no?>">
+                    <p  title="<?php echo $feature['judul']?>"><?php echo strtoupper(substr($feature['judul'], 0, 32)) . '[..]'; ?></p>
+                  </div>
+              </a>
+            </div>       
+          </div>
+              <?php $no++;endforeach;?>
+        </div>
+    </div>
+    <div class="">
+        <div class="">
+            <hr>
+                <h5 class="text-center text-white">&nbsp;<strong> Artikel <?php echo $jenisArtikel3 ?></strong></img></h4>
+            <hr>
+        </div>
+        <div class="container pb-3">
+          <?php 
+              $no=4; foreach($artikelReviewLimit as $Review) :            
+            ?>  
+          <div class="row mt-2">
+            <div class="kotak-asidebar">
+              <a href="<?php echo site_url('article/view/').$Review['id_artikel'];?>"> 
+                <img  src="<?php echo base_url('/assets/upload/'.$Review['foto1'])?>" alt="Card image cap" >
+                  <div class="kotak-judul-asidebar<?php echo $no?>">
+                    <p  title="<?php echo $Review['judul']?>"><?php echo strtoupper(substr($Review['judul'], 0, 32)) . '[..]'; ?></p>
+                  </div>
+              </a>
+            </div>       
+          </div>
+              <?php $no++;endforeach;?>
+        </div>
+    </div>
+                
+  </div>
 </div>
