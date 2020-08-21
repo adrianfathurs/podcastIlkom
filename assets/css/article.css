@@ -678,41 +678,32 @@ ul {
 	}
 }
 
-@media (min-width: 1255px){
-	.kotak {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
-
 .kotak {
-	width: 350px;
+	width: 300px;
 	width: 150px;
 }
 
 .kotak img {
 	position: relative;
-	max-width: 350px;
+	max-width: 300px;
 	height: 250px;
 	padding-bottom: 0px;
 	z-index: 1;
 	opacity: 80%;
-	border-style: outset;
-	border-color: rgb(4, 4, 41);
-	
+
+
 
 }
 
 .kotak img:hover {
 	position: relative;
-	max-width: 350px;
+	max-width: 300px;
 	height: 250px;
 	padding-bottom: 0px;
 	z-index: 2;
 	opacity: 40%;
 	-webkit-transform: scale(1.01);
-  transform: scale(1.01);
+	transform: scale(1.01);
 
 }
 
@@ -753,7 +744,7 @@ ul {
 
 .kotak-judul1 p {
 	margin-left: 14px;
-    margin-top: -28px;
+	margin-top: -28px;
 	margin-right: 20px;
 	color: white;
 	font-weight: bold;
@@ -771,4 +762,99 @@ ul {
 	margin-right: 20px;
 	font-weight: bold;
 	color: white;
+}
+
+@media (min-width: 1255px) {
+	.kotak {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.kotak {
+		width: 300px;
+		width: 150px;
+	}
+
+	.kotak img {
+		position: relative;
+		max-width: 300px;
+		height: 250px;
+		padding-bottom: 0px;
+		z-index: 1;
+		opacity: 80%;
+
+
+
+	}
+
+	.kotak img:hover {
+		position: relative;
+		max-width: 300px;
+		height: 250px;
+		padding-bottom: 0px;
+		z-index: 2;
+		opacity: 40%;
+		-webkit-transform: scale(1.01);
+		transform: scale(1.01);
+
+	}
+
+	.kotak-judul1 {
+		box-sizing: inherit;
+		width: 300px;
+		height: 60px;
+
+		position: absolute;
+		z-index: 2;
+
+		top: 225px;
+
+
+	}
+
+	.kotak-judul2 {
+		box-sizing: inherit;
+		width: 300px;
+		height: 60px;
+		position: absolute;
+		z-index: 2;
+		top: 480px;
+
+
+	}
+
+	.kotak-judul3 {
+		box-sizing: inherit;
+		width: 300px;
+		height: 60px;
+		position: absolute;
+		z-index: 2;
+		top: 725px;
+
+
+	}
+
+	.kotak-judul1 p {
+		margin-left: 14px;
+		margin-top: -28px;
+		margin-right: 20px;
+		color: white;
+		font-weight: bold;
+	}
+
+	.kotak-judul2 p {
+		margin-left: 20px;
+		margin-right: 20px;
+		color: white;
+		font-weight: bold;
+	}
+
+	.kotak-judul3 p {
+		margin-left: 20px;
+		margin-right: 20px;
+		font-weight: bold;
+		color: white;
+	}
 }
