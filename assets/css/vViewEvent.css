@@ -1,5 +1,5 @@
 section {
-	padding: 0;
+	padding-top: 0px;
 }
 
 #main-wrapper {
@@ -16,10 +16,11 @@ section {
 	overflow: hidden;
 
 
+
 }
 
 .asidebar {
-	margin-top: 30%;
+	margin-top: 40%;
 }
 
 #judulEvent {
@@ -53,6 +54,522 @@ section {
 
 .clr {
 	clear: both;
+}
+
+/* sudah jadi */
+.kotak-asidebar {
+	max-width: 300px;
+	max-height: 200px;
+}
+
+.kotak-asidebar img {
+	box-sizing: inherit;
+	position: relative;
+	width: 230px;
+	height: 150px;
+	padding-left: 10px;
+	padding-right: 5px;
+	z-index: 1;
+	opacity: 80%;
+
+}
+
+.kotak-asidebar img:hover {
+	position: relative;
+
+
+	z-index: 1;
+	opacity: 40%;
+
+}
+
+.kotak-judul-asidebar1 {
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 6px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+
+
+	top: 300px;
+
+
+}
+
+.kotak-judul-asidebar2 {
+
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 6px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 440px;
+
+
+
+}
+
+.kotak-judul-asidebar3 {
+
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 610px;
+
+
+
+}
+
+.kotak-judul-asidebar1 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.kotak-judul-asidebar2 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.kotak-judul-asidebar3 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+
+}
+
+.kotak-judul-asidebar4 {
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+
+
+	top: 870px;
+
+
+}
+
+.kotak-judul-asidebar5 {
+
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 1030px;
+
+
+
+}
+
+.kotak-judul-asidebar6 {
+
+
+	box-sizing: inherit;
+	width: 215px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 1190px;
+
+
+
+}
+
+.kotak-judul-asidebar4 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.kotak-judul-asidebar5 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.kotak-judul-asidebar6 p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+@media(max-width: 420px) {
+
+	/* sudah jadi */
+	.kotak-asidebar {
+		max-width: 400px;
+		max-height: 250px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.kotak-asidebar img {
+		box-sizing: inherit;
+		position: relative;
+		width: 350px;
+		height: 200px;
+		z-index: 1;
+		opacity: 80%;
+
+	}
+
+	.kotak-asidebar img:hover {
+		position: relative;
+
+		z-index: 1;
+		opacity: 40%;
+
+	}
+
+	.kotak-judul-asidebar1 {
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+
+
+		top: 270px;
+
+
+	}
+
+	.kotak-judul-asidebar2 {
+
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 470px;
+
+
+
+
+	}
+
+	.kotak-judul-asidebar3 {
+
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 680px;
+
+
+
+	}
+
+	.kotak-judul-asidebar1 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar2 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar3 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		font-weight: bold;
+		color: white;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar4 {
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+
+
+		top: 990px;
+
+
+	}
+
+	.kotak-judul-asidebar5 {
+
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 1200px;
+
+
+
+	}
+
+	.kotak-judul-asidebar6 {
+
+		box-sizing: inherit;
+		width: 335px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 1410px;
+
+
+
+	}
+
+	.kotak-judul-asidebar4 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar5 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar6 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 376px) {
+
+	.image-size-foto23 {
+		width: 80%;
+		height: auto;
+	}
+
+	/* sudah jadi */
+	.kotak-asidebar {
+		max-width: 400px;
+		max-height: 250px;
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+
+	.kotak-asidebar img {
+		box-sizing: inherit;
+		position: relative;
+		width: 320px;
+		height: 200px;
+		z-index: 1;
+		opacity: 80%;
+		padding-bottom: 5px;
+
+	}
+
+	.kotak-asidebar img:hover {
+		position: relative;
+
+		z-index: 1;
+		opacity: 40%;
+
+	}
+
+	.kotak-judul-asidebar1 {
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+
+
+		top: 250px;
+
+
+	}
+
+	.kotak-judul-asidebar2 {
+
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 450px;
+
+
+
+
+	}
+
+	.kotak-judul-asidebar3 {
+
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 660px;
+
+
+
+	}
+
+	.kotak-judul-asidebar1 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar2 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar3 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		font-weight: bold;
+		color: white;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar4 {
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+
+
+		top: 975px;
+
+
+	}
+
+	.kotak-judul-asidebar5 {
+
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 1185px;
+
+
+
+	}
+
+	.kotak-judul-asidebar6 {
+
+		box-sizing: inherit;
+		width: 310px;
+		height: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: absolute;
+		z-index: 2;
+		top: 1390px;
+
+
+
+	}
+
+	.kotak-judul-asidebar4 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar5 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.kotak-judul-asidebar6 p {
+		margin-left: 5px;
+		margin-right: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+
 }
 
 @media (max-width: 980px) {
