@@ -709,7 +709,7 @@ ul {
 
 .kotak-judul1 {
 	box-sizing: inherit;
-	width: 350px;
+	width: 280px;
 	height: 60px;
 
 	position: absolute;
@@ -722,7 +722,7 @@ ul {
 
 .kotak-judul2 {
 	box-sizing: inherit;
-	width: 350px;
+	width: 280px;
 	height: 60px;
 	position: absolute;
 	z-index: 2;
@@ -733,7 +733,7 @@ ul {
 
 .kotak-judul3 {
 	box-sizing: inherit;
-	width: 350px;
+	width: 280px;
 	height: 60px;
 	position: absolute;
 	z-index: 2;
@@ -803,7 +803,7 @@ ul {
 
 	.kotak-judul1 {
 		box-sizing: inherit;
-		width: 300px;
+		width: 280px;
 		height: 60px;
 
 		position: absolute;
@@ -816,7 +816,7 @@ ul {
 
 	.kotak-judul2 {
 		box-sizing: inherit;
-		width: 300px;
+		width: 280px;
 		height: 60px;
 		position: absolute;
 		z-index: 2;
@@ -827,7 +827,7 @@ ul {
 
 	.kotak-judul3 {
 		box-sizing: inherit;
-		width: 300px;
+		width: 280px;
 		height: 60px;
 		position: absolute;
 		z-index: 2;

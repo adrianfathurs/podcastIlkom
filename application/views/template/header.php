@@ -75,7 +75,7 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/tanggaLagu');?>">Chart</a>
                     <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('music/playlistLagu');?>">Playlist</a>
-                    <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/4');?>">Info Music</a>
+                    <!-- <a class="dropdown-item music-navbar-hover" href="<?php echo site_url('article/getArtikel/4');?>">Info Music</a> -->
                   </div>
                 </li>
               <?php if($page=="announcerPage"){?>
