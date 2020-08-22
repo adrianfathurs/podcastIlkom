@@ -28,7 +28,7 @@ class Auth extends CI_Controller {
 		$cek = $this->Mauth->ceklogin($username,$password);
 
 		if ($cek) {
-			redirect('homepage');
+			redirect('HomePage');
 		} else {
 			redirect('auth');
 		}
@@ -42,7 +42,7 @@ class Auth extends CI_Controller {
 		);
         // print_r($data);die;
 		$this->session->unset_userdata($data);
-		redirect('homepage');
+		redirect('HomePage');
 	}
 }
 ?>

@@ -282,7 +282,7 @@ if (isset($css)) {
     <div class="nonloop-block-13 owl-carousel">
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Adit.jpeg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Megan Smith</h3>
@@ -292,7 +292,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Amanda.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brooke Cagle</h3>
@@ -302,7 +302,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_3.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Aninda.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Philip Martin</h3>
@@ -312,7 +312,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Anjani.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Steven Ericson</h3>
@@ -322,7 +322,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Aurelio.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Nathan Dumlao</h3>
@@ -332,7 +332,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>
@@ -341,7 +341,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/announcer/penyiar/Nicola.JPG" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bobi.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>
@@ -351,7 +351,223 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('')?>assets/images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Cessa.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ciput.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/DindaRezika.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Gunung.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Hafidz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Jati.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Lili.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/penyiar/LUTHFI.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luthfiah.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Luwina.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Mega.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Moza.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Naura.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nicola.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Rizqul.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Wisnu.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Vania.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+        </div>
+        <div class="text-black">
+          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+        </div>
+      </div>
+      <div class="text-center p-3 p-md-5 bg-white">
+        <div class="mb-4">            
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>

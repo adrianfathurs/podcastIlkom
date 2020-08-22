@@ -251,7 +251,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.jpg')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.JPG')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Luwina Kusuma Sari</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -307,7 +307,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/LUTHFI.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/LUTHFI.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">M.Luthfi Fauzi</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -540,8 +540,8 @@ $this->load->view($css);
         </div>
         <!-- Fotonya belu ketemu -->
         <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">jpg
-                <img src="<?php echo base_url('/assets/images/announcer/Produser/Rohani.JPG')?>" alt="Image" class="img-fluid">
+            <div class="team-member">
+                <img src="<?php echo base_url('/assets/images/announcer/Produser/Rohani.jpg')?>" alt="Image" class="img-fluid">
                     <div class="text">
                         <h2 class="mb-2 font-weight-light h4 text-center">Rohani Luneria Siburian</h2>
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>

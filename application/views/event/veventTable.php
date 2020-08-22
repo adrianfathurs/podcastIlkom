@@ -32,6 +32,7 @@
                     <td><?php echo $key['judul']?></td>
                     <td><?php echo $key['foto']?></td>
                     <td><?php echo $key['keterangan']?></td>
+                    <td><?php echo $key['id_event']?></td>
                     <td>
                       <button class="btn btn-danger"  id="btnHapus" data-toggle="modal" data-target="#staticBackdrop" data-id="<?php echo $key['id_event']?>">Delete</button>
                       <a href="<?php echo site_url('event/viewEvent/').$key['id_event']?>"><button class="btn btn-info">Menuju Halaman</button></a>

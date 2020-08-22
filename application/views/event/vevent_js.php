@@ -3,15 +3,15 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         
-<script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
     $(document).on("click",'#btnHapus',function(){
-        var idEvent=$(this).data('id');
-         $(".modal-footer #formHapus #idEvent").val(idEvent);
-    })
-    
-  };
-
-
+            var event= $(this).data('id');
+            console.log(event);
+            $(".modal-footer #formHapus #idEvent").val(event);
+        });  
+   });
 </script>
     <script>
       $(document).ready(function(){
@@ -33,5 +33,8 @@
             reader.readAsDataURL(file);
           }
         });
+
+        
+
       });
     </script>

@@ -112,10 +112,13 @@ class Event extends CI_Controller {
                 }
     }
         function deleteEvent(){
-            $data['page']="managementPage";
+            $data['css']="event/vevent_css";
+		    $data['js']="event/vevent_js";
+            $data['page']="managementEvent";
             $id=$this->input->post('idEvent');
             if (!isset($id)) show_404();
             $query= $this->Mevent->deleteEventById($id);
+
             if ($query) {
                 redirect('Event/getAll');
             }
