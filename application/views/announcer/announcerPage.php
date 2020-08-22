@@ -62,7 +62,7 @@ $this->load->view($css);
                             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
                             <p class=""></p>
                             <p>
-                                <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                                <a href="https://www.instagram.com/_Putradit/" class="text-white p-2" target="_blank" ><span class="icon-instagram"></span></a>
                             </p>
                         </div>
                 </div>
@@ -76,7 +76,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/Amanda_srydw/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -90,7 +90,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
                         <p class="mb-4"></p>
                         <p>
-                            <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                            <a href="https://www.instagram.com/dindarezika/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -104,7 +104,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Sahnazng/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Lisafirdaussn/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Mozzaya/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Lailiwidy/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -160,7 +160,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Bungaaqila_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Trianitanh_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -188,7 +188,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Anjanip.y/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/spaschasia/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -216,7 +216,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05"> &nbsp; &nbsp; &nbsp;Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2">&nbsp;&nbsp;<span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Cessarisintaa/" class="text-white p-2" target="_blank">&nbsp;&nbsp;<span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -230,7 +230,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/abgunung/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -243,7 +243,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/r.qull/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -257,7 +257,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Luwinaaa/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -271,7 +271,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/wisnuarimurtiprab/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -285,7 +285,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Mhrnasd/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -299,7 +299,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Vanianaf/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -313,7 +313,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -327,7 +327,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Zharifahsalmaa_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -341,7 +341,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/20aninda_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -355,7 +355,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Jati.trisna/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -369,7 +369,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/donabellaalda/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -383,7 +383,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/nicolacavalera/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -397,7 +397,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Fidz_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -411,7 +411,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/risatrisnanda_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -425,7 +425,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Annisazzahta._/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -439,7 +439,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -453,7 +453,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Baguswisanggeni_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -467,7 +467,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/aurelliooo_/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -480,7 +480,7 @@ $this->load->view($css);
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
             <p class="mb-4"></p>
             <p>
-              <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/Nauranafia/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
             </p>
           </div>
         </div>
@@ -506,7 +506,7 @@ $this->load->view($css);
                             <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                             <p class=""></p>
                             <p>
-                                <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                                <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                             </p>
                         </div>
                 </div>
@@ -520,7 +520,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -533,7 +533,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -547,7 +547,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -561,7 +561,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -575,7 +575,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -589,7 +589,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -603,7 +603,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -617,7 +617,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -631,7 +631,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -645,7 +645,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -660,7 +660,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -674,7 +674,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -688,7 +688,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -702,7 +702,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -716,7 +716,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
@@ -730,7 +730,7 @@ $this->load->view($css);
                         <span class="d-block mb-2 text-white-opacity-05">Producer</span>
                         <p class="mb-4"></p>
                         <p>
-                          <a href="#" class="text-white p-2"><span class="icon-instagram"></span></a>
+                          <a href="https://www.instagram.com/#/" class="text-white p-2" target="_blank"><span class="icon-instagram"></span></a>
                         </p>
                     </div>
             </div>
