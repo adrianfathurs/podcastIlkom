@@ -276,11 +276,10 @@ if (isset($css)) {
     <div class="row">
       <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
         <h2 class="mb-5">Announcer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
-      </div>
+        </div>
     </div>
-    <div class="nonloop-block-13 owl-carousel">
-      <div class="text-center p-3 p-md-5 bg-white">
+    <div class="nonloop-block-13 owl-carousel "  >
+      <div class="text-center p-3 p-md-5 bg-white" style="max-height:550px;">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Adit.jpeg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
@@ -567,7 +566,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMAA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Brook Smith</h3>
