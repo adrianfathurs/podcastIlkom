@@ -8,6 +8,14 @@
 	visibility: visible;
 }
 
+#main-content-homepage img {
+
+
+	width: 60%;
+
+
+}
+
 @media(max-width: 681px) {
 	.visibility1 {
 		visibility: hidden;
@@ -16,4 +24,23 @@
 	.visibility2 {
 		visibility: visible;
 	}
+}
+
+@media (max-width: 480px) {
+	.text-heading-article {
+		color: #228B22;
+		font-size: 20px;
+		padding-left: 160px;
+		padding-right: auto;
+
+	}
+
+	#carousel-items img {
+		height: 280px;
+	}
+
+	.site-section-heading h2 {
+		font-size: 25px;
+	}
+
 }

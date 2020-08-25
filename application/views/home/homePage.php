@@ -21,16 +21,16 @@ if (isset($css)) {
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="1000">
-        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"   style="width: 100%; height: 550px;"  alt="...">  </img>
+    <div id="carousel-items" class="carousel-item active"  data-interval="1000">
+        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"   style="width: 100%; "  alt="...">  </img>
     </div>
     
-    <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="..."></img>
+    <div id="carousel-items" class="carousel-item " data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; "   alt="..."></img>
     </div>
   
-    <div class="carousel-item" data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
+    <div id="carousel-items" class="carousel-item" data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; "  alt="...">
     </div>
   
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -181,8 +181,7 @@ if (isset($css)) {
     <div class="row">
       <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
         <h2 class="mb-5">Schedule Shows</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
-        officia, error reiciendis ab quod?</p>
+        
       </div>
     </div>
     <div class="w3-container">
@@ -219,6 +218,19 @@ if (isset($css)) {
 
           <div class="element effect" >
             <div class="front">
+              <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_SP_6Agt-copy.png'  width="300px;" height="300px;">
+            </div>
+            <div class="back" >
+              <div class="back-content">
+                <h5 class="text-white">Senin-Jumat</h5>
+                <h5 class="text-white">12.00-13.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="element effect" >
+            <div class="front">
               <img class="mySlides" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png'  width="300px;" height="300px;">
             </div>
             <div class="back" >
@@ -246,16 +258,19 @@ if (isset($css)) {
 
     <div class="container">
       <div class="row padding-row-carousel mt-4">
-        <div class=" col-lg col-md col-sm col-xs pb-2">
+        <div class=" col-lg col-md col-sm col-6 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_Morsun_4Agt.png' style="cursor:pointer" onclick="currentDiv(1)">
         </div>
-        <div class="col-lg col-md col-sm col-xs pb-2">
+        <div class="col-lg col-md col-sm col-6 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_CH_5Agt-copy.png" style="cursor:pointer" onclick="currentDiv(2)">
         </div>
-        <div class="col-lg col-md col-sm col-xs pb-2">
+        <div class="col-lg col-md col-sm col-6 pb-2">
+          <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_SP_6Agt-copy.png' style="cursor:pointer" onclick="currentDiv(3)">
+        </div>
+        <div class="col-lg col-md col-sm col-6 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src='<?php echo base_url()?>assets/images/schedule/Isu_TZ_7Agt-copy.png' style="cursor:pointer" onclick="currentDiv(3)">
         </div>
-        <div class="col-lg col-md col-sm col-xs pb-2">
+        <div class="col-lg col-md col-sm col-6 pb-2">
           <img class="demo w3-opacity w3-hover-opacity-off image-size-second-carousel" src="<?php echo base_url()?>assets/images/schedule/Isu_BD_8Agt-copy.png" style="cursor:pointer" onclick="currentDiv(4)">
         </div>
       </div>
@@ -284,9 +299,11 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Adit.jpeg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Megan Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Aditya Novatri Putra</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/_Putradit/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
@@ -294,19 +311,23 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Amanda.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brooke Cagle</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
-      </div>
+          <h3 class="font-weight-light h5">Amanda Suryadewi</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Amanda_srydw/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
+      </div>  
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Aninda.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Philip Martin</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Aninda Nurullia Utami</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/20aninda_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
@@ -314,9 +335,11 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Anjani.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Steven Ericson</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Anjani Putri Yudhanti</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Anjanip.y/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
@@ -324,9 +347,11 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Aurelio.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Nathan Dumlao</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Aurellio Yudiprasetyo</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/aurelliooo_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
@@ -334,18 +359,22 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Maharani Ayu</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Mhrnasd/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bobi.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Bagus Wisanggeni M.</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Baguswisanggeni_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
@@ -353,98 +382,121 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Bunga Aqila Weny Devita</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Bungaaqila_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Cessa.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Cessarisinta</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Cessarisintaa/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ciput.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Paschasia Tyas S.</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/spaschasia/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/DindaRezika.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Rezika Ardia Dinda Arrini</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/dindarezika/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Donabella Alda Keshena</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/donabellaalda/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Gunung.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Adrian Banyu Gunung</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/abgunung/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Hafidz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Hafidz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Hafidz Ahmad TNA</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Fidz_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Jati.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Wahyu Trisna Jati</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Jati.trisna/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Lili.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lili.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Laili Widyastuti</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Lailiwidy/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Lisa Firdaus Siti Nurjanah</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/Lisafirdaussn/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/penyiar/LUTHFI.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/LUTHFI.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">M.Luthfi Fauzi</h3>
+          
+        <p class="mt-2">
+              <a href="https://www.instagram.com/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -452,17 +504,21 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luthfiah.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Lutfiah Nur Fadhiah</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Luwina.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Luwina Kusuma Sari</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/Luwinaaa/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -470,17 +526,21 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Mega.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Mega Karina Putri W.</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/penyiar/Moza.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Moza.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Mozaya Aysha Noerzahra</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/Mozzaya/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -488,8 +548,10 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Naura.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Naura Salma Nafia</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/Nauranafia/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -497,35 +559,43 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nicola.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Nicola Cavalera</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/nicolacavalera/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Annisa Azzahra</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Annisazzahta._/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-        </div>
+          <h3 class="font-weight-light h5">Khoirul Trianita Nurhavifah</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Trianitanh_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Mellinia Risa Trisnanda</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/risatrisnanda_/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>  
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -533,8 +603,10 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Rizqul.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Rizqullah Muladi</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/r.qull/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -542,8 +614,10 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Sahnaz Nurraisa</h3>
+        <p class="mt-2">
+              <a href="https://www.instagram.com/Sahnazng/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -551,8 +625,10 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Wisnu.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Wisnu Arimurti Prabowo</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/wisnuarimurtiprab/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
@@ -560,17 +636,21 @@ if (isset($css)) {
           <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Vania.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Vania Nafisah Widitama</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Vanianaf/" class="mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMAA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
-          <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
+          <h3 class="font-weight-light h5">Zharifah Salma Hutami</h3>
+          <p class="mt-2">
+              <a href="https://www.instagram.com/Zharifahsalmaa_/" class=" mt-2" target="_blank"><span class="icon-instagram"></span></a>
+            </p>
         </div>
       </div>
     </div>
@@ -581,8 +661,7 @@ if (isset($css)) {
   <div class="container" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
       <h2 class="mb-5">Top 10 Chart</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
-      officia, error reiciendis ab quod?</p>
+      
     </div>
     <table class="table-responsive table-hover table-dark">
       <thead>
@@ -697,8 +776,7 @@ if (isset($css)) {
   <div class="container" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
       <h2 class="mb-5">Articles</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
-      officia, error reiciendis ab quod?</p>
+    
     </div>
     <div class="row">
       <div class="col-lg-4 col-md-4"><h3 class="text-center visibility-users">Feature</h3></div>

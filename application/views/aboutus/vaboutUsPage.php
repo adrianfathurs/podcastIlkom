@@ -8,16 +8,16 @@ if (isset($css)) {
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="1000">
-        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"   style="width: 100%; height: 550px;"  alt="...">  </img>
+    <div id="carousel-items" class="carousel-item active" data-interval="1000">
+        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"   style="width: 100%;"  alt="...">  </img>
     </div>
     
-    <div class="carousel-item " data-interval="2000">
-        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="..."></img>
+    <div id="carousel-items" class="carousel-item " data-interval="2000">
+        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; "   alt="..."></img>
     </div>
 
-    <div class="carousel-item" data-interval="2000">
-        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
+    <div id="carousel-items" class="carousel-item" data-interval="2000">
+        <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; "  alt="...">
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">

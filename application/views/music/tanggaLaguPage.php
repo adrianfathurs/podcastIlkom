@@ -7,18 +7,18 @@ $this->load->view($css);
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
+    <div id="carousel-items" class="carousel-item active" data-interval="1000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; "  alt="...">  
       </img>
     </div>
 
-    <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
+    <div id="carousel-items" class="carousel-item " data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; "   alt="...">
       </img>
     </div>
 
-    <div class="carousel-item" data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
+    <div id="carousel-items" class="carousel-item" data-interval="2000">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; "  alt="...">
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -49,8 +49,7 @@ $this->load->view($css);
   <div class="container-fluid" data-aos="fade-up">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
       <h2 class="mb-5">Top 10 Chart</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
-      officia, error reiciendis ab quod?</p>
+      
     </div>
     <div class="table-responsive">
     <table class="table table-hover table-dark">

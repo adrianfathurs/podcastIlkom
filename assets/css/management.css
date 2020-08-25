@@ -13,12 +13,44 @@
 	transform: scale(1.2);
 }
 
+#main-content-homepage img {
+
+
+	width: 60%;
+
+
+}
+
+#carousel-items img {
+	height: 650px;
+}
+
 div.kotak-management img {
 	width: 320px;
 	height: 250px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+@media (max-width: 480px) {
+	.text-heading-article {
+		color: #228B22;
+		font-size: 20px;
+		padding-left: 160px;
+		padding-right: auto;
+
+	}
+
+	#carousel-items img {
+		height: 280px;
+	}
+
+	.site-section-heading h2 {
+		font-size: 25px;
+	}
+
+}
+
 
 @media(max-width:415px) {
 

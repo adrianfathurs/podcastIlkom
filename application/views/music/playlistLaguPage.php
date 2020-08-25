@@ -8,17 +8,17 @@ $this->load->view($css);
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; height: 550px;"  alt="...">  
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/1.jpg"  style="width: 100%; "  alt="...">  
       </img>
     </div>
 
     <div class="carousel-item " data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; height: 550px;"   alt="...">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/2.jpg" style="width: 100%; "   alt="...">
       </img>
     </div>
 
     <div class="carousel-item" data-interval="2000">
-      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; height: 550px;"  alt="...">
+      <img class="image-carousel-size" src="<?php echo base_url(); ?>assets/images/thumbnail/3.jpg" style="width: 100%; "  alt="...">
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -49,8 +49,7 @@ $this->load->view($css);
         <div class="site-section-heading text-center mb-5 w-border mx-auto">
             <div class="offset-md-3 col-lg-6 col-md-6 text-center">
                 <h2 class="mb-5">Playlist Song</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
-                officia, error reiciendis ab quod?</p>
+                
             </div>
             <!-- databse spotify  -->
             <?php foreach ($linkPlaylist as $LP) :?>
