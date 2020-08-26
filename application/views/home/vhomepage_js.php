@@ -28,13 +28,13 @@
         dots[slideIndex-1].className += " w3-opacity-off";
         if(dots[slideIndex])
         {
-          $('.demo').addClass('animated infinite bounce animated.slow');
+         
           console.log("berhasil");
           console.log(dots[slideIndex]);
         }
         else
         {
-          $('.demo').removeClass('animated infinite bounce animated.slow');
+         
           console.log("salah");
           console.log(dots[slideIndex]);
         }
@@ -66,13 +66,13 @@ showDivss(slideIndexs);
         dots[slideIndexs-1].className += " w3-opacity-off";
         if(dots[slideIndexs])
         {
-          $('.demo').addClass('animated infinite bounce animated.slow');
+          
           console.log("berhasil");
           console.log(dots[slideIndexs]);
         }
         else
         {
-          $('.demo').removeClass('animated infinite bounce animated.slow');
+        
           console.log("salah");
           console.log(dots[slideIndexs]);
         }

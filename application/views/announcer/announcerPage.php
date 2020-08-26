@@ -98,7 +98,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Sahnaz Nurraisa </h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -112,7 +112,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Lisa Firdaus Siti Nurjanah</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -154,7 +154,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Bunga Aqila Weny Devita</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -168,7 +168,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Khoirul Trianita Nurhavifah</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -251,7 +251,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Luwina Kusuma Sari</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -279,7 +279,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Maharani Ayu</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -321,7 +321,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMA.jpg')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Salma.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Zharifah Salma Hutami</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -363,7 +363,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Donabella Alda Keshena</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -391,7 +391,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Hafidz.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Hafidz.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Hafidz Ahmad TNA</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -405,7 +405,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Mellinia Risa Trisnanda</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>
@@ -419,7 +419,7 @@ $this->load->view($css);
 
       <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
         <div class="team-member">
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.JPG')?>" alt="Image" class="img-fluid">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.jpg')?>" alt="Image" class="img-fluid">
           <div class="text">
             <h2 class="mb-2 font-weight-light h4 text-center">Annisa Azzahrah</h2>
             <span class="d-block mb-2 text-white-opacity-05">Announcer</span>

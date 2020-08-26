@@ -356,7 +356,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Ayu.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Maharani Ayu</h3>
@@ -379,7 +379,7 @@ if (isset($css)) {
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Bunga.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Bunga Aqila Weny Devita</h3>
@@ -423,7 +423,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Dona.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Donabella Alda Keshena</h3>
@@ -445,7 +445,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Hafidz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Hafidz.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Hafidz Ahmad TNA</h3>
@@ -478,7 +478,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Lisa.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Lisa Firdaus Siti Nurjanah</h3>
@@ -512,7 +512,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Luwina.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Luwina Kusuma Sari</h3>
@@ -567,7 +567,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nisa.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Annisa Azzahra</h3>
@@ -578,7 +578,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Nita.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Khoirul Trianita Nurhavifah</h3>
@@ -589,7 +589,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Risa.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Mellinia Risa Trisnanda</h3>
@@ -611,7 +611,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.JPG')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Sahnaz.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Sahnaz Nurraisa</h3>
@@ -644,7 +644,7 @@ if (isset($css)) {
       </div>
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">            
-          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/SALMA.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img src="<?php echo base_url('/assets/images/announcer/Penyiar/Salma.jpg')?>" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="text-black">
           <h3 class="font-weight-light h5">Zharifah Salma Hutami</h3>
