@@ -4,10 +4,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   
+  <title>Crast FM - Komunitas Radio Ilkom</title>
+  
+  <meta name="google-site-verification" content="SEZfhmzJS_l21oAi3ggFjOIJ3G0zd5ApcfEUPjmNI3U" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Crast FM merupakan sebuah radio komunitas milik Ilmu Komunikasi Universitas
+Pembangunan Nasional “Veteran” Yogyakarta. Radio ini berdiri pada 14 Mei 2003 di
+Babarsari, Sleman, Yogyakarta (Kampus II UPN “Veteran” Yogyakarta). Tagline dari Crast
+sendiri adalah Smart People Think Different. Crast FM memiliki pendengar setia yang biasa
+dipanggil dengan sebutan Smart Listener">
+  <meta name="keywords" content="radio,yogyakarta,UPN,KomunitasRadio,CrastFM,1078CrastFM,IlmuKomunikasiUPN,Komunikasi,Announcer,Smart,People,Think,Different,Veteran,Yogyakarta ">
   
   <link rel="shortcut icon" href="<?php echo base_url()?>assets/images/lambang_crast.png" width="20px">
-  <title>Crast FM</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/icomoon/style.css">
